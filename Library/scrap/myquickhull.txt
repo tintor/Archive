@@ -1,0 +1,62 @@
+	private void addf(List<int[]> list, Map<int[], Integer> map, int... a) {
+		Arrays.sort(a);
+		Integer i = map.get(a);
+		if (i != null) {
+			map.remove(a);
+			list.set(i, null);
+		} else {
+			map.put(a, list.size());
+			list.add(a);
+		}
+	}
+
+	private ConvexPolygon3[] quickHull() {
+		List<int[]> list = new ArrayList<int[]>();
+		Map<int[], Integer> map = new HashMap<int[], Integer>();
+
+		addf(list, map, 0, 1, 2);
+		addf(list, map, 0, 1, 3);
+		addf(list, map, 0, 2, 3);
+		addf(list, map, 1, 2, 3);
+		Vector3 o = Vector3.average(vertices[0], vertices[1], vertices[2], vertices[3]);
+
+		for (int i = 0; i < list.size(); i++) {
+			int[] f = list.get(i);
+			if(f == null) continue;
+
+			int a = f[0], b = f[1], c = f[2];
+			Plane3 p = new Plane3(vertices[a], vertices[b], vertices[c]);
+			if (p.distance(o) > 0)
+				p = p.flip();
+
+			int m = 0;
+			double md = Double.NEGATIVE_INFINITY;
+			for (int j = 0; j < vertices.length; j++) {
+				double d = p.distance(vertices[j]);
+				if (d > md) {
+					m = j;
+					md = d;
+				}
+			}
+
+			if (m == a || m == b || m == c)
+				continue;
+
+			list.set(i, null);
+			map.remove(f);
+
+			addf(list, map, m, a, b);
+			addf(list, map, m, a, c);
+			addf(list, map, m, b, c);
+		}
+
+		int i = 0;
+		ConvexPolygon3[] faces = new ConvexPolygon3[map.size()];
+		for (int[] f : list)
+			if (f != null) {
+				Vector3 a = vertices[f[0]], b = vertices[f[1]], c = vertices[f[2]];
+				Plane3 p = new Plane3(a, b, c);
+				faces[i++] = (p.distance(o) > 0) ? new ConvexPolygon3(c, b, a) : new ConvexPolygon3(a, b, c);
+			}
+		return faces;
+	}

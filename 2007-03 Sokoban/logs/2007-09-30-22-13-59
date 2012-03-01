@@ -1,0 +1,255 @@
+there are 34 nondead cells and 6 boxes, maximum of 1344904 keys!
+#: time=469ms keys=164 k/s=349 c/k=31 branch=3.7(3.7) deadlocks[fast2x2=31 frozenBoxes=22]65% queue=288(1000)2% set=453(1024)2% queue/set=64% deadlock/set=0.12 memFree=4071k
+solution in 101 pushes!
+loading time: 757ms
+there are 44 nondead cells and 10 boxes, maximum of 2481256778 keys!
+#: time=16s keys=22k k/s=4416 c/k=38 branch=6.3(6.3) deadlocks[fast2x2=13k frozenBoxes=14k]33% queue=47k(58k)7% set=69k(131k)8% queue/set=68% deadlock/set=0.39 memFree=2694k
+total=137 distance=77 carries=27
+##############
+#**!!#!!!!!###
+#*?!!#!!!!!!!#
+#??!!#$####!!#
+#??!!#$  ##$!#
+#?*!!###    ##
+######$## $  #
+###  $       #
+###    #     #
+##############
+
+#: time=19s keys=39k k/s=5710 c/k=42 branch=5.6(6.0) deadlocks[fast2x2=17k frozenBoxes=20k]32% queue=70k(86k)7% set=109k(262k)8% queue/set=64% deadlock/set=0.33 memFree=4976k
+solution in 137 pushes!
+there are 41 nondead cells and 11 boxes, maximum of 3159461968 keys!
+#: time=33s keys=36k k/s=-623 c/k=107 branch=11.7(5.5) deadlocks[fast2x2=9778 frozenBoxes=27k]31% queue=14k(17k)-6% set=50k(131k)-3% queue/set=28% deadlock/set=0.74 memFree=5130k
+total=140 distance=112 carries=29
+#################
+#########  #  ###
+#########  #  ###
+#########     ###
+##########    ###
+#########   # ###
+#?**?!!##    $  #
+##***!$## $     #
+#?**?$!##########
+#################
+
+#: time=38s keys=67k k/s=6064 c/k=35 branch=6.9(6.2) deadlocks[fast2x2=16k frozenBoxes=38k]32% queue=23k(26k)6% set=90k(131k)10% queue/set=26% deadlock/set=0.60 memFree=13M
+total=142 distance=94 carries=27
+#################
+#########  #  ###
+######### $#  ###
+#########     ###
+##########    ###
+#########   #$###
+#?*?*  ##  $!!!!#
+##***  ## $!!!!!#
+#?*?*  ##########
+#################
+
+#: time=43s keys=99k k/s=6275 c/k=34 branch=7.0(6.4) deadlocks[fast2x2=23k frozenBoxes=46k]32% queue=23k(26k)6% set=122k(262k)11% queue/set=19% deadlock/set=0.57 memFree=10M
+total=146 distance=104 carries=28
+#################
+#########!!#!!###
+#########!!#!!###
+#########!!!!$###
+##########!!!!###
+#########!!!#!###
+#?***  ##!!$!$!!#
+##**. $##!!!!!!!#
+#?**.  ##########
+#################
+
+#: time=48s keys=132k k/s=6623 c/k=34 branch=6.8(6.5) deadlocks[fast2x2=34k frozenBoxes=53k]32% queue=15k(26k)6% set=147k(262k)12% queue/set=10% deadlock/set=0.59 memFree=6049k
+total=148 distance=95 carries=28
+#################
+#########  #  ###
+#########  #$ ###
+#########     ###
+########## $  ###
+#########!$!#$###
+#?*?*!!##!!!!!!!#
+##***!!##!!!!!!!#
+#?**?!!##########
+#################
+
+#: time=53s keys=172k k/s=7897 c/k=33 branch=5.5(6.3) deadlocks[fast2x2=47k frozenBoxes=63k]31% queue=4342(26k)6% set=176k(262k)10% queue/set=2% deadlock/set=0.63 memFree=4031k
+total=140 distance=104 carries=31
+#################
+#########  #  ###
+#########  #  ###
+######### $   ###
+##########    ###
+#########!$ # ###
+#?***  ##$      #
+##***$ ##       #
+#?*..  ##########
+#################
+
+#: time=58s keys=205k k/s=6546 c/k=36 branch=6.4(6.3) deadlocks[fast2x2=58k frozenBoxes=71k]34% queue=3929(26k)6% set=209k(524k)11% queue/set=2% deadlock/set=0.62 memFree=14M
+total=140 distance=119 carries=34
+#################
+#########  #  ###
+#########  #  ###
+#########     ###
+##########    ###
+#########  $# ###
+#?**.  ##       #
+##**.$ ## $     #
+#****  ##########
+#################
+
+#: time=64s keys=241k k/s=7163 c/k=36 branch=5.8(6.2) deadlocks[fast2x2=65k frozenBoxes=82k]30% queue=13k(26k)6% set=255k(524k)9% queue/set=5% deadlock/set=0.58 memFree=11M
+total=142 distance=101 carries=32
+#################
+#########  #  ###
+#########  #  ###
+#########     ###
+##########$$  ###
+#########   # ###
+#?**?!!##       #
+##***!!##$ $    #
+#*??*!!##########
+#################
+
+#: time=69s keys=274k k/s=6466 c/k=34 branch=6.5(6.3) deadlocks[fast2x2=72k frozenBoxes=95k]30% queue=22k(26k)6% set=296k(524k)10% queue/set=7% deadlock/set=0.56 memFree=7373k
+total=148 distance=110 carries=33
+#################
+#########  #  ###
+#########  #$ ###
+#########     ###
+##########$   ###
+#########   # ###
+#?***  ##  $    #
+##**.  ##       #
+#*?*.$ ##########
+#################
+
+#: time=74s keys=307k k/s=6466 c/k=33 branch=6.7(6.3) deadlocks[fast2x2=80k frozenBoxes=103k]31% queue=24k(26k)6% set=331k(524k)12% queue/set=7% deadlock/set=0.55 memFree=3614k
+total=152 distance=114 carries=35
+#################
+#########  #  ###
+#########  #$ ###
+#########     ###
+##########    ###
+#########   # ###
+#?***  ##    $  #
+##**.  ##  $    #
+#*?*.$ ##########
+#################
+
+#: time=79s keys=339k k/s=6359 c/k=32 branch=6.4(6.3) deadlocks[fast2x2=88k frozenBoxes=109k]37% queue=21k(26k)5% set=360k(524k)11% queue/set=6% deadlock/set=0.55 memFree=29M
+total=154 distance=108 carries=34
+#################
+#########  #  ###
+#########  #$ ###
+#########     ###
+##########  $ ###
+#########  $# ###
+#?**?!!##       #
+##**?!!##$      #
+#*?**!!##########
+#################
+
+#: time=84s keys=377k k/s=7501 c/k=31 branch=5.9(6.3) deadlocks[fast2x2=99k frozenBoxes=116k]32% queue=10k(26k)6% set=387k(524k)11% queue/set=3% deadlock/set=0.56 memFree=25M
+total=160 distance=110 carries=33
+#################
+#########  #  ###
+######### $#$ ###
+#########     ###
+##########    ###
+#########  $# ###
+#?**.  ##       #
+##***  ##    $  #
+#**..  ##########
+#################
+
+#: time=89s keys=412k k/s=6886 c/k=32 branch=6.1(6.3) deadlocks[fast2x2=111k frozenBoxes=130k]32% queue=5177(26k)5% set=417k(1049k)14% queue/set=1% deadlock/set=0.58 memFree=18M
+total=154 distance=106 carries=35
+#################
+#########  #  ###
+#########  #  ###
+#########  $  ###
+##########    ###
+#########   # ###
+#?***  ##    $!!#
+##**.  ##  $  $!#
+#?*?*  ##########
+#################
+
+#: time=94s keys=445k k/s=6526 c/k=37 branch=6.9(6.3) deadlocks[fast2x2=120k frozenBoxes=136k]30% queue=9428(26k)5% set=455k(1049k)11% queue/set=2% deadlock/set=0.56 memFree=13M
+total=142 distance=100 carries=31
+#################
+#########  #  ###
+#########  #  ###
+#########     ###
+##########$   ###
+######### $ # ###
+#?**.  ##  $$   #
+##***  ##       #
+#**..  ##########
+#################
+
+#: time=99s keys=476k k/s=6030 c/k=37 branch=7.4(6.4) deadlocks[fast2x2=128k frozenBoxes=141k]30% queue=12k(26k)5% set=487k(1049k)10% queue/set=2% deadlock/set=0.55 memFree=9200k
+total=136 distance=92 carries=28
+#################
+#########  #  ###
+######### $#  ###
+######### $   ###
+##########    ###
+#########   # ###
+#?**.  ##$$     #
+##**.$ ##       #
+#*?*.  ##########
+#################
+
+#: time=104s keys=509k k/s=6524 c/k=36 branch=6.5(6.4) deadlocks[fast2x2=136k frozenBoxes=153k]34% queue=20k(26k)5% set=528k(1049k)10% queue/set=4% deadlock/set=0.55 memFree=3321k
+total=148 distance=111 carries=33
+#################
+#########  #  ###
+#########  #$ ###
+#########     ###
+##########    ###
+#########  $# ###
+#?***  ##$      #
+##*.*$ ##       #
+#**..  ##########
+#################
+
+#: time=109s keys=536k k/s=5345 c/k=35 branch=7.4(6.4) deadlocks[fast2x2=144k frozenBoxes=161k]28% queue=22k(26k)5% set=558k(1049k)11% queue/set=4% deadlock/set=0.55 memFree=51M
+total=154 distance=107 carries=35
+#################
+#########  #  ###
+#########  #  ###
+#########    $###
+##########    ###
+#########   #$###
+#?*?*!!##  $    #
+##***!!##$      #
+#*?*?!!##########
+#################
+
+#: time=114s keys=568k k/s=6224 c/k=35 branch=7.0(6.5) deadlocks[fast2x2=154k frozenBoxes=173k]44% queue=22k(26k)5% set=590k(1049k)11% queue/set=4% deadlock/set=0.55 memFree=42M
+total=148 distance=106 carries=34
+#################
+#########  #  ###
+#########  #  ###
+#########     ###
+##########    ###
+######### $ # ###
+#?***  ## $     #
+##*?*  ##   $ $ #
+#*?*.  ##########
+#################
+
+#: time=119s keys=597k k/s=5882 c/k=35 branch=7.0(6.5) deadlocks[fast2x2=163k frozenBoxes=183k]30% queue=22k(26k)5% set=619k(1049k)10% queue/set=3% deadlock/set=0.56 memFree=45M
+total=146 distance=104 carries=29
+#################
+#########  #  ###
+#########  #  ###
+#########     ###
+##########    ###
+#########!$ # ###
+#?***!!##!$   $ #
+##*?*!!##!$     #
+#?**?!!##########
+#################
+

@@ -1,0 +1,7 @@
+(Each x, y, z) Enemy(x, y) and Enemy(y, z) => Ally(x, z)
+(Each x) Ally(x, Enemy(Enemy(x, Each), Each))
+
+function : enemy(x)
+variable : x
+relation : Enemy(x, y)
+constant : Marko

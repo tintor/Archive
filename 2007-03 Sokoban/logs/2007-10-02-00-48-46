@@ -1,0 +1,82 @@
+loading time: 832ms
+loading time: 524ms
+loading time: 430ms
+loading time: 1258ms
+loading time: 949ms
+loading time: 737ms
+loading time: 460ms
+loading time: 454ms
+loading time: 808ms
+loading time: 1444ms
+loading time: 758ms
+loading time: 1163ms
+loading time: 472ms
+loading time: 528ms
+loading time: 473ms
+loading time: 466ms
+loading time: 357ms
+loading time: 831ms
+loading time: 631ms
+loading time: 687ms
+there are 39 nondead cells and 8 boxes, maximum of 61523748 keys!
+#: time=21ms keys=1 k/s=47 c/k=6 branch=2.0(2.0) deadlocks[ hash=2]21998% queue=0(1000)0% set=3(64)0% queue/set=0% deadlock/set=0.67 memFree=3793k
+no solution!
+there are 39 nondead cells and 8 boxes, maximum of 61523748 keys!
+#: time=8468ms keys=29k k/s=5892 c/k=28 branch=4.9(4.9) deadlocks[fast2x2=9322 frozenBoxes=14k]38% queue=44k(58k)9% set=74k(131k)8% queue/set=60% deadlock/set=0.32 memFree=2272k
+total=111 distance=73 carries=20
+###########
+#######!!##
+#    # $!##
+#    ##!!##
+## #.**#$##
+##  **.  ##
+## #* .# ##
+## $ # #  #
+##        #
+##  #######
+###########
+
+#: time=14s keys=69k k/s=7688 c/k=26 branch=4.7(4.8) deadlocks[fast2x2=17k frozenBoxes=28k]31% queue=78k(86k)8% set=146k(262k)9% queue/set=53% deadlock/set=0.31 memFree=2997k
+total=89 distance=60 carries=16
+###########
+#######  ##
+#    #   ##
+#  $ ##  ##
+## #.**# ##
+##  .*.  ##
+##$#* .# ##
+##!!!# #$ #
+##!!$     #
+##!!#######
+###########
+
+#: time=19s keys=97k k/s=5691 c/k=27 branch=5.9(5.1) deadlocks[fast2x2=25k frozenBoxes=42k]33% queue=132k(194k)8% set=230k(524k)9% queue/set=58% deadlock/set=0.29 memFree=5134k
+total=89 distance=60 carries=17
+###########
+#######  ##
+#    #   ##
+# $  ##  ##
+##$#***# ##
+##  *..  ##
+## #. .#$##
+##   # #  #
+## $      #
+##  #######
+###########
+
+#: time=24s keys=130k k/s=6519 c/k=25 branch=5.5(5.2) deadlocks[fast2x2=32k frozenBoxes=55k]36% queue=170k(194k)8% set=300k(524k)9% queue/set=57% deadlock/set=0.29 memFree=18M
+total=111 distance=65 carries=17
+###########
+#######!!##
+#!!!!#$!!##
+#!!!!##!!##
+##!#*.*#!##
+##!!*.*!!##
+##$#. .#!##
+##   # #$!#
+##    $!!!#
+##  #######
+###########
+
+#: time=27s keys=150k k/s=6692 c/k=26 branch=5.6(5.3) deadlocks[fast2x2=38k frozenBoxes=64k]32% queue=195k(292k)8% set=345k(524k)10% queue/set=56% deadlock/set=0.30 memFree=13M
+solution in 87 pushes!

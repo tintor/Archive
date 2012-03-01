@@ -1,0 +1,51 @@
+	private void slowHull() {
+		for (int a = 0; a < vertices.length; a++)
+			for (int b = a + 1; b < vertices.length; b++)
+				for (int c = b + 1; c < vertices.length; c++)
+					each(a, b, c);
+	}
+
+	public void each(int a, int b, int c) {
+		Plane3 p = new Plane3(vertices[a], vertices[b], vertices[c]);
+
+		int front = 0, back = 0;
+		List<Vector3> on = new ArrayList<Vector3>();
+		Vector3 m = Vector3.Zero;
+
+		for (int i = 0; i < vertices.length; i++)
+			switch (p.classify(vertices[i], 1e-8)) {
+			case Front:
+				front++;
+				break;
+			case On:
+				m = m.add(vertices[i]);
+				on.add(vertices[i]);
+				break;
+			case Back:
+				back++;
+				break;
+			}
+
+		if (front > 0 && back > 0)
+			return;
+
+		m = m.div(on.size());
+		final Vector3 x = vertices[a].sub(m).unit();
+		final Vector3 z = p.normal;
+		final Vector3 y = x.cross(z).unit();
+		Collections.sort(on, new Comparator<Vector3>() {
+			public int compare(Vector3 a, Vector3 b) {
+				Vector3 A = GMath.solveLinearEquation(x, y, z, a);
+				Vector3 B = GMath.solveLinearEquation(x, y, z, b);
+				return Double.compare(Math.atan2(A.y, A.x), Math.atan2(B.y, B.x));
+			}
+		});
+
+		boolean w = new Plane3(on.get(0), on.get(1), on.get(2)).normal.dot(p.normal) > 0;
+		if (w == front > 0)
+			Collections.reverse(on);
+
+		ConvexPolygon3 face = new ConvexPolygon3(on.toArray(new Vector3[] {}));
+		if (!faces.contains(face))
+			faces.add(face);
+	}

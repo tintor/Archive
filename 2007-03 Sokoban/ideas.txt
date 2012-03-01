@@ -1,0 +1,83 @@
+combine several search strategies, each consuming fixed percentage of time
+
+treat continuous push of same box in same direction as distance of "1"
+
+penalize changing boxes beetwen pushes
+
+better heuristic
+	penalties for conflicts
+	improving heuristic during search
+
+find alive articulation cells // pushing box to dead cell creates deadlock
+
+if all goal rooms have only one entrance try this:
+	solve multiple subproblems:
+		pushing boxes inside each goal room
+		general search with goal macros that are activated when box reaches goal room entrance
+	if this fails then
+		if goal room entrance is one-way
+			return no solution
+		find way to park boxes inside goal room as function of number of boxes in goal rom
+		use this info for general search
+
+find separate alive regions (separate sub-problems)
+
+// coral is unreachable region
+find all corals
+find number of goals inside coral and number of bordering boxes
+
+deadlock testing
+	search pattern database (of every deadlock in 5x5)
+		optimize pattern generator
+	test for frozen boxes not on goals
+	iterative increating number of boxes in maze deadlock search, to test if move introduced deadlock
+	heuristics  ... (freeze deadlocks, coral deadlocks, unreachable sections due to frozen boxes, bipartite deadlocks)
+
+recognize common parts in levels and create macros for them
+	- two-way tunnels
+	- one-way tunnels (box can be pushed only in one direction)
+	- single box storage rooms
+
+if a push must be made no mather what
+	create macro for it
+	ex. box is pushed inside single-entrance room entrance
+	in case of multiple such pushes can be done at once, then do them at once (generate one "Key")
+
+penalize moving beetwen subproblems (submazes)
+
+store push sequences instead of links to previous nodes in "Node" (could save memory)
+remove "Nodes" and move "distance" and 'prev' to "Key"
+
+remove deadends
+
+BAD IDEA reprocess level when boxes are frozen on goal cells
+	in "Key" store boxes, shared(goal-frozen boxes, deadlock bit, moves and pushes maps)
+		reprocessing is easier
+		once reachable goal cells CAN be converted to walls if box is frozen on it
+		each cell has array of bordering non-initial-wall cells for faster iteration
+		conflicts with pointer compression, but move macros can be added
+
+pointer compress move-only tunnels
+
+greedy search toward subgoal
+	how to generate subgoals
+	test if push can be undoable
+	run it when search is near solution (ex. if h/(g+h) < p%)
+
+cut symetrical pushes
+	find translational, mirror, 90 deg and 180 deg symetries
+	analyse level for local symetries
+	box symetries
+
+eficient class for small Cell set (+space)
+	NO, using simple sorted arrays
+
+===
+
+find a way to lower java process priority to LOW
+
+find a way to auto excute java program on system startup
+
+find a way to save state of general long lasting computation and to load it
+
+find a way to monitor long lasting computation

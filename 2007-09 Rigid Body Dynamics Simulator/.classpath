@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="tintor/rigidbody/model/FeaturePair.java|tintor/rigidbody/model/solid/|tintor/rigidbody/model/collisiondetection/algorithms/AdaptiveSpatialHashing.java|tintor/rigidbody/model/collisiondetection/algorithms/KineticSweepAndPrune.java|tintor/rigidbody/model/collisiondetection/algorithms/SimpleSpatialHashing.java|tintor/rigidbody/model/collisiondetection/algorithms/SpatialHashing.java|tintor/rigidbody/model/collisiondetection/algorithms/SweepAndPrune.java|tintor/rigidbody/model/joint/|tintor/rigidbody/model/sensor/|tintor/rigidbody/model/collisiondetection/|tintor/rigidbody/model/effector/GearedMotor.java|tintor/rigidbody/main/worlds/AATrebuchet.java|tintor/rigidbody/model/collisiondetector/SpatialHashing.java|tintor/rigidbody/model/Concave.java|Merge.java|tintor/rigidbody/main/worlds/Tower.java|tintor/rigidbody/main/worlds/Train.java|tintor/rigidbody/main/worlds/Wheel.java|tintor/rigidbody/model/effector/Servo1R.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Library"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/marko/Desktop/download/vecmath.jar"/>
+	<classpathentry kind="lib" path="C:/java lib/jogl-1.1.1-rc7/jogl.jar"/>
+	<classpathentry kind="lib" path="C:/java lib/jogl-1.1.1-rc7/gluegen-rt.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

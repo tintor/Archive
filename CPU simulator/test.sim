@@ -1,0 +1,6 @@
+SP f000
+PC 100
+
+MEMORY 90 FA
+
+CODE test.asm

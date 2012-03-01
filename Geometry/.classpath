@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="tintor/geometry/sandbox/|tintor/geometry/VectorUtil.java|tintor/geometry/Vector4.java|tintor/geometry/Matrix4.java|tintor/geometry/_extended/|tintor/geometry/_sandbox/|tintor/geometry_removed/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

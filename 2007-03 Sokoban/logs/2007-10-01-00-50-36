@@ -1,0 +1,55 @@
+loading time: 673ms
+loading time: 608ms
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=29ms keys=1 k/s=35 c/k=11 branch=6.0(6.0) deadlocks[fast2x2=1 hash=5]2520% queue=0(1000)0% set=6(64)0% queue/set=0% deadlock/set=1.00 memFree=3760k
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=4622ms keys=1 k/s=21 c/k=0 branch=0.0(6.0) deadlocks[fast2x2=1 hash=5]2% queue=0(1000)-0% set=6(64)-0% queue/set=0% deadlock/set=1.00 memFree=3791k
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=11s keys=1 k/s=13 c/k=0 branch=0.0(6.0) deadlocks[fast2x2=1 hash=5]0% queue=0(1000)0% set=6(64)0% queue/set=0% deadlock/set=1.00 memFree=3786k
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=24s keys=1 k/s=10 c/k=0 branch=0.0(6.0) deadlocks[ frozenBoxes=1 hash=5]1% queue=0(1000)-0% set=6(64)-0% queue/set=0% deadlock/set=1.00 memFree=3937k
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=32s keys=1 k/s=6 c/k=0 branch=0.0(6.0) deadlocks[fast2x2=1 hash=5]0% queue=0(1000)0% set=6(64)0% queue/set=0% deadlock/set=1.00 memFree=3932k
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=61s keys=1 k/s=6 c/k=0 branch=0.0(6.0) deadlocks[fast2x2=1 hash=5]1% queue=0(1000)-0% set=6(64)-0% queue/set=0% deadlock/set=1.00 memFree=3926k
+no solution!
+loading time: 500ms
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=65s keys=1 k/s=5 c/k=5 branch=-3.0(3.0) deadlocks[fast2x2=3 frozenBoxes=2 hash=3]121% queue=0(1000)0% set=4(64)-0% queue/set=0% deadlock/set=2.00 memFree=3857k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=76s keys=1 k/s=4 c/k=0 branch=2.0(5.0) deadlocks[fast2x2=3 hash=5]0% queue=0(1000)0% set=6(64)0% queue/set=0% deadlock/set=1.33 memFree=3970k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=80s keys=1 k/s=6 c/k=0 branch=3.0(8.0) deadlocks[ hash=8]0% queue=0(1000)-0% set=9(64)-0% queue/set=0% deadlock/set=0.89 memFree=3965k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=84s keys=1 k/s=4 c/k=0 branch=0.0(8.0) deadlocks[ hash=8]0% queue=0(1000)0% set=9(64)0% queue/set=0% deadlock/set=0.89 memFree=3959k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=85s keys=1 k/s=7 c/k=0 branch=0.0(8.0) deadlocks[ hash=8]0% queue=0(1000)0% set=9(64)0% queue/set=0% deadlock/set=0.89 memFree=3954k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=85s keys=1 k/s=5 c/k=0 branch=0.0(8.0) deadlocks[ hash=8]0% queue=0(1000)0% set=9(64)0% queue/set=0% deadlock/set=0.89 memFree=3969k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=86s keys=1 k/s=5 c/k=0 branch=0.0(8.0) deadlocks[ hash=8]0% queue=0(1000)0% set=9(64)0% queue/set=0% deadlock/set=0.89 memFree=3964k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=87s keys=1 k/s=5 c/k=0 branch=0.0(8.0) deadlocks[ hash=8]0% queue=0(1000)0% set=9(64)-0% queue/set=0% deadlock/set=0.89 memFree=3958k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=87s keys=1 k/s=5 c/k=0 branch=0.0(8.0) deadlocks[ hash=8]0% queue=0(1000)-0% set=9(64)-0% queue/set=0% deadlock/set=0.89 memFree=3953k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=94s keys=1 k/s=3 c/k=0 branch=0.0(8.0) deadlocks[ hash=8]0% queue=0(1000)-0% set=9(64)-0% queue/set=0% deadlock/set=0.89 memFree=3969k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=96s keys=1 k/s=3 c/k=0 branch=0.0(8.0) deadlocks[ hash=8]0% queue=0(1000)-0% set=9(64)-0% queue/set=0% deadlock/set=0.89 memFree=3964k
+no solution!
+there are 40 nondead cells and 11 boxes, maximum of 2311801440 keys!

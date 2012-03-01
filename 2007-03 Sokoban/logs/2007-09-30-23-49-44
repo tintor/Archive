@@ -1,0 +1,13 @@
+loading time: 692ms
+loading time: 876ms
+loading time: 429ms
+loading time: 559ms
+loading time: 354ms
+loading time: 354ms
+loading time: 1256ms
+loading time: 569ms
+loading time: 543ms
+loading time: 396ms
+there are 14 nondead cells and 4 boxes, maximum of 1001 keys!
+#: time=213ms keys=85 k/s=400 c/k=13 branch=2.7(2.7) deadlocks[fast2x2=4 frozenBoxes=69]853% queue=85(1000)1% set=171(256)1% queue/set=50% deadlock/set=0.43 memFree=3110k
+solution in 13 pushes!

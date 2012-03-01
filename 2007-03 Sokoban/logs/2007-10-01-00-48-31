@@ -1,0 +1,97 @@
+there are 34 nondead cells and 6 boxes, maximum of 1344904 keys!
+#: time=279ms keys=76 k/s=273 c/k=35 branch=4.7(4.7) deadlocks[fast2x2=57 frozenBoxes=37]90% queue=233(1000)2% set=310(512)2% queue/set=75% deadlock/set=0.30 memFree=3453k
+solution in 97 pushes!
+loading time: 623ms
+there are 44 nondead cells and 10 boxes, maximum of 2481256778 keys!
+#: time=3040ms keys=1624 k/s=1700 c/k=45 branch=6.5(6.4) deadlocks[fast2x2=2781 frozenBoxes=1432]36% queue=5744(7590)12% set=7369(16k)5% queue/set=78% deadlock/set=0.57 memFree=2652k
+solution in 135 pushes!
+loading time: 372ms
+there are 72 nondead cells and 20 boxes, maximum of 312049055023946856 keys!
+#: time=11s keys=6370 k/s=951 c/k=40 branch=12.3(10.8) deadlocks[fast2x2=6018 frozenBoxes=4452]32% queue=42k(58k)1% set=49k(66k)4% queue/set=87% deadlock/set=0.22 memFree=6001k
+total=357 distance=54 carries=8
+###################
+############  ...*#
+############  ....#
+#    #     #  ....#
+# $$$#$   $#  ....#
+#    #  $  #  .***#
+# $$ #$   $########
+#  $ #     ########
+###################
+#    #    #########
+#    #    #########
+# $$$#$$  #########
+#    #    #########
+###################
+
+#: time=16s keys=13k k/s=1334 c/k=69 branch=10.1(10.4) deadlocks[fast2x2=9155 frozenBoxes=7470]21% queue=82k(86k)4% set=96k(131k)4% queue/set=86% deadlock/set=0.17 memFree=9804k
+total=361 distance=308 carries=22
+###################
+############!!****#
+############!!*?**#
+#!!!!#!!!!!#!!**?*#
+#!!!!#!!!!!#!!*?**#
+#!!!!#!!!!$#!!****#
+#!!$!#!!!!!########
+#!!!!#!!!!!########
+###################
+#!!!!#    #########
+#!!!$#    #########
+#!!!!#    #########
+#!!!!#    #########
+###################
+
+#: time=21s keys=28k k/s=2943 c/k=69 branch=6.8(8.5) deadlocks[fast2x2=9522 frozenBoxes=10k]25% queue=102k(130k)4% set=130k(262k)5% queue/set=78% deadlock/set=0.15 memFree=3022k
+total=363 distance=314 carries=23
+###################
+############!!****#
+############!!*?**#
+#!!!!#!!!!!#!!**?*#
+#!!!!#!!!!!#!!*?**#
+#!!!$#!!!$!#!!****#
+#!!!!#!!!!!########
+#!$!!#!!!!!########
+###################
+#    #    #########
+#    #    #########
+#    #    #########
+#    #    #########
+###################
+
+#: time=23s keys=38k k/s=4076 c/k=58 branch=5.4(7.6) deadlocks[fast2x2=9676 frozenBoxes=12k]28% queue=106k(130k)5% set=145k(262k)5% queue/set=73% deadlock/set=0.15 memFree=142k
+solution in 355 pushes!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=57s keys=1 k/s=-282465 c/k=62 branch=7.6(6.0) deadlocks[fast2x2=1 hash=5]61% queue=0(1000)-534% set=6(64)-648% queue/set=0% deadlock/set=1.00 memFree=19M
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=66s keys=1 k/s=5 c/k=0 branch=0.0(6.0) deadlocks[fast2x2=1 hash=5]0% queue=0(1000)-0% set=6(64)-0% queue/set=0% deadlock/set=1.00 memFree=41M
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=70s keys=1 k/s=5 c/k=0 branch=0.0(6.0) deadlocks[fast2x2=1 hash=5]0% queue=0(1000)0% set=6(64)0% queue/set=0% deadlock/set=1.00 memFree=37M
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=75s keys=1 k/s=8 c/k=0 branch=0.0(6.0) deadlocks[fast2x2=1 hash=5]0% queue=0(1000)0% set=6(64)0% queue/set=0% deadlock/set=1.00 memFree=24M
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=80s keys=1 k/s=3 c/k=0 branch=1.0(7.0) deadlocks[ hash=6]0% queue=0(1000)0% set=7(64)0% queue/set=0% deadlock/set=0.86 memFree=3932k
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=91s keys=1 k/s=4 c/k=37 branch=9.0(16.0) deadlocks[ hash=16]0% queue=0(1000)-0% set=17(64)0% queue/set=0% deadlock/set=0.94 memFree=3920k
+no solution!
+there are 52 nondead cells and 12 boxes, maximum of 206379406870 keys!
+#: time=118s keys=34k k/s=6757 c/k=45 branch=6.2(6.2) deadlocks[ hash=2]11% queue=30k(38k)7% set=63k(131k)11% queue/set=47% deadlock/set=0.00 memFree=3748k
+total=145 distance=67 carries=9
+#################
+######### # #####
+######### # ##  #
+#########       #
+######### ###   #
+#*???!!##   $ ###
+#*???!$##     ###
+#*?*?!!##$$   ###
+#########$    ###
+#########!$ $$ ##
+########### #####
+########### ## ##
+#################
+

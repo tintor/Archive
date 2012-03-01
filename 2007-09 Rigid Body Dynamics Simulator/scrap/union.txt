@@ -1,0 +1,31 @@
+class UnionList<T> implements Iterable<T> {
+	private final List<? extends T> listA, listB;
+
+	public UnionList(final List<? extends T> a, final List<? extends T> b) {
+		listA = a;
+		listB = b;
+	}
+
+	@Override public Iterator<T> iterator() {
+		return new Iterator<T>() {
+			Iterator<? extends T> iterA = listA.iterator(), iterB = listB.iterator();
+			boolean inA = true;
+
+			@Override public boolean hasNext() {
+				return inA && iterA.hasNext() || iterB.hasNext();
+			}
+
+			@Override public T next() {
+				if (!inA) return iterB.next();
+				final T x = iterA.next();
+				if (x != null) return x;
+				inA = false;
+				return iterB.next();
+			}
+
+			@Override public void remove() {
+				throw new RuntimeException();
+			}
+		};
+	}
+}

@@ -1,0 +1,11 @@
+loading time: 406ms
+loading time: 595ms
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=25ms keys=1 k/s=40 c/k=16 branch=3.0(3.0) deadlocks[fast2x2=3 frozenBoxes=2 hash=3]1991% queue=0(1000)0% set=4(64)0% queue/set=0% deadlock/set=2.00 memFree=3792k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=57s keys=1 k/s=6 c/k=25 branch=3.0(6.0) deadlocks[fast2x2=1 frozenBoxes=3 hash=6]120% queue=0(1000)-0% set=7(64)0% queue/set=0% deadlock/set=1.43 memFree=3819k
+no solution!
+there are 38 nondead cells and 10 boxes, maximum of 472733756 keys!
+#: time=116s keys=541 k/s=1856 c/k=35 branch=4.8(4.8) deadlocks[fast2x2=871 frozenBoxes=509]32% queue=1344(1500)11% set=1886(4096)3% queue/set=71% deadlock/set=0.73 memFree=2916k
+solution in 110 pushes!

@@ -1,0 +1,510 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) annotate 
+// Source File Name:   Contact.java
+
+package tintor.rigidbody.model;
+
+import tintor.geometry.*;
+
+// Referenced classes of package tintor.rigidbody.model:
+//            Constraint, Body, Arbiter
+
+public class Contact
+    implements Constraint
+{
+
+    public Contact(Body bodyA, Body bodyB, Vector3 normal, Vector3 point, float depth, Arbiter arbiter)
+    {
+    //    0    0:aload_0         
+    //    1    1:invokespecial   #53  <Method void Object()>
+        this.bodyA = bodyA;
+    //    2    4:aload_0         
+    //    3    5:aload_1         
+    //    4    6:putfield        #55  <Field Body bodyA>
+        this.bodyB = bodyB;
+    //    5    9:aload_0         
+    //    6   10:aload_2         
+    //    7   11:putfield        #57  <Field Body bodyB>
+        this.normal = normal;
+    //    8   14:aload_0         
+    //    9   15:aload_3         
+    //   10   16:putfield        #59  <Field Vector3 normal>
+        this.point = point;
+    //   11   19:aload_0         
+    //   12   20:aload           4
+    //   13   22:putfield        #61  <Field Vector3 point>
+        this.depth = depth;
+    //   14   25:aload_0         
+    //   15   26:fload           5
+    //   16   28:putfield        #63  <Field float depth>
+        this.arbiter = arbiter;
+    //   17   31:aload_0         
+    //   18   32:aload           6
+    //   19   34:putfield        #65  <Field Arbiter arbiter>
+        if(!$assertionsDisabled && depth < 0.0F)
+    //*  20   37:getstatic       #44  <Field boolean $assertionsDisabled>
+    //*  21   40:ifne            58
+    //*  22   43:fload           5
+    //*  23   45:fconst_0        
+    //*  24   46:fcmpl           
+    //*  25   47:ifge            58
+            throw new AssertionError();
+    //   26   50:new             #67  <Class AssertionError>
+    //   27   53:dup             
+    //   28   54:invokespecial   #69  <Method void AssertionError()>
+    //   29   57:athrow          
+        if(!$assertionsDisabled && normal == null)
+    //*  30   58:getstatic       #44  <Field boolean $assertionsDisabled>
+    //*  31   61:ifne            76
+    //*  32   64:aload_3         
+    //*  33   65:ifnonnull       76
+            throw new AssertionError();
+    //   34   68:new             #67  <Class AssertionError>
+    //   35   71:dup             
+    //   36   72:invokespecial   #69  <Method void AssertionError()>
+    //   37   75:athrow          
+        if(!$assertionsDisabled && !point.isFinite())
+    //*  38   76:getstatic       #44  <Field boolean $assertionsDisabled>
+    //*  39   79:ifne            98
+    //*  40   82:aload           4
+    //*  41   84:invokevirtual   #70  <Method boolean Vector3.isFinite()>
+    //*  42   87:ifne            98
+            throw new AssertionError();
+    //   43   90:new             #67  <Class AssertionError>
+    //   44   93:dup             
+    //   45   94:invokespecial   #69  <Method void AssertionError()>
+    //   46   97:athrow          
+        else
+            return;
+    //   47   98:return          
+    }
+
+    public void prepare(float dt)
+    {
+        ra = point.sub(bodyA.transform().v);
+    //    0    0:aload_0         
+    //    1    1:aload_0         
+    //    2    2:getfield        #61  <Field Vector3 point>
+    //    3    5:aload_0         
+    //    4    6:getfield        #55  <Field Body bodyA>
+    //    5    9:invokevirtual   #83  <Method Transform3 Body.transform()>
+    //    6   12:getfield        #87  <Field Vector3 Transform3.v>
+    //    7   15:invokevirtual   #92  <Method Vector3 Vector3.sub(Vector3)>
+    //    8   18:putfield        #96  <Field Vector3 ra>
+        rb = point.sub(bodyB.transform().v);
+    //    9   21:aload_0         
+    //   10   22:aload_0         
+    //   11   23:getfield        #61  <Field Vector3 point>
+    //   12   26:aload_0         
+    //   13   27:getfield        #57  <Field Body bodyB>
+    //   14   30:invokevirtual   #83  <Method Transform3 Body.transform()>
+    //   15   33:getfield        #87  <Field Vector3 Transform3.v>
+    //   16   36:invokevirtual   #92  <Method Vector3 Vector3.sub(Vector3)>
+    //   17   39:putfield        #98  <Field Vector3 rb>
+        K = Body.imassAt(bodyA, bodyB, ra, rb);
+    //   18   42:aload_0         
+    //   19   43:aload_0         
+    //   20   44:getfield        #55  <Field Body bodyA>
+    //   21   47:aload_0         
+    //   22   48:getfield        #57  <Field Body bodyB>
+    //   23   51:aload_0         
+    //   24   52:getfield        #96  <Field Vector3 ra>
+    //   25   55:aload_0         
+    //   26   56:getfield        #98  <Field Vector3 rb>
+    //   27   59:invokestatic    #100 <Method Matrix3 Body.imassAt(Body, Body, Vector3, Vector3)>
+    //   28   62:putfield        #104 <Field Matrix3 K>
+        nK = normal.mul(K);
+    //   29   65:aload_0         
+    //   30   66:aload_0         
+    //   31   67:getfield        #59  <Field Vector3 normal>
+    //   32   70:aload_0         
+    //   33   71:getfield        #104 <Field Matrix3 K>
+    //   34   74:invokevirtual   #106 <Method Vector3 Vector3.mul(Matrix3)>
+    //   35   77:putfield        #110 <Field Vector3 nK>
+        invK = K.inv();
+    //   36   80:aload_0         
+    //   37   81:aload_0         
+    //   38   82:getfield        #104 <Field Matrix3 K>
+    //   39   85:invokevirtual   #112 <Method Matrix3 Matrix3.inv()>
+    //   40   88:putfield        #118 <Field Matrix3 invK>
+        elasticity = elasticity(bodyA.elasticity, bodyB.elasticity);
+    //   41   91:aload_0         
+    //   42   92:aload_0         
+    //   43   93:getfield        #55  <Field Body bodyA>
+    //   44   96:getfield        #120 <Field float Body.elasticity>
+    //   45   99:aload_0         
+    //   46  100:getfield        #57  <Field Body bodyB>
+    //   47  103:getfield        #120 <Field float Body.elasticity>
+    //   48  106:invokestatic    #122 <Method float elasticity(float, float)>
+    //   49  109:putfield        #125 <Field float elasticity>
+        sfriction = friction(bodyA.sfriction, bodyB.sfriction);
+    //   50  112:aload_0         
+    //   51  113:aload_0         
+    //   52  114:getfield        #55  <Field Body bodyA>
+    //   53  117:getfield        #126 <Field float Body.sfriction>
+    //   54  120:aload_0         
+    //   55  121:getfield        #57  <Field Body bodyB>
+    //   56  124:getfield        #126 <Field float Body.sfriction>
+    //   57  127:invokestatic    #128 <Method float friction(float, float)>
+    //   58  130:putfield        #131 <Field float sfriction>
+        dfriction = friction(bodyA.dfriction, bodyB.dfriction);
+    //   59  133:aload_0         
+    //   60  134:aload_0         
+    //   61  135:getfield        #55  <Field Body bodyA>
+    //   62  138:getfield        #132 <Field float Body.dfriction>
+    //   63  141:aload_0         
+    //   64  142:getfield        #57  <Field Body bodyB>
+    //   65  145:getfield        #132 <Field float Body.dfriction>
+    //   66  148:invokestatic    #128 <Method float friction(float, float)>
+    //   67  151:putfield        #134 <Field float dfriction>
+        if(depth > 0.01F)
+    //*  68  154:aload_0         
+    //*  69  155:getfield        #63  <Field float depth>
+    //*  70  158:ldc1            #12  <Float 0.01F>
+    //*  71  160:fcmpl           
+    //*  72  161:ifle            224
+        {
+            biasVel = (0.2F / dt) * (depth - 0.01F);
+    //   73  164:aload_0         
+    //   74  165:ldc1            #10  <Float 0.2F>
+    //   75  167:fload_1         
+    //   76  168:fdiv            
+    //   77  169:aload_0         
+    //   78  170:getfield        #63  <Field float depth>
+    //   79  173:ldc1            #12  <Float 0.01F>
+    //   80  175:fsub            
+    //   81  176:fmul            
+    //   82  177:putfield        #135 <Field float biasVel>
+            Vector3 J = normal.mul(biasVel / nK.dot(normal));
+    //   83  180:aload_0         
+    //   84  181:getfield        #59  <Field Vector3 normal>
+    //   85  184:aload_0         
+    //   86  185:getfield        #135 <Field float biasVel>
+    //   87  188:aload_0         
+    //   88  189:getfield        #110 <Field Vector3 nK>
+    //   89  192:aload_0         
+    //   90  193:getfield        #59  <Field Vector3 normal>
+    //   91  196:invokevirtual   #137 <Method float Vector3.dot(Vector3)>
+    //   92  199:fdiv            
+    //   93  200:invokevirtual   #141 <Method Vector3 Vector3.mul(float)>
+    //   94  203:astore_2        
+            Body.transferBiasImpulse(J, bodyA, bodyB, ra, rb);
+    //   95  204:aload_2         
+    //   96  205:aload_0         
+    //   97  206:getfield        #55  <Field Body bodyA>
+    //   98  209:aload_0         
+    //   99  210:getfield        #57  <Field Body bodyB>
+    //  100  213:aload_0         
+    //  101  214:getfield        #96  <Field Vector3 ra>
+    //  102  217:aload_0         
+    //  103  218:getfield        #98  <Field Vector3 rb>
+    //  104  221:invokestatic    #144 <Method void Body.transferBiasImpulse(Vector3, Body, Body, Vector3, Vector3)>
+        }
+        if(warmStarting)
+    //* 105  224:getstatic       #46  <Field boolean warmStarting>
+    //* 106  227:ifeq            256
+            Body.transferImpulse(arbiter.impulse, bodyA, bodyB, ra, rb);
+    //  107  230:aload_0         
+    //  108  231:getfield        #65  <Field Arbiter arbiter>
+    //  109  234:getfield        #148 <Field Vector3 Arbiter.impulse>
+    //  110  237:aload_0         
+    //  111  238:getfield        #55  <Field Body bodyA>
+    //  112  241:aload_0         
+    //  113  242:getfield        #57  <Field Body bodyB>
+    //  114  245:aload_0         
+    //  115  246:getfield        #96  <Field Vector3 ra>
+    //  116  249:aload_0         
+    //  117  250:getfield        #98  <Field Vector3 rb>
+    //  118  253:invokestatic    #151 <Method void Body.transferImpulse(Vector3, Body, Body, Vector3, Vector3)>
+    //  119  256:return          
+    }
+
+    public void correct(float f)
+    {
+    //    0    0:return          
+    }
+
+    public void processCollision()
+    {
+        processContact(elasticity);
+    //    0    0:aload_0         
+    //    1    1:aload_0         
+    //    2    2:getfield        #125 <Field float elasticity>
+    //    3    5:invokevirtual   #158 <Method void processContact(float)>
+    //    4    8:return          
+    }
+
+    private Vector3 processContact3(float e, float nVel, Vector3 vel)
+    {
+        Vector3 tangent = vel.sub(nVel, normal).unitz();
+    //    0    0:aload_3         
+    //    1    1:fload_2         
+    //    2    2:aload_0         
+    //    3    3:getfield        #59  <Field Vector3 normal>
+    //    4    6:invokevirtual   #163 <Method Vector3 Vector3.sub(float, Vector3)>
+    //    5    9:invokevirtual   #166 <Method Vector3 Vector3.unitz()>
+    //    6   12:astore          4
+        Vector3 z = normal.sub(dfriction, tangent);
+    //    7   14:aload_0         
+    //    8   15:getfield        #59  <Field Vector3 normal>
+    //    9   18:aload_0         
+    //   10   19:getfield        #134 <Field float dfriction>
+    //   11   22:aload           4
+    //   12   24:invokevirtual   #163 <Method Vector3 Vector3.sub(float, Vector3)>
+    //   13   27:astore          5
+        float nJ = (-(1.0F + e) * nVel) / nK.dot(z);
+    //   14   29:fconst_1        
+    //   15   30:fload_1         
+    //   16   31:fadd            
+    //   17   32:fneg            
+    //   18   33:fload_2         
+    //   19   34:fmul            
+    //   20   35:aload_0         
+    //   21   36:getfield        #110 <Field Vector3 nK>
+    //   22   39:aload           5
+    //   23   41:invokevirtual   #137 <Method float Vector3.dot(Vector3)>
+    //   24   44:fdiv            
+    //   25   45:fstore          6
+        return z.mul(nJ);
+    //   26   47:aload           5
+    //   27   49:fload           6
+    //   28   51:invokevirtual   #141 <Method Vector3 Vector3.mul(float)>
+    //   29   54:areturn         
+    }
+
+    private void processContact2(float e, float nVel, Vector3 vel)
+    {
+        Vector3 J = invK.mul(normal.mul(-e * nVel).sub(vel));
+    //    0    0:aload_0         
+    //    1    1:getfield        #118 <Field Matrix3 invK>
+    //    2    4:aload_0         
+    //    3    5:getfield        #59  <Field Vector3 normal>
+    //    4    8:fload_1         
+    //    5    9:fneg            
+    //    6   10:fload_2         
+    //    7   11:fmul            
+    //    8   12:invokevirtual   #141 <Method Vector3 Vector3.mul(float)>
+    //    9   15:aload_3         
+    //   10   16:invokevirtual   #92  <Method Vector3 Vector3.sub(Vector3)>
+    //   11   19:invokevirtual   #178 <Method Vector3 Matrix3.mul(Vector3)>
+    //   12   22:astore          4
+        float nJ = normal.dot(J);
+    //   13   24:aload_0         
+    //   14   25:getfield        #59  <Field Vector3 normal>
+    //   15   28:aload           4
+    //   16   30:invokevirtual   #137 <Method float Vector3.dot(Vector3)>
+    //   17   33:fstore          5
+        if(nJ < 0.0F || J.sub(nJ, normal).square() > GMath.square(sfriction * nJ))
+    //*  18   35:fload           5
+    //*  19   37:fconst_0        
+    //*  20   38:fcmpg           
+    //*  21   39:iflt            70
+    //*  22   42:aload           4
+    //*  23   44:fload           5
+    //*  24   46:aload_0         
+    //*  25   47:getfield        #59  <Field Vector3 normal>
+    //*  26   50:invokevirtual   #163 <Method Vector3 Vector3.sub(float, Vector3)>
+    //*  27   53:invokevirtual   #180 <Method float Vector3.square()>
+    //*  28   56:aload_0         
+    //*  29   57:getfield        #131 <Field float sfriction>
+    //*  30   60:fload           5
+    //*  31   62:fmul            
+    //*  32   63:invokestatic    #184 <Method float GMath.square(float)>
+    //*  33   66:fcmpl           
+    //*  34   67:ifle            79
+            J = processContact3(e, nVel, vel);
+    //   35   70:aload_0         
+    //   36   71:fload_1         
+    //   37   72:fload_2         
+    //   38   73:aload_3         
+    //   39   74:invokespecial   #189 <Method Vector3 processContact3(float, float, Vector3)>
+    //   40   77:astore          4
+        if(warmStarting)
+    //*  41   79:getstatic       #46  <Field boolean warmStarting>
+    //*  42   82:ifeq            104
+            arbiter.impulse = arbiter.impulse.add(J);
+    //   43   85:aload_0         
+    //   44   86:getfield        #65  <Field Arbiter arbiter>
+    //   45   89:aload_0         
+    //   46   90:getfield        #65  <Field Arbiter arbiter>
+    //   47   93:getfield        #148 <Field Vector3 Arbiter.impulse>
+    //   48   96:aload           4
+    //   49   98:invokevirtual   #191 <Method Vector3 Vector3.add(Vector3)>
+    //   50  101:putfield        #148 <Field Vector3 Arbiter.impulse>
+        Body.transferImpulse(J, bodyA, bodyB, ra, rb);
+    //   51  104:aload           4
+    //   52  106:aload_0         
+    //   53  107:getfield        #55  <Field Body bodyA>
+    //   54  110:aload_0         
+    //   55  111:getfield        #57  <Field Body bodyB>
+    //   56  114:aload_0         
+    //   57  115:getfield        #96  <Field Vector3 ra>
+    //   58  118:aload_0         
+    //   59  119:getfield        #98  <Field Vector3 rb>
+    //   60  122:invokestatic    #151 <Method void Body.transferImpulse(Vector3, Body, Body, Vector3, Vector3)>
+    //   61  125:return          
+    }
+
+    public void processContact(float e)
+    {
+        Vector3 vel = bodyA.velAt(ra).sub(bodyB.velAt(rb));
+    //    0    0:aload_0         
+    //    1    1:getfield        #55  <Field Body bodyA>
+    //    2    4:aload_0         
+    //    3    5:getfield        #96  <Field Vector3 ra>
+    //    4    8:invokevirtual   #194 <Method Vector3 Body.velAt(Vector3)>
+    //    5   11:aload_0         
+    //    6   12:getfield        #57  <Field Body bodyB>
+    //    7   15:aload_0         
+    //    8   16:getfield        #98  <Field Vector3 rb>
+    //    9   19:invokevirtual   #194 <Method Vector3 Body.velAt(Vector3)>
+    //   10   22:invokevirtual   #92  <Method Vector3 Vector3.sub(Vector3)>
+    //   11   25:astore_2        
+        float nVel = vel.dot(normal);
+    //   12   26:aload_2         
+    //   13   27:aload_0         
+    //   14   28:getfield        #59  <Field Vector3 normal>
+    //   15   31:invokevirtual   #137 <Method float Vector3.dot(Vector3)>
+    //   16   34:fstore_3        
+        if(nVel < 0.0F)
+    //*  17   35:fload_3         
+    //*  18   36:fconst_0        
+    //*  19   37:fcmpg           
+    //*  20   38:ifge            48
+            processContact2(e, nVel, vel);
+    //   21   41:aload_0         
+    //   22   42:fload_1         
+    //   23   43:fload_3         
+    //   24   44:aload_2         
+    //   25   45:invokespecial   #197 <Method void processContact2(float, float, Vector3)>
+    //   26   48:return          
+    }
+
+    private void bias(float e)
+    {
+        Vector3 vel = bodyA.bVelAt(ra).sub(bodyB.bVelAt(rb));
+    //    0    0:aload_0         
+    //    1    1:getfield        #55  <Field Body bodyA>
+    //    2    4:aload_0         
+    //    3    5:getfield        #96  <Field Vector3 ra>
+    //    4    8:invokevirtual   #200 <Method Vector3 Body.bVelAt(Vector3)>
+    //    5   11:aload_0         
+    //    6   12:getfield        #57  <Field Body bodyB>
+    //    7   15:aload_0         
+    //    8   16:getfield        #98  <Field Vector3 rb>
+    //    9   19:invokevirtual   #200 <Method Vector3 Body.bVelAt(Vector3)>
+    //   10   22:invokevirtual   #92  <Method Vector3 Vector3.sub(Vector3)>
+    //   11   25:astore_2        
+        float nVel = vel.dot(normal);
+    //   12   26:aload_2         
+    //   13   27:aload_0         
+    //   14   28:getfield        #59  <Field Vector3 normal>
+    //   15   31:invokevirtual   #137 <Method float Vector3.dot(Vector3)>
+    //   16   34:fstore_3        
+        if(nVel >= 0.0F)
+    //*  17   35:fload_3         
+    //*  18   36:fconst_0        
+    //*  19   37:fcmpl           
+    //*  20   38:iflt            42
+        {
+            return;
+    //   21   41:return          
+        } else
+        {
+            float nJ = (-(1.0F + e) * nVel + biasVel) / nK.dot(normal);
+    //   22   42:fconst_1        
+    //   23   43:fload_1         
+    //   24   44:fadd            
+    //   25   45:fneg            
+    //   26   46:fload_3         
+    //   27   47:fmul            
+    //   28   48:aload_0         
+    //   29   49:getfield        #135 <Field float biasVel>
+    //   30   52:fadd            
+    //   31   53:aload_0         
+    //   32   54:getfield        #110 <Field Vector3 nK>
+    //   33   57:aload_0         
+    //   34   58:getfield        #59  <Field Vector3 normal>
+    //   35   61:invokevirtual   #137 <Method float Vector3.dot(Vector3)>
+    //   36   64:fdiv            
+    //   37   65:fstore          4
+            Vector3 J = normal.mul(nJ);
+    //   38   67:aload_0         
+    //   39   68:getfield        #59  <Field Vector3 normal>
+    //   40   71:fload           4
+    //   41   73:invokevirtual   #141 <Method Vector3 Vector3.mul(float)>
+    //   42   76:astore          5
+            Body.transferBiasImpulse(J, bodyA, bodyB, ra, rb);
+    //   43   78:aload           5
+    //   44   80:aload_0         
+    //   45   81:getfield        #55  <Field Body bodyA>
+    //   46   84:aload_0         
+    //   47   85:getfield        #57  <Field Body bodyB>
+    //   48   88:aload_0         
+    //   49   89:getfield        #96  <Field Vector3 ra>
+    //   50   92:aload_0         
+    //   51   93:getfield        #98  <Field Vector3 rb>
+    //   52   96:invokestatic    #144 <Method void Body.transferBiasImpulse(Vector3, Body, Body, Vector3, Vector3)>
+            return;
+    //   53   99:return          
+        }
+    }
+
+    public void render()
+    {
+    //    0    0:return          
+    }
+
+    private static float elasticity(float ea, float eb)
+    {
+        return Math.max(ea, eb);
+    //    0    0:fload_0         
+    //    1    1:fload_1         
+    //    2    2:invokestatic    #204 <Method float Math.max(float, float)>
+    //    3    5:freturn         
+    }
+
+    private static float friction(float fa, float fb)
+    {
+        return Math.min(fa, fb);
+    //    0    0:fload_0         
+    //    1    1:fload_1         
+    //    2    2:invokestatic    #211 <Method float Math.min(float, float)>
+    //    3    5:freturn         
+    }
+
+    private static final float BIAS_FACTOR = 0.2F;
+    private static final float BIAS_SLOP = 0.01F;
+    private static boolean warmStarting = false;
+    public final Body bodyA;
+    public final Body bodyB;
+    public final float depth;
+    public final Vector3 point;
+    public final Vector3 normal;
+    public final Arbiter arbiter;
+    private Vector3 ra;
+    private Vector3 rb;
+    private Matrix3 K;
+    private Matrix3 invK;
+    private Vector3 nK;
+    private float elasticity;
+    private float sfriction;
+    private float dfriction;
+    private float biasVel;
+    static final boolean $assertionsDisabled = !tintor/rigidbody/model/Contact.desiredAssertionStatus();
+
+    static 
+    {
+    //    0    0:ldc1            #1   <Class Contact>
+    //    1    2:invokevirtual   #38  <Method boolean Class.desiredAssertionStatus()>
+    //    2    5:ifne            12
+    //    3    8:iconst_1        
+    //    4    9:goto            13
+    //    5   12:iconst_0        
+    //    6   13:putstatic       #44  <Field boolean $assertionsDisabled>
+    //    7   16:iconst_0        
+    //    8   17:putstatic       #46  <Field boolean warmStarting>
+    //*   9   20:return          
+    }
+}

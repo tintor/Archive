@@ -1,0 +1,25 @@
+levels/microban:19
+
+total=0 distance=0 carries=0
+########
+#   .. #
+#   $$ #
+#####!##
+####!!##
+####!!##
+####!!##
+########
+
+there are 11 nondead cells and 2 boxes, maximum of 55 keys!
+#: time=21ms keys=61 k/s=2842 c/k=12 branch=2.0(2.0) deadlocks[fast2x2=41 frozenBoxes=6]92% queue=3(1000)3% set=65(128)3% queue/set=5% deadlock/set=0.72 memFree=4275k
+solution
+total=20 distance=20 carries=4
+########
+#   ** #
+#      #
+##### ##
+####  ##
+####  ##
+####  ##
+########
+

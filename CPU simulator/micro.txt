@@ -1,0 +1,108 @@
+# Instruction fetch
+ldMAR, ldADRTMP, incPC
+read
+ldIR1, ldMAR, ldINTEXT
+br (grADRCOD -> step0A)
+br (L1 -> step08)
+read
+incMAR, incPC, ldIR3, br (L2 -> step09)
+read
+ldMAR, mxMAR0, incPC, ldIR2, br (CTRL > step0B, STSYS > step0C, STORE > step0E, OP1 > step16, OP2 > step23, JSR > step32, JUMP > step37, RTI > step3A, RTS > step3C) 
+
+# INT instruction
+stPRINT, br step41
+
+# Error in op code or adress mode
+ldPRCODADR, ldPCL, ldPCH, mxPC0, mxPC1, br step41
+ 
+# CTRL: INTE, INTD, TRPE, TRPD, STIMR and HALT don't react on interrupts 
+ldCONTROL, br step00
+
+# STSYS: STIVTP and STSP
+ldSYSREG, br (not PREKID -> step00)
+br step41
+
+# STORE: Instruction STORE
+mxMAR1, ldMAR, ldMDR, mxMDR0, br (regdir -> step14)
+
+# STORE: Memory address mode 
+write
+incMAR, ldMDR, mxMDR1
+write
+br (not PREKID -> step00)
+br step41
+
+# STORE: Direct register addressing
+ldREG, br (not PREKID -> step00)
+br step41
+
+# OP1: LOAD, ADD, SUB, CMP, OR, XOR and AND 
+ldBL, ldBH, mxMAR1, ldMAR, br (immreg -> step21)
+
+# OP1: Memory addressing
+read
+incMAR, ldBL
+read
+ldBH
+aluOP1, ldFLAGS, br (not PREKID -> step00)
+br step41
+
+# OP2: INC, DEC, NOT, ASL, ASR and LSR 
+ldBH, ldBL, mxMAR1, ldMAR, br (regdir -> step2F)
+
+# OP2: Memory addressing
+read
+incMAR, ldBL
+read
+ldBH
+aluOP2, ldFLAGS
+ldMDR, mxMDR0, mxMDR1, ldMAR, mxMAR1
+write
+incMAR, ldMDR, mxMDR2
+write
+br (not PREKID -> step00)
+br step41
+
+# OP2: Direct register addressing
+aluOP2, ldFLAGS
+ldREG, mxREG, br (not PREKID -> step00)
+br step41
+
+# JSR instruction
+decSP, ldMDR, mxMDR2, mxMDR0 
+ldMAR, mxMAR0, decSP
+write
+ldMAR, mxMAR0, ldMDR, mxMDR2, mxMDR1
+write
+
+# JZ, JNZ, JV, JC, JNEG and JMP
+br (not cond -> step40)
+ldPCL, ldPCH, mxPC1, br (not PREKID -> step00)
+br step41
+
+# RTI return from interrupt
+read
+PSWin, incMAR, incSP
+
+# RTS return from sub routine
+read
+ldPCL, mxPC0 incMAR, incSP
+read
+ldPCH, mxPC0, incSP, br (not PREKID -> step00)
+
+# Interrupt handling: provera da li je bilo prekida za one korake u kome nije vrsena provera 
+br (not PREKID -> step00)
+
+# Interrupt handling: stavljanje na stek vrednosti registara PC i PSW i upis adrese prekidne rutine u PC
+mxMDR2, mxMDR0,  ldMDR, decSP
+ldMAR, mxMAR0, decSP
+write
+mxMDR2, mxMDR1, ldMDR, ldMAR, mxMAR0, decSP 
+write
+mxMDR2, mxMDR1, mxMDR0, ldMDR, ldMAR, mxMAR0
+write
+ack, ldMAR, mxMAR0, mxMAR1
+read
+incMAR, ldPCL, mxPC0
+read
+ldPCH, mxPC0, br step00

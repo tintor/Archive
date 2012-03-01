@@ -1,0 +1,2632 @@
+  **  Starting jProxy on port 7999. Press CTRL-C to end.  **
+
+tracker: eucbg.homeip.net
+  'uploaded=2799920' => 'uploaded=53009691'  'downloaded=53062093'  uploaded=53009691
+  downloaded=53062093
+  left=3741319168
+  event=stopped
+Sun Oct 21 05:26:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (515 bytes sent, 321 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=0
+  downloaded=0
+  left=3741319168
+  event=started
+Sun Oct 21 05:26:20 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (503 bytes sent, 912 bytes returned)
+tracker: forecastfox.accuweather.com
+  uploaded=0
+  downloaded=0
+  left=null
+  event=null
+Sun Oct 21 05:33:43 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host forecastfox.accuweather.com:80
+ (562 bytes sent, 1655 bytes returned)
+tracker: forecastfox.accuweather.com
+  uploaded=0
+  downloaded=0
+  left=null
+  event=null
+Sun Oct 21 05:33:54 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host forecastfox.accuweather.com:80
+ (562 bytes sent, 1655 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=1553296' => 'uploaded=32787327'  'downloaded=32507719'  uploaded=32787327
+  downloaded=32507719
+  left=3707764736
+  event=null
+Sun Oct 21 05:43:11 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (502 bytes sent, 934 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=35733342
+  downloaded=70400225
+  left=887095296
+  event=stopped
+Sun Oct 21 05:55:38 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (472 bytes sent, 98 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=0
+  downloaded=0
+  left=824970761
+  event=started
+tracker: inferno.demonoid.com:3407
+  uploaded=0
+  downloaded=0
+  left=887095296
+  event=started
+Sun Oct 21 05:55:43 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (459 bytes sent, 268 bytes returned)
+Sun Oct 21 05:55:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (505 bytes sent, 1049 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=0
+  downloaded=0
+  left=0
+  event=started
+Sun Oct 21 05:58:07 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=18102
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 05:59:08 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (489 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=81614
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:00:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (489 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=103391
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:01:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=126995
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:02:10 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=148655
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:03:10 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=167809
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:04:11 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=3741955' => 'uploaded=54351266'  'downloaded=54852284'  uploaded=54351266
+  downloaded=54852284
+  left=3690987520
+  event=null
+Sun Oct 21 06:05:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (502 bytes sent, 954 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=181958
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:05:11 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 454 bytes returned)
+TrackerProxy started on port 7999
+tracker: eucbg.homeip.net
+  uploaded=195020
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:06:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=344232
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:07:33 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=426192
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:08:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=524544
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:10:07 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=672072
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:11:29 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=737640
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:12:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=803208
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:14:02 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=852384
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:15:21 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (490 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1016304
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:17:19 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1213008
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:19:11 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1360536
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:21:04 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1426104
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:23:02 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1475280
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:24:58 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1590024
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:26:52 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1721160
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:28:51 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1770336
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:30:45 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=48681183'  uploaded=48681183
+  downloaded=47047217
+  left=791416329
+  event=null
+Sun Oct 21 06:31:06 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (505 bytes sent, 1030 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=1885080
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:32:40 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=2032608
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:35:48 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=2098176
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:38:54 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=5688024' => 'uploaded=112275576'  uploaded=112275576
+  downloaded=112238029
+  left=3644850176
+  event=null
+Sun Oct 21 06:39:35 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 934 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=2229312
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:42:00 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=2409624
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:45:10 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=2639112
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:48:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=2884992
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:51:23 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=3130872
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:54:27 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=3311184
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 06:57:32 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=3524280
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:00:39 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=3770160
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:03:44 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=3901296
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:05:34 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4098000
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:08:03 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=117547844'  uploaded=117547844
+  downloaded=114733076
+  left=720113161
+  event=null
+Sun Oct 21 07:09:30 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (507 bytes sent, 980 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4147176
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:10:36 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4147176
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:13:05 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4261920
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  'uploaded=8179608' => 'uploaded=175394454'  uploaded=175394454
+  downloaded=170471358
+  left=3586129920
+  event=null
+Sun Oct 21 07:15:37 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 936 bytes returned)
+Sun Oct 21 07:15:37 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4425840
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:18:06 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4491408
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:19:53 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4622544
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:21:50 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4737288
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:23:58 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4901208
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:25:52 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=4999560
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:27:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=5097912
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:29:39 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=5278224
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:32:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=5442144
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:35:16 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=5720808
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:38:22 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=5868336
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:41:27 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=6048648
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:44:33 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=185526361'  uploaded=185526361
+  downloaded=184250344
+  left=653004297
+  event=null
+Sun Oct 21 07:47:28 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (507 bytes sent, 1008 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=6212568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:47:36 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=10540056' => 'uploaded=225051640'  uploaded=225051640
+  downloaded=223423101
+  left=3523215360
+  event=null
+Sun Oct 21 07:49:35 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 934 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=6425664
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:50:44 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=6687936
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:53:50 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=92637391
+  downloaded=155874584
+  left=730857472
+  event=null
+Sun Oct 21 07:55:57 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (460 bytes sent, 238 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=6835464
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 07:56:59 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=6999384
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:00:06 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=7114128
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:03:11 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=7179696
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:05:03 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=7441968
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:07:00 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=7540320
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:08:57 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=7671456
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:10:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=7802592
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:12:42 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=7900944
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:14:35 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=7966512
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:16:28 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8081256
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:18:22 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8196000
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:20:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8294352
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:22:07 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=12736584' => 'uploaded=277129684'  uploaded=277129684
+  downloaded=276591432
+  left=3468689408
+  event=null
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=250240101'  uploaded=250240101
+  downloaded=248017010
+  left=587202560
+  event=null
+Sun Oct 21 08:22:48 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (507 bytes sent, 1060 bytes returned)
+Sun Oct 21 08:22:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 948 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8359920
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:24:03 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8556624
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:25:56 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8605800
+  downloaded=0
+  left=0
+  event=null
+Error getting HTTP data: java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at tintor.proxy.ProxyThread.readLine(TrackerProxy.java:220)
+	at tintor.proxy.ProxyThread.streamHTTPData(TrackerProxy.java:128)
+	at tintor.proxy.ProxyThread.run(TrackerProxy.java:89)
+Sun Oct 21 08:28:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 0 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8605800
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:28:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8786112
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:30:07 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=8818896
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:32:01 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=9048384
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:35:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=9245088
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:38:29 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=9294264
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:41:34 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=9458184
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:44:39 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=9736848
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:47:50 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=9802416
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:50:58 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=9982728
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:54:41 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=10212216
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 08:58:23 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=15228168' => 'uploaded=340100169'  uploaded=340100169
+  downloaded=335442314
+  left=3405774848
+  event=null
+Sun Oct 21 09:01:02 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 956 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=10490880
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:02:04 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=336054755'  uploaded=336054755
+  downloaded=323916813
+  left=515899392
+  event=null
+Sun Oct 21 09:03:35 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (507 bytes sent, 932 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=10622016
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:04:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=10785936
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:07:11 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=10818720
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:09:40 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=10917072
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:12:10 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=10982640
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:14:40 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=11130168
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:16:52 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=11277696
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:19:20 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=11408832
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:21:51 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=11490792
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:24:23 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=11490792
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:26:21 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=11605536
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:28:16 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=11736672
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:30:10 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=11900592
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:32:08 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=12080904
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:35:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=16916544' => 'uploaded=404247918'  uploaded=404247918
+  downloaded=390350241
+  left=3355443200
+  event=null
+Sun Oct 21 09:35:51 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 931 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=12310392
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:38:19 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 457 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=12457920
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:41:25 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=411346150'  uploaded=411346150
+  downloaded=395486092
+  left=440401920
+  event=null
+Sun Oct 21 09:42:35 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (507 bytes sent, 1006 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=12605448
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:44:31 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 454 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=12834936
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:48:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=12949680
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:51:22 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=13129992
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:54:35 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=186989743
+  downloaded=305985294
+  left=580911104
+  event=null
+Sun Oct 21 09:56:08 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (461 bytes sent, 244 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=13425048
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 09:57:38 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=13638144
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:00:44 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=13752888
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:03:48 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=13851240
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:06:59 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=13949592
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:10:06 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=18670488' => 'uploaded=451457551'  uploaded=451457551
+  downloaded=445932578
+  left=3305111552
+  event=null
+Sun Oct 21 10:11:55 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 931 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=14080728
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:13:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=14162688
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:16:10 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=14293824
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:18:45 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=14392176
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:21:19 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=488675380'  uploaded=488675380
+  downloaded=470817807
+  left=364904448
+  event=null
+Sun Oct 21 10:23:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (507 bytes sent, 954 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=14506920
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:23:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=14588880
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:26:16 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=14687232
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:28:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=14883936
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:31:17 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=15113424
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:35:33 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=15490440
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:39:50 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=15867456
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:44:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=16277256
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:48:35 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=16555920
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:52:57 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=20555568' => 'uploaded=535947848'  uploaded=535947848
+  downloaded=512263121
+  left=3233808384
+  event=null
+Sun Oct 21 10:53:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 850 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=17064072
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 10:57:16 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=17441088
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:01:34 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=17605008
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:04:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=556707523'  uploaded=556707523
+  downloaded=548726004
+  left=293601280
+  event=null
+Sun Oct 21 11:06:07 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (507 bytes sent, 892 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=17768928
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:07:18 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=17932848
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:09:55 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=18113160
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:12:28 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=18391824
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:15:41 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=18588528
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:18:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=18768840
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:21:22 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=19080288
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:24:30 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=19162248
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:27:45 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=19326168
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:30:54 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=19916280
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:37:38 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=22834056' => 'uploaded=590794565'  uploaded=590794565
+  downloaded=582889585
+  left=3170893824
+  event=null
+Sun Oct 21 11:39:25 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 740 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=20490000
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:43:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=21030936
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:48:44 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=643755572'  uploaded=643755572
+  downloaded=635457240
+  left=205520896
+  event=null
+Sun Oct 21 11:54:07 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (507 bytes sent, 681 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=21522696
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 11:55:30 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=279899599
+  downloaded=476667360
+  left=409993216
+  event=null
+Sun Oct 21 11:56:21 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (461 bytes sent, 157 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=22063632
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:02:07 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=22260336
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:06:00 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=22670136
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:10:23 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=23358600
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:16:34 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=23588088
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:21:04 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 497 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=24276552
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:29:36 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 538 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=24424080' => 'uploaded=695244956'  uploaded=695244956
+  downloaded=664105406
+  left=3082813440
+  event=null
+Sun Oct 21 12:29:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (503 bytes sent, 637 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=24440472' => 'uploaded=673321637'  uploaded=673321637
+  downloaded=664684737
+  left=3082813440
+  event=null
+Sun Oct 21 12:30:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 663 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=24965016
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:37:55 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 538 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=740150059'  uploaded=740150059
+  downloaded=722518205
+  left=113246208
+  event=null
+Sun Oct 21 12:44:57 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (506 bytes sent, 630 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=25342032
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:46:25 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 538 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=25735440
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:54:23 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 538 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=26063280
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 12:58:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 538 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=26178024
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:00:06 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 538 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=26882880
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:06:04 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 525 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=27161544
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:10:56 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 525 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=27489384
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:18:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=25538736' => 'uploaded=760834030'  uploaded=760834030
+  downloaded=748997143
+  left=3007315968
+  event=null
+Sun Oct 21 13:19:32 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 679 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=25555128' => 'uploaded=776438918'  uploaded=776438918
+  downloaded=750984656
+  left=3003121664
+  event=null
+Sun Oct 21 13:20:39 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 716 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=28079496
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:25:33 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=28653216
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:34:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=841234445'  uploaded=841234445
+  downloaded=806327143
+  left=33554432
+  event=null
+Sun Oct 21 13:35:22 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (506 bytes sent, 661 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=29128584
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:42:57 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (491 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  'event=completed' => 'event=stopped'
+  'uploaded=0' => 'uploaded=856346965'  uploaded=856346965
+  downloaded=826117085
+  left=0
+  event=stopped
+tracker: eucbg.homeip.net
+  uploaded=29407248
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:47:16 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (512 bytes sent, 599 bytes returned)
+Sun Oct 21 13:47:19 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=831822957'  uploaded=831822957
+  downloaded=826097664
+  left=0
+  event=null
+Sun Oct 21 13:49:01 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1244 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=29440032
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:49:13 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=29505600
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:49:55 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=839667362'  uploaded=839667362
+  downloaded=826097664
+  left=0
+  event=null
+Sun Oct 21 13:51:01 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1244 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=29685912
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  'uploaded=26817312' => 'uploaded=839859176'  uploaded=839859176
+  downloaded=811108124
+  left=2940207104
+  event=null
+Sun Oct 21 13:51:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 13:51:54 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 1110 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=863533597'  uploaded=863533597
+  downloaded=826097664
+  left=0
+  event=null
+Sun Oct 21 13:52:56 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1244 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=29817048
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:53:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=827477898'  uploaded=827477898
+  downloaded=826097664
+  left=0
+  event=null
+Sun Oct 21 13:54:54 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1244 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=29997360
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:55:41 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=372629143
+  downloaded=660423967
+  left=228589568
+  event=null
+Sun Oct 21 13:56:29 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (461 bytes sent, 273 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=860201159'  uploaded=860201159
+  downloaded=826097664
+  left=0
+  event=null
+Sun Oct 21 13:56:50 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1244 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=30112104
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:57:41 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 553 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=850265537'  uploaded=850265537
+  downloaded=826097664
+  left=0
+  event=null
+Sun Oct 21 13:58:47 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1277 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=30292416
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 13:59:37 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 553 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=32784' => 'uploaded=829398617'  uploaded=829398617
+  downloaded=826097664
+  left=0
+  event=null
+Sun Oct 21 14:00:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1297 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=32784' => 'uploaded=845107398'  uploaded=845107398
+  downloaded=826097664
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=30456336
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:01:24 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1305 bytes returned)
+Sun Oct 21 14:01:33 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 553 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=65568' => 'uploaded=867086674'  uploaded=867086674
+  downloaded=826097664
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=30587472
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:03:27 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 650 bytes returned)
+Error getting HTTP data: java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at tintor.proxy.ProxyThread.readLine(TrackerProxy.java:220)
+	at tintor.proxy.ProxyThread.streamHTTPData(TrackerProxy.java:128)
+	at tintor.proxy.ProxyThread.run(TrackerProxy.java:89)
+Sun Oct 21 14:03:38 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 0 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=65568' => 'uploaded=850162048'  uploaded=850162048
+  downloaded=826097664
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=30620256
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:03:51 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1256 bytes returned)
+Sun Oct 21 14:03:52 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=114744' => 'uploaded=842969918'  uploaded=842969918
+  downloaded=826097664
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=30800568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:05:45 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (499 bytes sent, 1277 bytes returned)
+Sun Oct 21 14:05:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=163920' => 'uploaded=842663339'  uploaded=842663339
+  downloaded=826097664
+  left=0
+  event=stopped
+tracker: inferno.demonoid.com:3407
+  uploaded=380071111
+  downloaded=676505269
+  left=210763776
+  event=stopped
+tracker: eucbg.homeip.net
+  uploaded=0
+  downloaded=0
+  left=0
+  event=started
+Error getting HTTP data: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at tintor.proxy.ProxyThread.readLine(TrackerProxy.java:220)
+	at tintor.proxy.ProxyThread.streamHTTPData(TrackerProxy.java:128)
+	at tintor.proxy.ProxyThread.run(TrackerProxy.java:89)
+Sun Oct 21 14:06:17 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (474 bytes sent, 0 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=380071111
+  downloaded=676505269
+  left=210763776
+  event=stopped
+Sun Oct 21 14:06:17 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (474 bytes sent, 97 bytes returned)
+Sun Oct 21 14:06:18 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (497 bytes sent, 650 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=0
+  downloaded=0
+  left=210763776
+  event=started
+Sun Oct 21 14:06:20 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (459 bytes sent, 286 bytes returned)
+Sun Oct 21 14:06:27 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (518 bytes sent, 667 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=0
+  downloaded=0
+  left=0
+  event=started
+tracker: eucbg.homeip.net
+  uploaded=30866136
+  downloaded=0
+  left=0
+  event=null
+Error getting HTTP data: java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at tintor.proxy.ProxyThread.readLine(TrackerProxy.java:220)
+	at tintor.proxy.ProxyThread.streamHTTPData(TrackerProxy.java:128)
+	at tintor.proxy.ProxyThread.run(TrackerProxy.java:89)
+Sun Oct 21 14:06:57 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (497 bytes sent, 0 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=0
+  downloaded=0
+  left=0
+  event=started
+Sun Oct 21 14:07:03 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 650 bytes returned)
+Sun Oct 21 14:07:03 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (497 bytes sent, 650 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=32784
+  downloaded=0
+  left=0
+  event=started
+Sun Oct 21 14:07:19 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (501 bytes sent, 1313 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=30882528
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:07:33 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:09:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1300 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=31079232
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:09:29 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:11:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1291 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=31193976
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:11:21 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:13:06 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1284 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=31357896
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:13:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:14:59 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1297 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=31521816
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:15:05 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=31669344
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:16:55 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1296 bytes returned)
+Sun Oct 21 14:16:58 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=31833264
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:18:47 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1262 bytes returned)
+Sun Oct 21 14:18:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=31964400
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:20:45 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1284 bytes returned)
+Sun Oct 21 14:20:45 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=32095536
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:22:38 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:22:38 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1282 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=28554864' => 'uploaded=952874897'  uploaded=952874897
+  downloaded=921482902
+  left=2826960896
+  event=null
+Sun Oct 21 14:23:41 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (504 bytes sent, 1107 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=32292240
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:24:31 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1284 bytes returned)
+Sun Oct 21 14:24:31 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=32456160
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:26:29 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1292 bytes returned)
+Sun Oct 21 14:26:30 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=32685648
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:28:21 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1287 bytes returned)
+Sun Oct 21 14:28:23 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=32816784
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:30:14 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1265 bytes returned)
+Sun Oct 21 14:30:20 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=32915136
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:32:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1273 bytes returned)
+Sun Oct 21 14:32:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=33046272
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:34:04 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1292 bytes returned)
+Sun Oct 21 14:34:06 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=33226584
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:36:01 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1287 bytes returned)
+Sun Oct 21 14:36:01 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=33308544
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:37:53 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:37:57 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1291 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=33488856
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:39:55 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1283 bytes returned)
+Sun Oct 21 14:39:58 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=33652776
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:41:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1286 bytes returned)
+Sun Oct 21 14:41:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=33800304
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:43:47 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1284 bytes returned)
+Sun Oct 21 14:43:47 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=33931440
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:45:42 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:45:44 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1282 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=34078968
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:47:35 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:47:39 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1289 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=34308456
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:49:30 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1290 bytes returned)
+Sun Oct 21 14:49:33 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=34439592
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:51:24 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:51:24 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1282 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=34619904
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:53:19 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:53:22 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1280 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=34767432
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:55:13 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:55:13 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1321 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=30226848' => 'uploaded=1036528085'  uploaded=1036528085
+  downloaded=1033307626
+  left=2713714688
+  event=null
+Sun Oct 21 14:55:53 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (506 bytes sent, 1105 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=34947744
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:57:04 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:57:04 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1324 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=35177232
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 14:58:58 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+Sun Oct 21 14:58:58 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1325 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=35406720
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:00:50 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1329 bytes returned)
+Sun Oct 21 15:00:53 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 539 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=35619816
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:02:45 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+Sun Oct 21 15:02:46 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1307 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=35750952
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:04:48 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1303 bytes returned)
+Sun Oct 21 15:04:53 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=35914872
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:06:43 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1301 bytes returned)
+Sun Oct 21 15:06:47 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=36062400
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:08:37 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1281 bytes returned)
+Sun Oct 21 15:08:38 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=36193536
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:10:36 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1273 bytes returned)
+Error getting HTTP data: java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at tintor.proxy.ProxyThread.readLine(TrackerProxy.java:220)
+	at tintor.proxy.ProxyThread.streamHTTPData(TrackerProxy.java:128)
+	at tintor.proxy.ProxyThread.run(TrackerProxy.java:89)
+Sun Oct 21 15:10:48 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 0 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=36193536
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:10:54 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:12:32 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1284 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=36406632
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:12:45 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:14:25 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1301 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=36636120
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:14:36 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:16:21 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1306 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=36800040
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:16:27 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=36996744
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:18:15 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1306 bytes returned)
+Sun Oct 21 15:18:18 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=37144272
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:20:09 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1305 bytes returned)
+Sun Oct 21 15:20:10 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=37340976
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:22:03 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+Sun Oct 21 15:22:03 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1299 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=37521288
+  downloaded=0
+  left=0
+  event=null
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=null
+Sun Oct 21 15:23:58 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (492 bytes sent, 524 bytes returned)
+Sun Oct 21 15:24:00 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (487 bytes sent, 1281 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=37636032
+  downloaded=0
+  left=0
+  event=stopped
+tracker: eucbg.homeip.net
+  uploaded=65568
+  downloaded=0
+  left=0
+  event=stopped
+Sun Oct 21 15:25:33 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (505 bytes sent, 321 bytes returned)
+Sun Oct 21 15:25:34 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (500 bytes sent, 321 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=32111928' => 'uploaded=1171611977'  uploaded=1171611977
+  downloaded=1141856897
+  left=2608857088
+  event=null
+Sun Oct 21 15:27:06 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (506 bytes sent, 1109 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=32669256' => 'uploaded=1225598386'  uploaded=1225598386
+  downloaded=1180710165
+  left=2562719744
+  event=null
+Sun Oct 21 15:38:07 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (506 bytes sent, 1109 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=32669256' => 'uploaded=1306478045'  uploaded=1306478045
+  downloaded=1246697767
+  left=2499805184
+  event=stopped
+Sun Oct 21 15:56:52 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (519 bytes sent, 321 bytes returned)
+tracker: eucbg.homeip.net
+  uploaded=0
+  downloaded=0
+  left=2499805184
+  event=started
+Sun Oct 21 15:57:41 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (502 bytes sent, 381 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=91385400
+  downloaded=160242081
+  left=49283072
+  event=null
+Sun Oct 21 16:06:30 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (459 bytes sent, 298 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=52754446'  uploaded=52754446
+  downloaded=51742762
+  left=2445279232
+  event=started
+Sun Oct 21 16:12:49 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (516 bytes sent, 381 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=97761888
+  downloaded=167223862
+  left=42991616
+  event=stopped
+tracker: eucbg.homeip.net
+  uploaded=0
+  downloaded=0
+  left=2436890624
+  event=started
+Sun Oct 21 16:14:24 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (472 bytes sent, 98 bytes returned)
+Sun Oct 21 16:14:24 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (503 bytes sent, 381 bytes returned)
+tracker: inferno.demonoid.com:3407
+  uploaded=0
+  downloaded=0
+  left=42991616
+  event=started
+Sun Oct 21 16:14:26 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host inferno.demonoid.com:3407
+ (458 bytes sent, 292 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=52905489'  uploaded=52905489
+  downloaded=52747938
+  left=2394947584
+  event=started
+Sun Oct 21 16:29:31 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (516 bytes sent, 381 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=119820574'  uploaded=119820574
+  downloaded=114799743
+  left=2332033024
+  event=started
+Sun Oct 21 16:47:13 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (518 bytes sent, 381 bytes returned)
+tracker: eucbg.homeip.net
+  'uploaded=0' => 'uploaded=124221877'  uploaded=124221877
+  downloaded=123843216
+  left=2323644416
+  event=started
+Sun Oct 21 16:49:48 CEST 2007
+Request from 127.0.0.1 on Port 7999 to host eucbg.homeip.net:80
+ (518 bytes sent, 381 bytes returned)

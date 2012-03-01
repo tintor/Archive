@@ -1,0 +1,1995 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) annotate 
+// Source File Name:   Vector3.java
+
+package tintor.geometry;
+
+import java.io.Serializable;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import tintor.util.*;
+
+// Referenced classes of package tintor.geometry:
+//            GMath, Matrix3, Quaternion, Vector2
+
+public final class Vector3
+    implements Comparable, Serializable
+{
+
+    public Vector3(double d, double d1, double d2)
+    {
+        this((float)d, (float)d1, (float)d2);
+    //    0    0:aload_0         
+    //    1    1:dload_1         
+    //    2    2:d2f             
+    //    3    3:dload_3         
+    //    4    4:d2f             
+    //    5    5:dload           5
+    //    6    7:d2f             
+    //    7    8:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //    8   11:return          
+    }
+
+    public Vector3(float f, float f1, float f2)
+    {
+    //    0    0:aload_0         
+    //    1    1:invokespecial   #63  <Method void Object()>
+        x = f;
+    //    2    4:aload_0         
+    //    3    5:fload_1         
+    //    4    6:putfield        #64  <Field float x>
+        y = f1;
+    //    5    9:aload_0         
+    //    6   10:fload_2         
+    //    7   11:putfield        #66  <Field float y>
+        z = f2;
+    //    8   14:aload_0         
+    //    9   15:fload_3         
+    //   10   16:putfield        #68  <Field float z>
+        counter++;
+    //   11   19:getstatic       #70  <Field long counter>
+    //   12   22:lconst_1        
+    //   13   23:ladd            
+    //   14   24:putstatic       #70  <Field long counter>
+    //   15   27:return          
+    }
+
+    public Vector3(float f, float f1, float f2, float f3)
+    {
+        this(f * f3, f1 * f3, f2 * f3);
+    //    0    0:aload_0         
+    //    1    1:fload_1         
+    //    2    2:fload           4
+    //    3    4:fmul            
+    //    4    5:fload_2         
+    //    5    6:fload           4
+    //    6    8:fmul            
+    //    7    9:fload_3         
+    //    8   10:fload           4
+    //    9   12:fmul            
+    //   10   13:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   11   16:return          
+    }
+
+    public static Vector3 valueOf(String s)
+    {
+        return valueOf(s, (String)defaultFormat.get());
+    //    0    0:aload_0         
+    //    1    1:getstatic       #56  <Field ThreadLocal defaultFormat>
+    //    2    4:invokevirtual   #75  <Method Object ThreadLocal.get()>
+    //    3    7:checkcast       #81  <Class String>
+    //    4   10:invokestatic    #83  <Method Vector3 valueOf(String, String)>
+    //    5   13:areturn         
+    }
+
+    public static Vector3 valueOf(String s, String s1)
+    {
+        String s2 = "([+-]?\\d+(?:\\.\\d+)?)";
+    //    0    0:ldc1            #86  <String "([+-]?\\d+(?:\\.\\d+)?)">
+    //    1    2:astore_2        
+        return valueOf(s, Pattern.compile(s1.replaceAll("[()]", "\\\\$0").replace("%s", "([+-]?\\d+(?:\\.\\d+)?)")));
+    //    2    3:aload_0         
+    //    3    4:aload_1         
+    //    4    5:ldc1            #88  <String "[()]">
+    //    5    7:ldc1            #90  <String "\\\\$0">
+    //    6    9:invokevirtual   #92  <Method String String.replaceAll(String, String)>
+    //    7   12:ldc1            #96  <String "%s">
+    //    8   14:ldc1            #86  <String "([+-]?\\d+(?:\\.\\d+)?)">
+    //    9   16:invokevirtual   #98  <Method String String.replace(CharSequence, CharSequence)>
+    //   10   19:invokestatic    #102 <Method Pattern Pattern.compile(String)>
+    //   11   22:invokestatic    #108 <Method Vector3 valueOf(String, Pattern)>
+    //   12   25:areturn         
+    }
+
+    public static Vector3 valueOf(String s, Pattern pattern)
+    {
+        Matcher matcher = pattern.matcher(s);
+    //    0    0:aload_1         
+    //    1    1:aload_0         
+    //    2    2:invokevirtual   #111 <Method Matcher Pattern.matcher(CharSequence)>
+    //    3    5:astore_2        
+        if(!matcher.matches())
+    //*   4    6:aload_2         
+    //*   5    7:invokevirtual   #115 <Method boolean Matcher.matches()>
+    //*   6   10:ifne            25
+            throw new IllegalArgumentException(pattern.pattern());
+    //    7   13:new             #121 <Class IllegalArgumentException>
+    //    8   16:dup             
+    //    9   17:aload_1         
+    //   10   18:invokevirtual   #123 <Method String Pattern.pattern()>
+    //   11   21:invokespecial   #127 <Method void IllegalArgumentException(String)>
+    //   12   24:athrow          
+        if(matcher.groupCount() != 3)
+    //*  13   25:aload_2         
+    //*  14   26:invokevirtual   #130 <Method int Matcher.groupCount()>
+    //*  15   29:iconst_3        
+    //*  16   30:icmpeq          43
+        {
+            throw new RuntimeException("invalid pattern");
+    //   17   33:new             #134 <Class RuntimeException>
+    //   18   36:dup             
+    //   19   37:ldc1            #136 <String "invalid pattern">
+    //   20   39:invokespecial   #138 <Method void RuntimeException(String)>
+    //   21   42:athrow          
+        } else
+        {
+            float f = Float.valueOf(matcher.group(1)).floatValue();
+    //   22   43:aload_2         
+    //   23   44:iconst_1        
+    //   24   45:invokevirtual   #139 <Method String Matcher.group(int)>
+    //   25   48:invokestatic    #143 <Method Float Float.valueOf(String)>
+    //   26   51:invokevirtual   #148 <Method float Float.floatValue()>
+    //   27   54:fstore_3        
+            float f1 = Float.valueOf(matcher.group(2)).floatValue();
+    //   28   55:aload_2         
+    //   29   56:iconst_2        
+    //   30   57:invokevirtual   #139 <Method String Matcher.group(int)>
+    //   31   60:invokestatic    #143 <Method Float Float.valueOf(String)>
+    //   32   63:invokevirtual   #148 <Method float Float.floatValue()>
+    //   33   66:fstore          4
+            float f2 = Float.valueOf(matcher.group(3)).floatValue();
+    //   34   68:aload_2         
+    //   35   69:iconst_3        
+    //   36   70:invokevirtual   #139 <Method String Matcher.group(int)>
+    //   37   73:invokestatic    #143 <Method Float Float.valueOf(String)>
+    //   38   76:invokevirtual   #148 <Method float Float.floatValue()>
+    //   39   79:fstore          5
+            return (new Vector3(f, f1, f2)).intern();
+    //   40   81:new             #1   <Class Vector3>
+    //   41   84:dup             
+    //   42   85:fload_3         
+    //   43   86:fload           4
+    //   44   88:fload           5
+    //   45   90:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   46   93:invokevirtual   #152 <Method Vector3 intern()>
+    //   47   96:areturn         
+        }
+    }
+
+    public static Vector3 intern(float f, float f1, float f2)
+    {
+        return (new Vector3(f, f1, f2)).intern();
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:fload_0         
+    //    3    5:fload_1         
+    //    4    6:fload_2         
+    //    5    7:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //    6   10:invokevirtual   #152 <Method Vector3 intern()>
+    //    7   13:areturn         
+    }
+
+    public static Vector3 randomDirection(Random random)
+    {
+        Vector3 vector3;
+        do
+        {
+            float f;
+            do
+            {
+                vector3 = new Vector3(random.nextFloat() - 0.5F, random.nextFloat() - 0.5F, random.nextFloat() - 0.5F);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:invokevirtual   #158 <Method float Random.nextFloat()>
+    //    4    8:ldc1            #163 <Float 0.5F>
+    //    5   10:fsub            
+    //    6   11:aload_0         
+    //    7   12:invokevirtual   #158 <Method float Random.nextFloat()>
+    //    8   15:ldc1            #163 <Float 0.5F>
+    //    9   17:fsub            
+    //   10   18:aload_0         
+    //   11   19:invokevirtual   #158 <Method float Random.nextFloat()>
+    //   12   22:ldc1            #163 <Float 0.5F>
+    //   13   24:fsub            
+    //   14   25:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   15   28:astore_1        
+                f = vector3.square();
+    //   16   29:aload_1         
+    //   17   30:invokevirtual   #164 <Method float square()>
+    //   18   33:fstore_2        
+            } while((double)f >= 0.25D);
+    //   19   34:fload_2         
+    //   20   35:f2d             
+    //   21   36:ldc2w           #167 <Double 0.25D>
+    //   22   39:dcmpl           
+    //   23   40:iflt            46
+    //*  24   43:goto            0
+            vector3 = vector3.div(GMath.sqrt(f));
+    //   25   46:aload_1         
+    //   26   47:fload_2         
+    //   27   48:invokestatic    #169 <Method float GMath.sqrt(float)>
+    //   28   51:invokevirtual   #175 <Method Vector3 div(float)>
+    //   29   54:astore_1        
+        } while(!vector3.isFinite());
+    //   30   55:aload_1         
+    //   31   56:invokevirtual   #179 <Method boolean isFinite()>
+    //   32   59:ifeq            0
+        return vector3;
+    //   33   62:aload_1         
+    //   34   63:areturn         
+    }
+
+    public static Vector3 linear(Vector3 vector3, Vector3 vector3_1, float f)
+    {
+        float f1 = 1.0F - f;
+    //    0    0:fconst_1        
+    //    1    1:fload_2         
+    //    2    2:fsub            
+    //    3    3:fstore_3        
+        float f2 = vector3.x * f1 + vector3_1.x * f;
+    //    4    4:aload_0         
+    //    5    5:getfield        #64  <Field float x>
+    //    6    8:fload_3         
+    //    7    9:fmul            
+    //    8   10:aload_1         
+    //    9   11:getfield        #64  <Field float x>
+    //   10   14:fload_2         
+    //   11   15:fmul            
+    //   12   16:fadd            
+    //   13   17:fstore          4
+        float f3 = vector3.y * f1 + vector3_1.y * f;
+    //   14   19:aload_0         
+    //   15   20:getfield        #66  <Field float y>
+    //   16   23:fload_3         
+    //   17   24:fmul            
+    //   18   25:aload_1         
+    //   19   26:getfield        #66  <Field float y>
+    //   20   29:fload_2         
+    //   21   30:fmul            
+    //   22   31:fadd            
+    //   23   32:fstore          5
+        float f4 = vector3.z * f1 + vector3_1.z * f;
+    //   24   34:aload_0         
+    //   25   35:getfield        #68  <Field float z>
+    //   26   38:fload_3         
+    //   27   39:fmul            
+    //   28   40:aload_1         
+    //   29   41:getfield        #68  <Field float z>
+    //   30   44:fload_2         
+    //   31   45:fmul            
+    //   32   46:fadd            
+    //   33   47:fstore          6
+        return new Vector3(f2, f3, f4);
+    //   34   49:new             #1   <Class Vector3>
+    //   35   52:dup             
+    //   36   53:fload           4
+    //   37   55:fload           5
+    //   38   57:fload           6
+    //   39   59:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   40   62:areturn         
+    }
+
+    public static Vector3 cubic(Vector3 vector3, Vector3 vector3_1, Vector3 vector3_2, Vector3 vector3_3, float f)
+    {
+        float f1 = 1.0F - f;
+    //    0    0:fconst_1        
+    //    1    1:fload           4
+    //    2    3:fsub            
+    //    3    4:fstore          5
+        float f2 = f * f1 * 3F;
+    //    4    6:fload           4
+    //    5    8:fload           5
+    //    6   10:fmul            
+    //    7   11:ldc1            #186 <Float 3F>
+    //    8   13:fmul            
+    //    9   14:fstore          6
+        float f3 = f1 * f1 * f1;
+    //   10   16:fload           5
+    //   11   18:fload           5
+    //   12   20:fmul            
+    //   13   21:fload           5
+    //   14   23:fmul            
+    //   15   24:fstore          7
+        float f4 = f2 * f1;
+    //   16   26:fload           6
+    //   17   28:fload           5
+    //   18   30:fmul            
+    //   19   31:fstore          8
+        float f5 = f2 * f;
+    //   20   33:fload           6
+    //   21   35:fload           4
+    //   22   37:fmul            
+    //   23   38:fstore          9
+        float f6 = f * f * f;
+    //   24   40:fload           4
+    //   25   42:fload           4
+    //   26   44:fmul            
+    //   27   45:fload           4
+    //   28   47:fmul            
+    //   29   48:fstore          10
+        float f7 = vector3.x * f3 + vector3_1.x * f4 + vector3_2.x * f5 + vector3_3.x * f6;
+    //   30   50:aload_0         
+    //   31   51:getfield        #64  <Field float x>
+    //   32   54:fload           7
+    //   33   56:fmul            
+    //   34   57:aload_1         
+    //   35   58:getfield        #64  <Field float x>
+    //   36   61:fload           8
+    //   37   63:fmul            
+    //   38   64:fadd            
+    //   39   65:aload_2         
+    //   40   66:getfield        #64  <Field float x>
+    //   41   69:fload           9
+    //   42   71:fmul            
+    //   43   72:fadd            
+    //   44   73:aload_3         
+    //   45   74:getfield        #64  <Field float x>
+    //   46   77:fload           10
+    //   47   79:fmul            
+    //   48   80:fadd            
+    //   49   81:fstore          11
+        float f8 = vector3.y * f3 + vector3_1.y * f4 + vector3_2.y * f5 + vector3_3.y * f6;
+    //   50   83:aload_0         
+    //   51   84:getfield        #66  <Field float y>
+    //   52   87:fload           7
+    //   53   89:fmul            
+    //   54   90:aload_1         
+    //   55   91:getfield        #66  <Field float y>
+    //   56   94:fload           8
+    //   57   96:fmul            
+    //   58   97:fadd            
+    //   59   98:aload_2         
+    //   60   99:getfield        #66  <Field float y>
+    //   61  102:fload           9
+    //   62  104:fmul            
+    //   63  105:fadd            
+    //   64  106:aload_3         
+    //   65  107:getfield        #66  <Field float y>
+    //   66  110:fload           10
+    //   67  112:fmul            
+    //   68  113:fadd            
+    //   69  114:fstore          12
+        float f9 = vector3.z * f3 + vector3_1.z * f4 + vector3_2.z * f5 + vector3_3.z * f6;
+    //   70  116:aload_0         
+    //   71  117:getfield        #68  <Field float z>
+    //   72  120:fload           7
+    //   73  122:fmul            
+    //   74  123:aload_1         
+    //   75  124:getfield        #68  <Field float z>
+    //   76  127:fload           8
+    //   77  129:fmul            
+    //   78  130:fadd            
+    //   79  131:aload_2         
+    //   80  132:getfield        #68  <Field float z>
+    //   81  135:fload           9
+    //   82  137:fmul            
+    //   83  138:fadd            
+    //   84  139:aload_3         
+    //   85  140:getfield        #68  <Field float z>
+    //   86  143:fload           10
+    //   87  145:fmul            
+    //   88  146:fadd            
+    //   89  147:fstore          13
+        return new Vector3(f7, f8, f9);
+    //   90  149:new             #1   <Class Vector3>
+    //   91  152:dup             
+    //   92  153:fload           11
+    //   93  155:fload           12
+    //   94  157:fload           13
+    //   95  159:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   96  162:areturn         
+    }
+
+    public static Vector3 average(Vector3 vector3, Vector3 vector3_1)
+    {
+        return new Vector3((vector3.x + vector3_1.x) / 2.0F, (vector3.y + vector3_1.y) / 2.0F, (vector3.z + vector3_1.z) / 2.0F);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_1         
+    //    5    9:getfield        #64  <Field float x>
+    //    6   12:fadd            
+    //    7   13:fconst_2        
+    //    8   14:fdiv            
+    //    9   15:aload_0         
+    //   10   16:getfield        #66  <Field float y>
+    //   11   19:aload_1         
+    //   12   20:getfield        #66  <Field float y>
+    //   13   23:fadd            
+    //   14   24:fconst_2        
+    //   15   25:fdiv            
+    //   16   26:aload_0         
+    //   17   27:getfield        #68  <Field float z>
+    //   18   30:aload_1         
+    //   19   31:getfield        #68  <Field float z>
+    //   20   34:fadd            
+    //   21   35:fconst_2        
+    //   22   36:fdiv            
+    //   23   37:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   24   40:areturn         
+    }
+
+    public static transient Vector3 average(Vector3 avector3[])
+    {
+        Vector3 vector3 = Zero;
+    //    0    0:getstatic       #41  <Field Vector3 Zero>
+    //    1    3:astore_1        
+        Vector3 avector3_1[];
+        int j = (avector3_1 = avector3).length;
+    //    2    4:aload_0         
+    //    3    5:dup             
+    //    4    6:astore          5
+    //    5    8:arraylength     
+    //    6    9:istore          4
+        for(int i = 0; i < j; i++)
+    //*   7   11:iconst_0        
+    //*   8   12:istore_3        
+    //*   9   13:goto            30
+        {
+            Vector3 vector3_1 = avector3_1[i];
+    //   10   16:aload           5
+    //   11   18:iload_3         
+    //   12   19:aaload          
+    //   13   20:astore_2        
+            vector3 = vector3.add(vector3_1);
+    //   14   21:aload_1         
+    //   15   22:aload_2         
+    //   16   23:invokevirtual   #190 <Method Vector3 add(Vector3)>
+    //   17   26:astore_1        
+        }
+
+    //   18   27:iinc            3  1
+    //   19   30:iload_3         
+    //   20   31:iload           4
+    //   21   33:icmplt          16
+        return vector3.div(avector3.length);
+    //   22   36:aload_1         
+    //   23   37:aload_0         
+    //   24   38:arraylength     
+    //   25   39:i2f             
+    //   26   40:invokevirtual   #175 <Method Vector3 div(float)>
+    //   27   43:areturn         
+    }
+
+    public static Vector3 average(List list)
+    {
+        Vector3 vector3 = Zero;
+    //    0    0:getstatic       #41  <Field Vector3 Zero>
+    //    1    3:astore_1        
+        for(Iterator iterator = list.iterator(); iterator.hasNext();)
+    //*   2    4:aload_0         
+    //*   3    5:invokeinterface #198 <Method Iterator List.iterator()>
+    //*   4   10:astore_3        
+    //*   5   11:goto            30
+        {
+            Vector3 vector3_1 = (Vector3)iterator.next();
+    //    6   14:aload_3         
+    //    7   15:invokeinterface #204 <Method Object Iterator.next()>
+    //    8   20:checkcast       #1   <Class Vector3>
+    //    9   23:astore_2        
+            vector3 = vector3.add(vector3_1);
+    //   10   24:aload_1         
+    //   11   25:aload_2         
+    //   12   26:invokevirtual   #190 <Method Vector3 add(Vector3)>
+    //   13   29:astore_1        
+        }
+
+    //   14   30:aload_3         
+    //   15   31:invokeinterface #209 <Method boolean Iterator.hasNext()>
+    //   16   36:ifne            14
+        return vector3.div(list.size());
+    //   17   39:aload_1         
+    //   18   40:aload_0         
+    //   19   41:invokeinterface #212 <Method int List.size()>
+    //   20   46:i2f             
+    //   21   47:invokevirtual   #175 <Method Vector3 div(float)>
+    //   22   50:areturn         
+    }
+
+    public static Vector3 sum(List list)
+    {
+        Vector3 vector3 = Zero;
+    //    0    0:getstatic       #41  <Field Vector3 Zero>
+    //    1    3:astore_1        
+        for(Iterator iterator = list.iterator(); iterator.hasNext();)
+    //*   2    4:aload_0         
+    //*   3    5:invokeinterface #198 <Method Iterator List.iterator()>
+    //*   4   10:astore_3        
+    //*   5   11:goto            30
+        {
+            Vector3 vector3_1 = (Vector3)iterator.next();
+    //    6   14:aload_3         
+    //    7   15:invokeinterface #204 <Method Object Iterator.next()>
+    //    8   20:checkcast       #1   <Class Vector3>
+    //    9   23:astore_2        
+            vector3 = vector3.add(vector3_1);
+    //   10   24:aload_1         
+    //   11   25:aload_2         
+    //   12   26:invokevirtual   #190 <Method Vector3 add(Vector3)>
+    //   13   29:astore_1        
+        }
+
+    //   14   30:aload_3         
+    //   15   31:invokeinterface #209 <Method boolean Iterator.hasNext()>
+    //   16   36:ifne            14
+        return vector3;
+    //   17   39:aload_1         
+    //   18   40:areturn         
+    }
+
+    public Vector3 add(Vector3 vector3)
+    {
+        return new Vector3(x + vector3.x, y + vector3.y, z + vector3.z);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_1         
+    //    5    9:getfield        #64  <Field float x>
+    //    6   12:fadd            
+    //    7   13:aload_0         
+    //    8   14:getfield        #66  <Field float y>
+    //    9   17:aload_1         
+    //   10   18:getfield        #66  <Field float y>
+    //   11   21:fadd            
+    //   12   22:aload_0         
+    //   13   23:getfield        #68  <Field float z>
+    //   14   26:aload_1         
+    //   15   27:getfield        #68  <Field float z>
+    //   16   30:fadd            
+    //   17   31:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   18   34:areturn         
+    }
+
+    public Vector3 sub(Vector3 vector3)
+    {
+        return new Vector3(x - vector3.x, y - vector3.y, z - vector3.z);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_1         
+    //    5    9:getfield        #64  <Field float x>
+    //    6   12:fsub            
+    //    7   13:aload_0         
+    //    8   14:getfield        #66  <Field float y>
+    //    9   17:aload_1         
+    //   10   18:getfield        #66  <Field float y>
+    //   11   21:fsub            
+    //   12   22:aload_0         
+    //   13   23:getfield        #68  <Field float z>
+    //   14   26:aload_1         
+    //   15   27:getfield        #68  <Field float z>
+    //   16   30:fsub            
+    //   17   31:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   18   34:areturn         
+    }
+
+    public Vector3 neg()
+    {
+        return new Vector3(-x, -y, -z);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:fneg            
+    //    5    9:aload_0         
+    //    6   10:getfield        #66  <Field float y>
+    //    7   13:fneg            
+    //    8   14:aload_0         
+    //    9   15:getfield        #68  <Field float z>
+    //   10   18:fneg            
+    //   11   19:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   12   22:areturn         
+    }
+
+    public Vector3 add(float f, Vector3 vector3)
+    {
+        return new Vector3(x + vector3.x * f, y + vector3.y * f, z + vector3.z * f);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_2         
+    //    5    9:getfield        #64  <Field float x>
+    //    6   12:fload_1         
+    //    7   13:fmul            
+    //    8   14:fadd            
+    //    9   15:aload_0         
+    //   10   16:getfield        #66  <Field float y>
+    //   11   19:aload_2         
+    //   12   20:getfield        #66  <Field float y>
+    //   13   23:fload_1         
+    //   14   24:fmul            
+    //   15   25:fadd            
+    //   16   26:aload_0         
+    //   17   27:getfield        #68  <Field float z>
+    //   18   30:aload_2         
+    //   19   31:getfield        #68  <Field float z>
+    //   20   34:fload_1         
+    //   21   35:fmul            
+    //   22   36:fadd            
+    //   23   37:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   24   40:areturn         
+    }
+
+    public Vector3 sub(float f, Vector3 vector3)
+    {
+        return new Vector3(x - vector3.x * f, y - vector3.y * f, z - vector3.z * f);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_2         
+    //    5    9:getfield        #64  <Field float x>
+    //    6   12:fload_1         
+    //    7   13:fmul            
+    //    8   14:fsub            
+    //    9   15:aload_0         
+    //   10   16:getfield        #66  <Field float y>
+    //   11   19:aload_2         
+    //   12   20:getfield        #66  <Field float y>
+    //   13   23:fload_1         
+    //   14   24:fmul            
+    //   15   25:fsub            
+    //   16   26:aload_0         
+    //   17   27:getfield        #68  <Field float z>
+    //   18   30:aload_2         
+    //   19   31:getfield        #68  <Field float z>
+    //   20   34:fload_1         
+    //   21   35:fmul            
+    //   22   36:fsub            
+    //   23   37:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   24   40:areturn         
+    }
+
+    public Vector3 add(Matrix3 matrix3, Vector3 vector3)
+    {
+        return new Vector3(x + matrix3.a.dot(vector3), y + matrix3.b.dot(vector3), z + matrix3.c.dot(vector3));
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_1         
+    //    5    9:getfield        #220 <Field Vector3 Matrix3.a>
+    //    6   12:aload_2         
+    //    7   13:invokevirtual   #225 <Method float dot(Vector3)>
+    //    8   16:fadd            
+    //    9   17:aload_0         
+    //   10   18:getfield        #66  <Field float y>
+    //   11   21:aload_1         
+    //   12   22:getfield        #229 <Field Vector3 Matrix3.b>
+    //   13   25:aload_2         
+    //   14   26:invokevirtual   #225 <Method float dot(Vector3)>
+    //   15   29:fadd            
+    //   16   30:aload_0         
+    //   17   31:getfield        #68  <Field float z>
+    //   18   34:aload_1         
+    //   19   35:getfield        #232 <Field Vector3 Matrix3.c>
+    //   20   38:aload_2         
+    //   21   39:invokevirtual   #225 <Method float dot(Vector3)>
+    //   22   42:fadd            
+    //   23   43:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   24   46:areturn         
+    }
+
+    public Vector3 sub(Matrix3 matrix3, Vector3 vector3)
+    {
+        return new Vector3(x - matrix3.a.dot(vector3), y - matrix3.b.dot(vector3), z - matrix3.c.dot(vector3));
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_1         
+    //    5    9:getfield        #220 <Field Vector3 Matrix3.a>
+    //    6   12:aload_2         
+    //    7   13:invokevirtual   #225 <Method float dot(Vector3)>
+    //    8   16:fsub            
+    //    9   17:aload_0         
+    //   10   18:getfield        #66  <Field float y>
+    //   11   21:aload_1         
+    //   12   22:getfield        #229 <Field Vector3 Matrix3.b>
+    //   13   25:aload_2         
+    //   14   26:invokevirtual   #225 <Method float dot(Vector3)>
+    //   15   29:fsub            
+    //   16   30:aload_0         
+    //   17   31:getfield        #68  <Field float z>
+    //   18   34:aload_1         
+    //   19   35:getfield        #232 <Field Vector3 Matrix3.c>
+    //   20   38:aload_2         
+    //   21   39:invokevirtual   #225 <Method float dot(Vector3)>
+    //   22   42:fsub            
+    //   23   43:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   24   46:areturn         
+    }
+
+    public Vector3 add(Vector3 vector3, Matrix3 matrix3)
+    {
+        return new Vector3(x + matrix3.dotX(vector3), y + matrix3.dotY(vector3), z + matrix3.dotZ(vector3));
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_2         
+    //    5    9:aload_1         
+    //    6   10:invokevirtual   #236 <Method float Matrix3.dotX(Vector3)>
+    //    7   13:fadd            
+    //    8   14:aload_0         
+    //    9   15:getfield        #66  <Field float y>
+    //   10   18:aload_2         
+    //   11   19:aload_1         
+    //   12   20:invokevirtual   #239 <Method float Matrix3.dotY(Vector3)>
+    //   13   23:fadd            
+    //   14   24:aload_0         
+    //   15   25:getfield        #68  <Field float z>
+    //   16   28:aload_2         
+    //   17   29:aload_1         
+    //   18   30:invokevirtual   #242 <Method float Matrix3.dotZ(Vector3)>
+    //   19   33:fadd            
+    //   20   34:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   21   37:areturn         
+    }
+
+    public Vector3 sub(Vector3 vector3, Matrix3 matrix3)
+    {
+        return new Vector3(x - matrix3.dotX(vector3), y - matrix3.dotY(vector3), z - matrix3.dotZ(vector3));
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_2         
+    //    5    9:aload_1         
+    //    6   10:invokevirtual   #236 <Method float Matrix3.dotX(Vector3)>
+    //    7   13:fsub            
+    //    8   14:aload_0         
+    //    9   15:getfield        #66  <Field float y>
+    //   10   18:aload_2         
+    //   11   19:aload_1         
+    //   12   20:invokevirtual   #239 <Method float Matrix3.dotY(Vector3)>
+    //   13   23:fsub            
+    //   14   24:aload_0         
+    //   15   25:getfield        #68  <Field float z>
+    //   16   28:aload_2         
+    //   17   29:aload_1         
+    //   18   30:invokevirtual   #242 <Method float Matrix3.dotZ(Vector3)>
+    //   19   33:fsub            
+    //   20   34:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   21   37:areturn         
+    }
+
+    public Vector3 mul(float f)
+    {
+        return new Vector3(x * f, y * f, z * f);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:fload_1         
+    //    5    9:fmul            
+    //    6   10:aload_0         
+    //    7   11:getfield        #66  <Field float y>
+    //    8   14:fload_1         
+    //    9   15:fmul            
+    //   10   16:aload_0         
+    //   11   17:getfield        #68  <Field float z>
+    //   12   20:fload_1         
+    //   13   21:fmul            
+    //   14   22:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   15   25:areturn         
+    }
+
+    public Quaternion mul(Quaternion quaternion)
+    {
+        float f = -x * quaternion.x - y * quaternion.y - z * quaternion.z;
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:fneg            
+    //    3    5:aload_1         
+    //    4    6:getfield        #247 <Field float Quaternion.x>
+    //    5    9:fmul            
+    //    6   10:aload_0         
+    //    7   11:getfield        #66  <Field float y>
+    //    8   14:aload_1         
+    //    9   15:getfield        #250 <Field float Quaternion.y>
+    //   10   18:fmul            
+    //   11   19:fsub            
+    //   12   20:aload_0         
+    //   13   21:getfield        #68  <Field float z>
+    //   14   24:aload_1         
+    //   15   25:getfield        #251 <Field float Quaternion.z>
+    //   16   28:fmul            
+    //   17   29:fsub            
+    //   18   30:fstore_2        
+        float f1 = (x * quaternion.w + y * quaternion.z) - z * quaternion.y;
+    //   19   31:aload_0         
+    //   20   32:getfield        #64  <Field float x>
+    //   21   35:aload_1         
+    //   22   36:getfield        #252 <Field float Quaternion.w>
+    //   23   39:fmul            
+    //   24   40:aload_0         
+    //   25   41:getfield        #66  <Field float y>
+    //   26   44:aload_1         
+    //   27   45:getfield        #251 <Field float Quaternion.z>
+    //   28   48:fmul            
+    //   29   49:fadd            
+    //   30   50:aload_0         
+    //   31   51:getfield        #68  <Field float z>
+    //   32   54:aload_1         
+    //   33   55:getfield        #250 <Field float Quaternion.y>
+    //   34   58:fmul            
+    //   35   59:fsub            
+    //   36   60:fstore_3        
+        float f2 = -x * quaternion.z + y * quaternion.w + z * quaternion.x;
+    //   37   61:aload_0         
+    //   38   62:getfield        #64  <Field float x>
+    //   39   65:fneg            
+    //   40   66:aload_1         
+    //   41   67:getfield        #251 <Field float Quaternion.z>
+    //   42   70:fmul            
+    //   43   71:aload_0         
+    //   44   72:getfield        #66  <Field float y>
+    //   45   75:aload_1         
+    //   46   76:getfield        #252 <Field float Quaternion.w>
+    //   47   79:fmul            
+    //   48   80:fadd            
+    //   49   81:aload_0         
+    //   50   82:getfield        #68  <Field float z>
+    //   51   85:aload_1         
+    //   52   86:getfield        #247 <Field float Quaternion.x>
+    //   53   89:fmul            
+    //   54   90:fadd            
+    //   55   91:fstore          4
+        float f3 = (x * quaternion.y - y * quaternion.x) + z * quaternion.w;
+    //   56   93:aload_0         
+    //   57   94:getfield        #64  <Field float x>
+    //   58   97:aload_1         
+    //   59   98:getfield        #250 <Field float Quaternion.y>
+    //   60  101:fmul            
+    //   61  102:aload_0         
+    //   62  103:getfield        #66  <Field float y>
+    //   63  106:aload_1         
+    //   64  107:getfield        #247 <Field float Quaternion.x>
+    //   65  110:fmul            
+    //   66  111:fsub            
+    //   67  112:aload_0         
+    //   68  113:getfield        #68  <Field float z>
+    //   69  116:aload_1         
+    //   70  117:getfield        #252 <Field float Quaternion.w>
+    //   71  120:fmul            
+    //   72  121:fadd            
+    //   73  122:fstore          5
+        return new Quaternion(f, f1, f2, f3);
+    //   74  124:new             #248 <Class Quaternion>
+    //   75  127:dup             
+    //   76  128:fload_2         
+    //   77  129:fload_3         
+    //   78  130:fload           4
+    //   79  132:fload           5
+    //   80  134:invokespecial   #255 <Method void Quaternion(float, float, float, float)>
+    //   81  137:areturn         
+    }
+
+    public Matrix3 mul(Vector3 vector3)
+    {
+        return new Matrix3(vector3.mul(x), vector3.mul(y), vector3.mul(z));
+    //    0    0:new             #221 <Class Matrix3>
+    //    1    3:dup             
+    //    2    4:aload_1         
+    //    3    5:aload_0         
+    //    4    6:getfield        #64  <Field float x>
+    //    5    9:invokevirtual   #258 <Method Vector3 mul(float)>
+    //    6   12:aload_1         
+    //    7   13:aload_0         
+    //    8   14:getfield        #66  <Field float y>
+    //    9   17:invokevirtual   #258 <Method Vector3 mul(float)>
+    //   10   20:aload_1         
+    //   11   21:aload_0         
+    //   12   22:getfield        #68  <Field float z>
+    //   13   25:invokevirtual   #258 <Method Vector3 mul(float)>
+    //   14   28:invokespecial   #260 <Method void Matrix3(Vector3, Vector3, Vector3)>
+    //   15   31:areturn         
+    }
+
+    public Vector3 mul(Matrix3 matrix3)
+    {
+        return mul(x, y, z, matrix3);
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_0         
+    //    3    5:getfield        #66  <Field float y>
+    //    4    8:aload_0         
+    //    5    9:getfield        #68  <Field float z>
+    //    6   12:aload_1         
+    //    7   13:invokestatic    #264 <Method Vector3 mul(float, float, float, Matrix3)>
+    //    8   16:areturn         
+    }
+
+    public static Vector3 mul(float f, float f1, float f2, Matrix3 matrix3)
+    {
+        return new Vector3(f * matrix3.a.x + f1 * matrix3.b.x + f2 * matrix3.c.x, f * matrix3.a.y + f1 * matrix3.b.y + f2 * matrix3.c.y, f * matrix3.a.z + f1 * matrix3.b.z + f2 * matrix3.c.z);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:fload_0         
+    //    3    5:aload_3         
+    //    4    6:getfield        #220 <Field Vector3 Matrix3.a>
+    //    5    9:getfield        #64  <Field float x>
+    //    6   12:fmul            
+    //    7   13:fload_1         
+    //    8   14:aload_3         
+    //    9   15:getfield        #229 <Field Vector3 Matrix3.b>
+    //   10   18:getfield        #64  <Field float x>
+    //   11   21:fmul            
+    //   12   22:fadd            
+    //   13   23:fload_2         
+    //   14   24:aload_3         
+    //   15   25:getfield        #232 <Field Vector3 Matrix3.c>
+    //   16   28:getfield        #64  <Field float x>
+    //   17   31:fmul            
+    //   18   32:fadd            
+    //   19   33:fload_0         
+    //   20   34:aload_3         
+    //   21   35:getfield        #220 <Field Vector3 Matrix3.a>
+    //   22   38:getfield        #66  <Field float y>
+    //   23   41:fmul            
+    //   24   42:fload_1         
+    //   25   43:aload_3         
+    //   26   44:getfield        #229 <Field Vector3 Matrix3.b>
+    //   27   47:getfield        #66  <Field float y>
+    //   28   50:fmul            
+    //   29   51:fadd            
+    //   30   52:fload_2         
+    //   31   53:aload_3         
+    //   32   54:getfield        #232 <Field Vector3 Matrix3.c>
+    //   33   57:getfield        #66  <Field float y>
+    //   34   60:fmul            
+    //   35   61:fadd            
+    //   36   62:fload_0         
+    //   37   63:aload_3         
+    //   38   64:getfield        #220 <Field Vector3 Matrix3.a>
+    //   39   67:getfield        #68  <Field float z>
+    //   40   70:fmul            
+    //   41   71:fload_1         
+    //   42   72:aload_3         
+    //   43   73:getfield        #229 <Field Vector3 Matrix3.b>
+    //   44   76:getfield        #68  <Field float z>
+    //   45   79:fmul            
+    //   46   80:fadd            
+    //   47   81:fload_2         
+    //   48   82:aload_3         
+    //   49   83:getfield        #232 <Field Vector3 Matrix3.c>
+    //   50   86:getfield        #68  <Field float z>
+    //   51   89:fmul            
+    //   52   90:fadd            
+    //   53   91:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   54   94:areturn         
+    }
+
+    public Vector3 mulD(Matrix3 matrix3)
+    {
+        return new Vector3(x * matrix3.a.x, y * matrix3.b.y, z * matrix3.c.z);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_1         
+    //    5    9:getfield        #220 <Field Vector3 Matrix3.a>
+    //    6   12:getfield        #64  <Field float x>
+    //    7   15:fmul            
+    //    8   16:aload_0         
+    //    9   17:getfield        #66  <Field float y>
+    //   10   20:aload_1         
+    //   11   21:getfield        #229 <Field Vector3 Matrix3.b>
+    //   12   24:getfield        #66  <Field float y>
+    //   13   27:fmul            
+    //   14   28:aload_0         
+    //   15   29:getfield        #68  <Field float z>
+    //   16   32:aload_1         
+    //   17   33:getfield        #232 <Field Vector3 Matrix3.c>
+    //   18   36:getfield        #68  <Field float z>
+    //   19   39:fmul            
+    //   20   40:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   21   43:areturn         
+    }
+
+    public Vector3 mulT(Matrix3 matrix3)
+    {
+        float f = x * matrix3.a.x + y * matrix3.a.y + z * matrix3.a.z;
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_1         
+    //    3    5:getfield        #220 <Field Vector3 Matrix3.a>
+    //    4    8:getfield        #64  <Field float x>
+    //    5   11:fmul            
+    //    6   12:aload_0         
+    //    7   13:getfield        #66  <Field float y>
+    //    8   16:aload_1         
+    //    9   17:getfield        #220 <Field Vector3 Matrix3.a>
+    //   10   20:getfield        #66  <Field float y>
+    //   11   23:fmul            
+    //   12   24:fadd            
+    //   13   25:aload_0         
+    //   14   26:getfield        #68  <Field float z>
+    //   15   29:aload_1         
+    //   16   30:getfield        #220 <Field Vector3 Matrix3.a>
+    //   17   33:getfield        #68  <Field float z>
+    //   18   36:fmul            
+    //   19   37:fadd            
+    //   20   38:fstore_2        
+        float f1 = x * matrix3.b.x + y * matrix3.b.y + z * matrix3.b.z;
+    //   21   39:aload_0         
+    //   22   40:getfield        #64  <Field float x>
+    //   23   43:aload_1         
+    //   24   44:getfield        #229 <Field Vector3 Matrix3.b>
+    //   25   47:getfield        #64  <Field float x>
+    //   26   50:fmul            
+    //   27   51:aload_0         
+    //   28   52:getfield        #66  <Field float y>
+    //   29   55:aload_1         
+    //   30   56:getfield        #229 <Field Vector3 Matrix3.b>
+    //   31   59:getfield        #66  <Field float y>
+    //   32   62:fmul            
+    //   33   63:fadd            
+    //   34   64:aload_0         
+    //   35   65:getfield        #68  <Field float z>
+    //   36   68:aload_1         
+    //   37   69:getfield        #229 <Field Vector3 Matrix3.b>
+    //   38   72:getfield        #68  <Field float z>
+    //   39   75:fmul            
+    //   40   76:fadd            
+    //   41   77:fstore_3        
+        float f2 = x * matrix3.c.x + y * matrix3.c.y + z * matrix3.c.z;
+    //   42   78:aload_0         
+    //   43   79:getfield        #64  <Field float x>
+    //   44   82:aload_1         
+    //   45   83:getfield        #232 <Field Vector3 Matrix3.c>
+    //   46   86:getfield        #64  <Field float x>
+    //   47   89:fmul            
+    //   48   90:aload_0         
+    //   49   91:getfield        #66  <Field float y>
+    //   50   94:aload_1         
+    //   51   95:getfield        #232 <Field Vector3 Matrix3.c>
+    //   52   98:getfield        #66  <Field float y>
+    //   53  101:fmul            
+    //   54  102:fadd            
+    //   55  103:aload_0         
+    //   56  104:getfield        #68  <Field float z>
+    //   57  107:aload_1         
+    //   58  108:getfield        #232 <Field Vector3 Matrix3.c>
+    //   59  111:getfield        #68  <Field float z>
+    //   60  114:fmul            
+    //   61  115:fadd            
+    //   62  116:fstore          4
+        return new Vector3(f, f1, f2);
+    //   63  118:new             #1   <Class Vector3>
+    //   64  121:dup             
+    //   65  122:fload_2         
+    //   66  123:fload_3         
+    //   67  124:fload           4
+    //   68  126:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   69  129:areturn         
+    }
+
+    public Vector3 div(float f)
+    {
+        return mul(1.0F / f);
+    //    0    0:aload_0         
+    //    1    1:fconst_1        
+    //    2    2:fload_1         
+    //    3    3:fdiv            
+    //    4    4:invokevirtual   #258 <Method Vector3 mul(float)>
+    //    5    7:areturn         
+    }
+
+    public Vector3 unit()
+    {
+        return div(length());
+    //    0    0:aload_0         
+    //    1    1:aload_0         
+    //    2    2:invokevirtual   #270 <Method float length()>
+    //    3    5:invokevirtual   #175 <Method Vector3 div(float)>
+    //    4    8:areturn         
+    }
+
+    public Vector3 unitz()
+    {
+        return unitz(x, y, z);
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_0         
+    //    3    5:getfield        #66  <Field float y>
+    //    4    8:aload_0         
+    //    5    9:getfield        #68  <Field float z>
+    //    6   12:invokestatic    #274 <Method Vector3 unitz(float, float, float)>
+    //    7   15:areturn         
+    }
+
+    public static Vector3 unitz(float f, float f1, float f2)
+    {
+        float f3 = 1.0F / GMath.sqrt(f * f + f1 * f1 + f2 * f2);
+    //    0    0:fconst_1        
+    //    1    1:fload_0         
+    //    2    2:fload_0         
+    //    3    3:fmul            
+    //    4    4:fload_1         
+    //    5    5:fload_1         
+    //    6    6:fmul            
+    //    7    7:fadd            
+    //    8    8:fload_2         
+    //    9    9:fload_2         
+    //   10   10:fmul            
+    //   11   11:fadd            
+    //   12   12:invokestatic    #169 <Method float GMath.sqrt(float)>
+    //   13   15:fdiv            
+    //   14   16:fstore_3        
+        float f4 = f * f3;
+    //   15   17:fload_0         
+    //   16   18:fload_3         
+    //   17   19:fmul            
+    //   18   20:fstore          4
+        if(!GMath.isFinite(f4))
+    //*  19   22:fload           4
+    //*  20   24:invokestatic    #276 <Method boolean GMath.isFinite(float)>
+    //*  21   27:ifne            34
+            return Zero;
+    //   22   30:getstatic       #41  <Field Vector3 Zero>
+    //   23   33:areturn         
+        float f5 = f1 * f3;
+    //   24   34:fload_1         
+    //   25   35:fload_3         
+    //   26   36:fmul            
+    //   27   37:fstore          5
+        if(!GMath.isFinite(f5))
+    //*  28   39:fload           5
+    //*  29   41:invokestatic    #276 <Method boolean GMath.isFinite(float)>
+    //*  30   44:ifne            51
+            return Zero;
+    //   31   47:getstatic       #41  <Field Vector3 Zero>
+    //   32   50:areturn         
+        float f6 = f2 * f3;
+    //   33   51:fload_2         
+    //   34   52:fload_3         
+    //   35   53:fmul            
+    //   36   54:fstore          6
+        if(!GMath.isFinite(f6))
+    //*  37   56:fload           6
+    //*  38   58:invokestatic    #276 <Method boolean GMath.isFinite(float)>
+    //*  39   61:ifne            68
+            return Zero;
+    //   40   64:getstatic       #41  <Field Vector3 Zero>
+    //   41   67:areturn         
+        else
+            return new Vector3(f4, f5, f6);
+    //   42   68:new             #1   <Class Vector3>
+    //   43   71:dup             
+    //   44   72:fload           4
+    //   45   74:fload           5
+    //   46   76:fload           6
+    //   47   78:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   48   81:areturn         
+    }
+
+    public static Vector3 finite(Vector3 vector3)
+    {
+        return vector3.isFinite() ? vector3 : Zero;
+    //    0    0:aload_0         
+    //    1    1:invokevirtual   #179 <Method boolean isFinite()>
+    //    2    4:ifeq            11
+    //    3    7:aload_0         
+    //    4    8:goto            14
+    //    5   11:getstatic       #41  <Field Vector3 Zero>
+    //    6   14:areturn         
+    }
+
+    public Vector3 limit(float f)
+    {
+        float f1 = square();
+    //    0    0:aload_0         
+    //    1    1:invokevirtual   #164 <Method float square()>
+    //    2    4:fstore_2        
+        return f1 > f * f ? mul(f / GMath.sqrt(f1)) : this;
+    //    3    5:fload_2         
+    //    4    6:fload_1         
+    //    5    7:fload_1         
+    //    6    8:fmul            
+    //    7    9:fcmpg           
+    //    8   10:ifgt            17
+    //    9   13:aload_0         
+    //   10   14:goto            27
+    //   11   17:aload_0         
+    //   12   18:fload_1         
+    //   13   19:fload_2         
+    //   14   20:invokestatic    #169 <Method float GMath.sqrt(float)>
+    //   15   23:fdiv            
+    //   16   24:invokevirtual   #258 <Method Vector3 mul(float)>
+    //   17   27:areturn         
+    }
+
+    public Vector3 direction(Vector3 vector3)
+    {
+        float f = vector3.x - x;
+    //    0    0:aload_1         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_0         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:fsub            
+    //    5    9:fstore_2        
+        float f1 = vector3.y - y;
+    //    6   10:aload_1         
+    //    7   11:getfield        #66  <Field float y>
+    //    8   14:aload_0         
+    //    9   15:getfield        #66  <Field float y>
+    //   10   18:fsub            
+    //   11   19:fstore_3        
+        float f2 = vector3.z - z;
+    //   12   20:aload_1         
+    //   13   21:getfield        #68  <Field float z>
+    //   14   24:aload_0         
+    //   15   25:getfield        #68  <Field float z>
+    //   16   28:fsub            
+    //   17   29:fstore          4
+        float f3 = 1.0F / GMath.sqrt(f * f + f1 * f1 + f2 * f2);
+    //   18   31:fconst_1        
+    //   19   32:fload_2         
+    //   20   33:fload_2         
+    //   21   34:fmul            
+    //   22   35:fload_3         
+    //   23   36:fload_3         
+    //   24   37:fmul            
+    //   25   38:fadd            
+    //   26   39:fload           4
+    //   27   41:fload           4
+    //   28   43:fmul            
+    //   29   44:fadd            
+    //   30   45:invokestatic    #169 <Method float GMath.sqrt(float)>
+    //   31   48:fdiv            
+    //   32   49:fstore          5
+        return new Vector3(f * f3, f1 * f3, f2 * f3);
+    //   33   51:new             #1   <Class Vector3>
+    //   34   54:dup             
+    //   35   55:fload_2         
+    //   36   56:fload           5
+    //   37   58:fmul            
+    //   38   59:fload_3         
+    //   39   60:fload           5
+    //   40   62:fmul            
+    //   41   63:fload           4
+    //   42   65:fload           5
+    //   43   67:fmul            
+    //   44   68:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   45   71:areturn         
+    }
+
+    public float dot(Vector3 vector3)
+    {
+        return x * vector3.x + y * vector3.y + z * vector3.z;
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_1         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:fmul            
+    //    5    9:aload_0         
+    //    6   10:getfield        #66  <Field float y>
+    //    7   13:aload_1         
+    //    8   14:getfield        #66  <Field float y>
+    //    9   17:fmul            
+    //   10   18:fadd            
+    //   11   19:aload_0         
+    //   12   20:getfield        #68  <Field float z>
+    //   13   23:aload_1         
+    //   14   24:getfield        #68  <Field float z>
+    //   15   27:fmul            
+    //   16   28:fadd            
+    //   17   29:freturn         
+    }
+
+    public float dot(Vector3 vector3, Vector3 vector3_1)
+    {
+        return x * (vector3.x - vector3_1.x) + y * (vector3.y - vector3_1.y) + z * (vector3.z - vector3_1.z);
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_1         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:aload_2         
+    //    5    9:getfield        #64  <Field float x>
+    //    6   12:fsub            
+    //    7   13:fmul            
+    //    8   14:aload_0         
+    //    9   15:getfield        #66  <Field float y>
+    //   10   18:aload_1         
+    //   11   19:getfield        #66  <Field float y>
+    //   12   22:aload_2         
+    //   13   23:getfield        #66  <Field float y>
+    //   14   26:fsub            
+    //   15   27:fmul            
+    //   16   28:fadd            
+    //   17   29:aload_0         
+    //   18   30:getfield        #68  <Field float z>
+    //   19   33:aload_1         
+    //   20   34:getfield        #68  <Field float z>
+    //   21   37:aload_2         
+    //   22   38:getfield        #68  <Field float z>
+    //   23   41:fsub            
+    //   24   42:fmul            
+    //   25   43:fadd            
+    //   26   44:freturn         
+    }
+
+    public float square()
+    {
+        return dot(this);
+    //    0    0:aload_0         
+    //    1    1:aload_0         
+    //    2    2:invokevirtual   #225 <Method float dot(Vector3)>
+    //    3    5:freturn         
+    }
+
+    public float length()
+    {
+        return GMath.sqrt(square());
+    //    0    0:aload_0         
+    //    1    1:invokevirtual   #164 <Method float square()>
+    //    2    4:invokestatic    #169 <Method float GMath.sqrt(float)>
+    //    3    7:freturn         
+    }
+
+    public float distanceSquared(Vector3 vector3)
+    {
+        return (x - vector3.x) * (x - vector3.x) + (y - vector3.y) * (y - vector3.y) + (z - vector3.z) * (z - vector3.z);
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_1         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:fsub            
+    //    5    9:aload_0         
+    //    6   10:getfield        #64  <Field float x>
+    //    7   13:aload_1         
+    //    8   14:getfield        #64  <Field float x>
+    //    9   17:fsub            
+    //   10   18:fmul            
+    //   11   19:aload_0         
+    //   12   20:getfield        #66  <Field float y>
+    //   13   23:aload_1         
+    //   14   24:getfield        #66  <Field float y>
+    //   15   27:fsub            
+    //   16   28:aload_0         
+    //   17   29:getfield        #66  <Field float y>
+    //   18   32:aload_1         
+    //   19   33:getfield        #66  <Field float y>
+    //   20   36:fsub            
+    //   21   37:fmul            
+    //   22   38:fadd            
+    //   23   39:aload_0         
+    //   24   40:getfield        #68  <Field float z>
+    //   25   43:aload_1         
+    //   26   44:getfield        #68  <Field float z>
+    //   27   47:fsub            
+    //   28   48:aload_0         
+    //   29   49:getfield        #68  <Field float z>
+    //   30   52:aload_1         
+    //   31   53:getfield        #68  <Field float z>
+    //   32   56:fsub            
+    //   33   57:fmul            
+    //   34   58:fadd            
+    //   35   59:freturn         
+    }
+
+    public float distance(Vector3 vector3)
+    {
+        return GMath.sqrt(distanceSquared(vector3));
+    //    0    0:aload_0         
+    //    1    1:aload_1         
+    //    2    2:invokevirtual   #285 <Method float distanceSquared(Vector3)>
+    //    3    5:invokestatic    #169 <Method float GMath.sqrt(float)>
+    //    4    8:freturn         
+    }
+
+    public float mixed(Vector3 vector3, Vector3 vector3_1)
+    {
+        return x * (vector3.y * vector3_1.z - vector3.z * vector3_1.y) + y * (vector3.z * vector3_1.x - vector3.x * vector3_1.z) + z * (vector3.x * vector3_1.y - vector3.y * vector3_1.x);
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_1         
+    //    3    5:getfield        #66  <Field float y>
+    //    4    8:aload_2         
+    //    5    9:getfield        #68  <Field float z>
+    //    6   12:fmul            
+    //    7   13:aload_1         
+    //    8   14:getfield        #68  <Field float z>
+    //    9   17:aload_2         
+    //   10   18:getfield        #66  <Field float y>
+    //   11   21:fmul            
+    //   12   22:fsub            
+    //   13   23:fmul            
+    //   14   24:aload_0         
+    //   15   25:getfield        #66  <Field float y>
+    //   16   28:aload_1         
+    //   17   29:getfield        #68  <Field float z>
+    //   18   32:aload_2         
+    //   19   33:getfield        #64  <Field float x>
+    //   20   36:fmul            
+    //   21   37:aload_1         
+    //   22   38:getfield        #64  <Field float x>
+    //   23   41:aload_2         
+    //   24   42:getfield        #68  <Field float z>
+    //   25   45:fmul            
+    //   26   46:fsub            
+    //   27   47:fmul            
+    //   28   48:fadd            
+    //   29   49:aload_0         
+    //   30   50:getfield        #68  <Field float z>
+    //   31   53:aload_1         
+    //   32   54:getfield        #64  <Field float x>
+    //   33   57:aload_2         
+    //   34   58:getfield        #66  <Field float y>
+    //   35   61:fmul            
+    //   36   62:aload_1         
+    //   37   63:getfield        #66  <Field float y>
+    //   38   66:aload_2         
+    //   39   67:getfield        #64  <Field float x>
+    //   40   70:fmul            
+    //   41   71:fsub            
+    //   42   72:fmul            
+    //   43   73:fadd            
+    //   44   74:freturn         
+    }
+
+    public float angle(Vector3 vector3)
+    {
+        return (float)Math.acos(dot(vector3) / GMath.sqrt(square() + vector3.square()));
+    //    0    0:aload_0         
+    //    1    1:aload_1         
+    //    2    2:invokevirtual   #225 <Method float dot(Vector3)>
+    //    3    5:aload_0         
+    //    4    6:invokevirtual   #164 <Method float square()>
+    //    5    9:aload_1         
+    //    6   10:invokevirtual   #164 <Method float square()>
+    //    7   13:fadd            
+    //    8   14:invokestatic    #169 <Method float GMath.sqrt(float)>
+    //    9   17:fdiv            
+    //   10   18:f2d             
+    //   11   19:invokestatic    #289 <Method double Math.acos(double)>
+    //   12   22:d2f             
+    //   13   23:freturn         
+    }
+
+    public float fullAngle(Vector3 vector3, Vector3 vector3_1)
+    {
+        return mixed(vector3, vector3_1) < 0.0F ? 6.283185F - vector3.angle(vector3_1) : vector3.angle(vector3_1);
+    //    0    0:aload_0         
+    //    1    1:aload_1         
+    //    2    2:aload_2         
+    //    3    3:invokevirtual   #296 <Method float mixed(Vector3, Vector3)>
+    //    4    6:fconst_0        
+    //    5    7:fcmpl           
+    //    6    8:iflt            19
+    //    7   11:aload_1         
+    //    8   12:aload_2         
+    //    9   13:invokevirtual   #298 <Method float angle(Vector3)>
+    //   10   16:goto            28
+    //   11   19:ldc2            #300 <Float 6.283185F>
+    //   12   22:aload_1         
+    //   13   23:aload_2         
+    //   14   24:invokevirtual   #298 <Method float angle(Vector3)>
+    //   15   27:fsub            
+    //   16   28:freturn         
+    }
+
+    public Matrix3 tilda()
+    {
+        return new Matrix3(0.0F, -z, y, z, 0.0F, -x, -y, x, 0.0F);
+    //    0    0:new             #221 <Class Matrix3>
+    //    1    3:dup             
+    //    2    4:fconst_0        
+    //    3    5:aload_0         
+    //    4    6:getfield        #68  <Field float z>
+    //    5    9:fneg            
+    //    6   10:aload_0         
+    //    7   11:getfield        #66  <Field float y>
+    //    8   14:aload_0         
+    //    9   15:getfield        #68  <Field float z>
+    //   10   18:fconst_0        
+    //   11   19:aload_0         
+    //   12   20:getfield        #64  <Field float x>
+    //   13   23:fneg            
+    //   14   24:aload_0         
+    //   15   25:getfield        #66  <Field float y>
+    //   16   28:fneg            
+    //   17   29:aload_0         
+    //   18   30:getfield        #64  <Field float x>
+    //   19   33:fconst_0        
+    //   20   34:invokespecial   #303 <Method void Matrix3(float, float, float, float, float, float, float, float, float)>
+    //   21   37:areturn         
+    }
+
+    public Matrix3 tildaSqr()
+    {
+        float f = -x * x;
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:fneg            
+    //    3    5:aload_0         
+    //    4    6:getfield        #64  <Field float x>
+    //    5    9:fmul            
+    //    6   10:fstore_1        
+        float f1 = -y * y;
+    //    7   11:aload_0         
+    //    8   12:getfield        #66  <Field float y>
+    //    9   15:fneg            
+    //   10   16:aload_0         
+    //   11   17:getfield        #66  <Field float y>
+    //   12   20:fmul            
+    //   13   21:fstore_2        
+        float f2 = -z * z;
+    //   14   22:aload_0         
+    //   15   23:getfield        #68  <Field float z>
+    //   16   26:fneg            
+    //   17   27:aload_0         
+    //   18   28:getfield        #68  <Field float z>
+    //   19   31:fmul            
+    //   20   32:fstore_3        
+        float f3 = x * y;
+    //   21   33:aload_0         
+    //   22   34:getfield        #64  <Field float x>
+    //   23   37:aload_0         
+    //   24   38:getfield        #66  <Field float y>
+    //   25   41:fmul            
+    //   26   42:fstore          4
+        float f4 = y * z;
+    //   27   44:aload_0         
+    //   28   45:getfield        #66  <Field float y>
+    //   29   48:aload_0         
+    //   30   49:getfield        #68  <Field float z>
+    //   31   52:fmul            
+    //   32   53:fstore          5
+        float f5 = x * z;
+    //   33   55:aload_0         
+    //   34   56:getfield        #64  <Field float x>
+    //   35   59:aload_0         
+    //   36   60:getfield        #68  <Field float z>
+    //   37   63:fmul            
+    //   38   64:fstore          6
+        return new Matrix3(f1 + f2, f3, f5, f3, f2 + f, f4, f5, f4, f + f1);
+    //   39   66:new             #221 <Class Matrix3>
+    //   40   69:dup             
+    //   41   70:fload_2         
+    //   42   71:fload_3         
+    //   43   72:fadd            
+    //   44   73:fload           4
+    //   45   75:fload           6
+    //   46   77:fload           4
+    //   47   79:fload_3         
+    //   48   80:fload_1         
+    //   49   81:fadd            
+    //   50   82:fload           5
+    //   51   84:fload           6
+    //   52   86:fload           5
+    //   53   88:fload_1         
+    //   54   89:fload_2         
+    //   55   90:fadd            
+    //   56   91:invokespecial   #303 <Method void Matrix3(float, float, float, float, float, float, float, float, float)>
+    //   57   94:areturn         
+    }
+
+    public Vector3 cross(Vector3 vector3)
+    {
+        return new Vector3(y * vector3.z - z * vector3.y, z * vector3.x - x * vector3.z, x * vector3.y - y * vector3.x);
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #66  <Field float y>
+    //    4    8:aload_1         
+    //    5    9:getfield        #68  <Field float z>
+    //    6   12:fmul            
+    //    7   13:aload_0         
+    //    8   14:getfield        #68  <Field float z>
+    //    9   17:aload_1         
+    //   10   18:getfield        #66  <Field float y>
+    //   11   21:fmul            
+    //   12   22:fsub            
+    //   13   23:aload_0         
+    //   14   24:getfield        #68  <Field float z>
+    //   15   27:aload_1         
+    //   16   28:getfield        #64  <Field float x>
+    //   17   31:fmul            
+    //   18   32:aload_0         
+    //   19   33:getfield        #64  <Field float x>
+    //   20   36:aload_1         
+    //   21   37:getfield        #68  <Field float z>
+    //   22   40:fmul            
+    //   23   41:fsub            
+    //   24   42:aload_0         
+    //   25   43:getfield        #64  <Field float x>
+    //   26   46:aload_1         
+    //   27   47:getfield        #66  <Field float y>
+    //   28   50:fmul            
+    //   29   51:aload_0         
+    //   30   52:getfield        #66  <Field float y>
+    //   31   55:aload_1         
+    //   32   56:getfield        #64  <Field float x>
+    //   33   59:fmul            
+    //   34   60:fsub            
+    //   35   61:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   36   64:areturn         
+    }
+
+    public Matrix3 cross(Matrix3 matrix3)
+    {
+        return tilda().mul(matrix3);
+    //    0    0:aload_0         
+    //    1    1:invokevirtual   #309 <Method Matrix3 tilda()>
+    //    2    4:aload_1         
+    //    3    5:invokevirtual   #311 <Method Matrix3 Matrix3.mul(Matrix3)>
+    //    4    8:areturn         
+    }
+
+    public Vector3 project(Vector3 vector3, Vector3 vector3_1, Vector3 vector3_2)
+    {
+        return new Vector3(dot(vector3), dot(vector3_1), dot(vector3_2));
+    //    0    0:new             #1   <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:aload_1         
+    //    4    6:invokevirtual   #225 <Method float dot(Vector3)>
+    //    5    9:aload_0         
+    //    6   10:aload_2         
+    //    7   11:invokevirtual   #225 <Method float dot(Vector3)>
+    //    8   14:aload_0         
+    //    9   15:aload_3         
+    //   10   16:invokevirtual   #225 <Method float dot(Vector3)>
+    //   11   19:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   12   22:areturn         
+    }
+
+    public Vector2 project(Vector3 vector3, Vector3 vector3_1)
+    {
+        return new Vector2(dot(vector3.project(vector3, vector3_1, vector3)), dot(vector3_1));
+    //    0    0:new             #316 <Class Vector2>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:aload_1         
+    //    4    6:aload_1         
+    //    5    7:aload_2         
+    //    6    8:aload_1         
+    //    7    9:invokevirtual   #318 <Method Vector3 project(Vector3, Vector3, Vector3)>
+    //    8   12:invokevirtual   #225 <Method float dot(Vector3)>
+    //    9   15:aload_0         
+    //   10   16:aload_2         
+    //   11   17:invokevirtual   #225 <Method float dot(Vector3)>
+    //   12   20:invokespecial   #320 <Method void Vector2(float, float)>
+    //   13   23:areturn         
+    }
+
+    public Vector3 normal()
+    {
+        return z == 0.0F ? new Vector3(y, -x, 0.0F) : new Vector3(0.0F, z, -y);
+    //    0    0:aload_0         
+    //    1    1:getfield        #68  <Field float z>
+    //    2    4:fconst_0        
+    //    3    5:fcmpl           
+    //    4    6:ifeq            29
+    //    5    9:new             #1   <Class Vector3>
+    //    6   12:dup             
+    //    7   13:fconst_0        
+    //    8   14:aload_0         
+    //    9   15:getfield        #68  <Field float z>
+    //   10   18:aload_0         
+    //   11   19:getfield        #66  <Field float y>
+    //   12   22:fneg            
+    //   13   23:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   14   26:goto            46
+    //   15   29:new             #1   <Class Vector3>
+    //   16   32:dup             
+    //   17   33:aload_0         
+    //   18   34:getfield        #66  <Field float y>
+    //   19   37:aload_0         
+    //   20   38:getfield        #64  <Field float x>
+    //   21   41:fneg            
+    //   22   42:fconst_0        
+    //   23   43:invokespecial   #60  <Method void Vector3(float, float, float)>
+    //   24   46:areturn         
+    }
+
+    public Vector3 intern()
+    {
+        return (Vector3)vectors.intern(this);
+    //    0    0:getstatic       #35  <Field WeakHashSet vectors>
+    //    1    3:aload_0         
+    //    2    4:invokevirtual   #324 <Method Object WeakHashSet.intern(Object)>
+    //    3    7:checkcast       #1   <Class Vector3>
+    //    4   10:areturn         
+    }
+
+    public final boolean isFinite()
+    {
+        return GMath.isFinite(x) && GMath.isFinite(y) && GMath.isFinite(z);
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:invokestatic    #276 <Method boolean GMath.isFinite(float)>
+    //    3    7:ifeq            32
+    //    4   10:aload_0         
+    //    5   11:getfield        #66  <Field float y>
+    //    6   14:invokestatic    #276 <Method boolean GMath.isFinite(float)>
+    //    7   17:ifeq            32
+    //    8   20:aload_0         
+    //    9   21:getfield        #68  <Field float z>
+    //   10   24:invokestatic    #276 <Method boolean GMath.isFinite(float)>
+    //   11   27:ifeq            32
+    //   12   30:iconst_1        
+    //   13   31:ireturn         
+    //   14   32:iconst_0        
+    //   15   33:ireturn         
+    }
+
+    public final int compareTo(Vector3 vector3)
+    {
+        int i = Float.compare(x, vector3.x);
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_1         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:invokestatic    #329 <Method int Float.compare(float, float)>
+    //    5   11:istore_2        
+        if(i != 0)
+    //*   6   12:iload_2         
+    //*   7   13:ifeq            18
+        {
+            return i;
+    //    8   16:iload_2         
+    //    9   17:ireturn         
+        } else
+        {
+            int j = Float.compare(y, vector3.y);
+    //   10   18:aload_0         
+    //   11   19:getfield        #66  <Field float y>
+    //   12   22:aload_1         
+    //   13   23:getfield        #66  <Field float y>
+    //   14   26:invokestatic    #329 <Method int Float.compare(float, float)>
+    //   15   29:istore_2        
+            return j == 0 ? Float.compare(z, vector3.z) : j;
+    //   16   30:iload_2         
+    //   17   31:ifeq            38
+    //   18   34:iload_2         
+    //   19   35:goto            49
+    //   20   38:aload_0         
+    //   21   39:getfield        #68  <Field float z>
+    //   22   42:aload_1         
+    //   23   43:getfield        #68  <Field float z>
+    //   24   46:invokestatic    #329 <Method int Float.compare(float, float)>
+    //   25   49:ireturn         
+        }
+    }
+
+    public final String toString(String s)
+    {
+        return String.format(s, new Object[] {
+            Float.valueOf(x), Float.valueOf(y), Float.valueOf(z)
+        });
+    //    0    0:aload_1         
+    //    1    1:iconst_3        
+    //    2    2:anewarray       Object[]
+    //    3    5:dup             
+    //    4    6:iconst_0        
+    //    5    7:aload_0         
+    //    6    8:getfield        #64  <Field float x>
+    //    7   11:invokestatic    #335 <Method Float Float.valueOf(float)>
+    //    8   14:aastore         
+    //    9   15:dup             
+    //   10   16:iconst_1        
+    //   11   17:aload_0         
+    //   12   18:getfield        #66  <Field float y>
+    //   13   21:invokestatic    #335 <Method Float Float.valueOf(float)>
+    //   14   24:aastore         
+    //   15   25:dup             
+    //   16   26:iconst_2        
+    //   17   27:aload_0         
+    //   18   28:getfield        #68  <Field float z>
+    //   19   31:invokestatic    #335 <Method Float Float.valueOf(float)>
+    //   20   34:aastore         
+    //   21   35:invokestatic    #338 <Method String String.format(String, Object[])>
+    //   22   38:areturn         
+    }
+
+    public final boolean equals(Vector3 vector3, float f)
+    {
+        return Math.abs(x - vector3.x) <= f && Math.abs(y - vector3.y) <= f && Math.abs(z - vector3.z) <= f;
+    //    0    0:aload_0         
+    //    1    1:getfield        #64  <Field float x>
+    //    2    4:aload_1         
+    //    3    5:getfield        #64  <Field float x>
+    //    4    8:fsub            
+    //    5    9:invokestatic    #344 <Method float Math.abs(float)>
+    //    6   12:fload_2         
+    //    7   13:fcmpg           
+    //    8   14:ifgt            53
+    //    9   17:aload_0         
+    //   10   18:getfield        #66  <Field float y>
+    //   11   21:aload_1         
+    //   12   22:getfield        #66  <Field float y>
+    //   13   25:fsub            
+    //   14   26:invokestatic    #344 <Method float Math.abs(float)>
+    //   15   29:fload_2         
+    //   16   30:fcmpg           
+    //   17   31:ifgt            53
+    //   18   34:aload_0         
+    //   19   35:getfield        #68  <Field float z>
+    //   20   38:aload_1         
+    //   21   39:getfield        #68  <Field float z>
+    //   22   42:fsub            
+    //   23   43:invokestatic    #344 <Method float Math.abs(float)>
+    //   24   46:fload_2         
+    //   25   47:fcmpg           
+    //   26   48:ifgt            53
+    //   27   51:iconst_1        
+    //   28   52:ireturn         
+    //   29   53:iconst_0        
+    //   30   54:ireturn         
+    }
+
+    public final String toString()
+    {
+        return toString((String)defaultFormat.get());
+    //    0    0:aload_0         
+    //    1    1:getstatic       #56  <Field ThreadLocal defaultFormat>
+    //    2    4:invokevirtual   #75  <Method Object ThreadLocal.get()>
+    //    3    7:checkcast       #81  <Class String>
+    //    4   10:invokevirtual   #347 <Method String toString(String)>
+    //    5   13:areturn         
+    }
+
+    public final boolean equals(Object obj)
+    {
+        if(obj == this)
+    //*   0    0:aload_1         
+    //*   1    1:aload_0         
+    //*   2    2:if_acmpne       7
+            return true;
+    //    3    5:iconst_1        
+    //    4    6:ireturn         
+        try
+        {
+            Vector3 vector3 = (Vector3)obj;
+    //    5    7:aload_1         
+    //    6    8:checkcast       #1   <Class Vector3>
+    //    7   11:astore_2        
+            return vector3.x == x && vector3.y == y && vector3.z == z;
+    //    8   12:aload_2         
+    //    9   13:getfield        #64  <Field float x>
+    //   10   16:aload_0         
+    //   11   17:getfield        #64  <Field float x>
+    //   12   20:fcmpl           
+    //   13   21:ifne            50
+    //   14   24:aload_2         
+    //   15   25:getfield        #66  <Field float y>
+    //   16   28:aload_0         
+    //   17   29:getfield        #66  <Field float y>
+    //   18   32:fcmpl           
+    //   19   33:ifne            50
+    //   20   36:aload_2         
+    //   21   37:getfield        #68  <Field float z>
+    //   22   40:aload_0         
+    //   23   41:getfield        #68  <Field float z>
+    //   24   44:fcmpl           
+    //   25   45:ifne            50
+    //   26   48:iconst_1        
+    //   27   49:ireturn         
+    //   28   50:iconst_0        
+    //   29   51:ireturn         
+        }
+        catch(ClassCastException classcastexception)
+    //*  30   52:astore_2        
+        {
+            return false;
+    //   31   53:iconst_0        
+    //   32   54:ireturn         
+        }
+    }
+
+    public final int hashCode()
+    {
+        int i = 929;
+    //    0    0:sipush          929
+    //    1    3:istore_1        
+        char c = '\u0257';
+    //    2    4:sipush          599
+    //    3    7:istore_2        
+        i = i * 599 + Hash.hash(x);
+    //    4    8:iload_1         
+    //    5    9:sipush          599
+    //    6   12:imul            
+    //    7   13:aload_0         
+    //    8   14:getfield        #64  <Field float x>
+    //    9   17:invokestatic    #353 <Method int Hash.hash(float)>
+    //   10   20:iadd            
+    //   11   21:istore_1        
+        i = i * 599 + Hash.hash(y);
+    //   12   22:iload_1         
+    //   13   23:sipush          599
+    //   14   26:imul            
+    //   15   27:aload_0         
+    //   16   28:getfield        #66  <Field float y>
+    //   17   31:invokestatic    #353 <Method int Hash.hash(float)>
+    //   18   34:iadd            
+    //   19   35:istore_1        
+        i = i * 599 + Hash.hash(z);
+    //   20   36:iload_1         
+    //   21   37:sipush          599
+    //   22   40:imul            
+    //   23   41:aload_0         
+    //   24   42:getfield        #68  <Field float z>
+    //   25   45:invokestatic    #353 <Method int Hash.hash(float)>
+    //   26   48:iadd            
+    //   27   49:istore_1        
+        return i;
+    //   28   50:iload_1         
+    //   29   51:ireturn         
+    }
+
+    public volatile int compareTo(Object obj)
+    {
+        return compareTo((Vector3)obj);
+    //    0    0:aload_0         
+    //    1    1:aload_1         
+    //    2    2:checkcast       #1   <Class Vector3>
+    //    3    5:invokevirtual   #360 <Method int compareTo(Vector3)>
+    //    4    8:ireturn         
+    }
+
+    private static final WeakHashSet vectors = new WeakHashSet();
+    public static final Vector3 Zero = intern(0.0F, 0.0F, 0.0F);
+    public static final Vector3 X = intern(1.0F, 0.0F, 0.0F);
+    public static final Vector3 Y = intern(0.0F, 1.0F, 0.0F);
+    public static final Vector3 Z = intern(0.0F, 0.0F, 1.0F);
+    public static final ThreadLocal defaultFormat = new SimpleThreadLocal("(%s,%s,%s)");
+    public final float x;
+    public final float y;
+    public final float z;
+    public static long counter;
+
+    static 
+    {
+    //    0    0:new             #30  <Class WeakHashSet>
+    //    1    3:dup             
+    //    2    4:invokespecial   #32  <Method void WeakHashSet()>
+    //    3    7:putstatic       #35  <Field WeakHashSet vectors>
+    //    4   10:fconst_0        
+    //    5   11:fconst_0        
+    //    6   12:fconst_0        
+    //    7   13:invokestatic    #37  <Method Vector3 intern(float, float, float)>
+    //    8   16:putstatic       #41  <Field Vector3 Zero>
+    //    9   19:fconst_1        
+    //   10   20:fconst_0        
+    //   11   21:fconst_0        
+    //   12   22:invokestatic    #37  <Method Vector3 intern(float, float, float)>
+    //   13   25:putstatic       #43  <Field Vector3 X>
+    //   14   28:fconst_0        
+    //   15   29:fconst_1        
+    //   16   30:fconst_0        
+    //   17   31:invokestatic    #37  <Method Vector3 intern(float, float, float)>
+    //   18   34:putstatic       #45  <Field Vector3 Y>
+    //   19   37:fconst_0        
+    //   20   38:fconst_0        
+    //   21   39:fconst_1        
+    //   22   40:invokestatic    #37  <Method Vector3 intern(float, float, float)>
+    //   23   43:putstatic       #47  <Field Vector3 Z>
+    //   24   46:new             #49  <Class SimpleThreadLocal>
+    //   25   49:dup             
+    //   26   50:ldc1            #51  <String "(%s,%s,%s)">
+    //   27   52:invokespecial   #53  <Method void SimpleThreadLocal(Object)>
+    //   28   55:putstatic       #56  <Field ThreadLocal defaultFormat>
+    //*  29   58:return          
+    }
+}

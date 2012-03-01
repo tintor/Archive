@@ -1,0 +1,30 @@
+<property name="fast_block"><boolean>true</boolean></property>
+<property name="frozen_boxes"><boolean>true</boolean></property>
+<property name="level.file"><string>levels/original</string></property>
+<property name="level.id"><int>4</int></property>
+<property name="levels_directory"><string>levels</string></property>
+<property name="properties.sleep_time"><int>1000</int></property>
+<property name="shell.maximized"><boolean>true</boolean></property>
+<property name="shell.size"><org.eclipse.swt.graphics.Point>
+  <x>1680</x>
+  <y>1050</y>
+</org.eclipse.swt.graphics.Point></property>
+<property name="shell.title"><string>Markoban</string></property>
+<property name="show.agent"><boolean>true</boolean></property>
+<property name="show.articulations"><boolean>false</boolean></property>
+<property name="show.boxes"><boolean>true</boolean></property>
+<property name="show.dead_cells"><boolean>true</boolean></property>
+<property name="show.goals"><boolean>true</boolean></property>
+<property name="show.matching_goals"><boolean>false</boolean></property>
+<property name="show.push_distances"><boolean>false</boolean></property>
+<property name="show.tunnel_lengths"><boolean>false</boolean></property>
+<property name="show.unreachable"><boolean>false</boolean></property>
+<property name="tintor.sokoban2.gui.Main.console.font.name"><string>Courier New</string></property>
+<property name="tintor.sokoban2.gui.Main.console.font.size"><int>9</int></property>
+<property name="tintor.sokoban2.gui.Main.shell.location"><java.util.Arrays_-ArrayList>
+  <a class="java.lang.Integer-array">
+    <int>0</int>
+    <int>0</int>
+  </a>
+</java.util.Arrays_-ArrayList></property>
+<property name="tintor.sokoban2.gui.Main.shell.maximized"><boolean>true</boolean></property>

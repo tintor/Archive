@@ -1,0 +1,118 @@
+tetrahedron
+	// (+1, +1, +1) (−1, −1, +1) (−1, +1, −1) (+1, −1, −1)
+	//		Vector3 ppp = new Vector3(1, 1, 1), nnp = new Vector3(-1, -1, 1);
+	//		Vector3 npn = new Vector3(-1, 1, -1), pnn = new Vector3(1, -1, -1);
+	//		return new ConvexPolyhedron(new ConvexPolygon3[] { new ConvexPolygon3(nnp, npn, pnn),
+	//				new ConvexPolygon3(npn, ppp, pnn), new ConvexPolygon3(ppp, nnp, pnn),
+	//				new ConvexPolygon3(nnp, ppp, npn) });
+
+	public static ConvexPolyhedron octahedron(double a) {
+		a *= Math.sqrt(2);
+		Vector3 xp = new Vector3(a, 0, 0), xn = new Vector3(-a, 0, 0);
+		Vector3 yp = new Vector3(0, a, 0), yn = new Vector3(0, -a, 0);
+		Vector3 zp = new Vector3(0, 0, a), zn = new Vector3(0, 0, -a);
+		return new ConvexPolyhedron(new ConvexPolygon3[] { new ConvexPolygon3(zp, xp, yp),
+				new ConvexPolygon3(zp, yp, xn), new ConvexPolygon3(zp, yn, xp), new ConvexPolygon3(zp, xn, yn),
+				new ConvexPolygon3(zn, yp, xp), new ConvexPolygon3(zn, xp, yn), new ConvexPolygon3(zn, yn, xn),
+				new ConvexPolygon3(zn, xn, yp) });
+	}
+
+	public static ConvexPolyhedron dodecahedron() {
+		assert false;
+		// NOTE: implement
+
+		final double φ = (1 + Math.sqrt(5)) / 2;
+
+		Vector3 ppp = new Vector3(1, 1, 1), ppn = new Vector3(1, 1, -1);
+		Vector3 pnp = new Vector3(1, -1, 1), pnn = new Vector3(1, -1, -1);
+		Vector3 npp = new Vector3(-1, 1, 1), npn = new Vector3(-1, 1, -1);
+		Vector3 nnp = new Vector3(-1, -1, 1), nnn = new Vector3(-1, -1, -1);
+
+		Vector3 app = new Vector3(0, 1 / φ, φ), apn = new Vector3(0, 1 / φ, -φ);
+		Vector3 anp = new Vector3(0, -1 / φ, φ), ann = new Vector3(0, -1 / φ, -φ);
+		Vector3 bpp = new Vector3(φ, 0, 1 / φ), bpn = new Vector3(φ, 0, -1 / φ);
+		Vector3 bnp = new Vector3(-φ, 0, 1 / φ), bnn = new Vector3(-φ, 0, -1 / φ);
+		Vector3 cpp = new Vector3(1 / φ, φ, 0), cpn = new Vector3(1 / φ, -φ, 0);
+		Vector3 cnp = new Vector3(-1 / φ, φ, 0), cnn = new Vector3(-1 / φ, -φ, 0);
+
+		// edge = 2/φ = √5-1
+		Vector3[] v = new Vector3[] { ppp, ppn, pnp, pnn, npp, npn, nnp, nnn, app, apn, anp, ann, bpp, bpn, bnp,
+				bnn, cpp, cpn, cnp, cnn };
+
+		ConvexPolygon3[] p = new ConvexPolygon3[12];
+		int i = 0;
+
+		double k = 6 - 2 * Math.sqrt(5);
+
+		for (int a = 0; a < v.length; a++)
+			for (int b = a + 1; b < v.length; b++) {
+				if (Math.abs(v[a].quad(v[b]) - k) > 0.001)
+					continue;
+				for (int c = a + 1; c < v.length; c++) {
+					if (Math.abs(v[b].quad(v[c]) - k) > 0.001)
+						continue;
+					for (int d = a + 1; d < v.length; d++) {
+						if (Math.abs(v[c].quad(v[d]) - k) > 0.001)
+							continue;
+						for (int e = a + 1; e < v.length; e++) {
+							if (Math.abs(v[d].quad(v[e]) - k) > 0.001)
+								continue;
+							if (Math.abs(v[e].quad(v[a]) - k) > 0.001)
+								continue;
+
+							Vector3[] r = new Vector3[] { v[a], v[b], v[c], v[d], v[e] };
+							ConvexPolygon3 q = new ConvexPolygon3(r);
+							if (q.plane.distance(Vector3.Zero) < 0)
+								p[i++] = q;
+						}
+					}
+				}
+			}
+		System.out.println(i);
+		return new ConvexPolyhedron(p);
+	}
+
+	static final double φ = (1 + Math.sqrt(5)) / 2;
+
+	public static ConvexPolyhedron icosahedron() {
+		assert false;
+		// NOTE: implement
+
+		Vector3 app = new Vector3(0, 1, φ), apn = new Vector3(0, 1, -φ);
+		Vector3 anp = new Vector3(0, -1, φ), ann = new Vector3(0, -1, -φ);
+		Vector3 bpp = new Vector3(φ, 0, 1), bpn = new Vector3(φ, 0, -1);
+		Vector3 bnp = new Vector3(-φ, 0, 1), bnn = new Vector3(-φ, 0, -1);
+		Vector3 cpp = new Vector3(1, φ, 0), cpn = new Vector3(1, -φ, 0);
+		Vector3 cnp = new Vector3(-1, φ, 0), cnn = new Vector3(-1, -φ, 0);
+
+		// edge = 2
+
+		//		return new ConvexPolyhedron(new ConvexPolygon3[] { new ConvexPolygon3(app, anp, bpp),
+		//				new ConvexPolygon3(app, anp, bnp), new ConvexPolygon3(apn, ann, bpn),
+		//				new ConvexPolygon3(apn, ann, bnn), new ConvexPolygon3(cpp, cnp, app),
+		//				new ConvexPolygon3(cpp, cnp, apn), new ConvexPolygon3(cpn, cnn, ann), new ConvexPolygon3(cpn, cnn, anp) });
+		Vector3[] v = new Vector3[] { app, apn, anp, ann, bpp, bpn, bnp, bnn, cpp, cpn, cnp, cnn };
+
+		ConvexPolygon3[] p = new ConvexPolygon3[20];
+		int i = 0;
+
+		double k = 4;
+
+		for (int a = 0; a < v.length; a++)
+			for (int b = a + 1; b < v.length; b++) {
+				if (Math.abs(v[a].quad(v[b]) - k) > 0.001)
+					continue;
+				for (int c = a + 1; c < v.length; c++) {
+					if (Math.abs(v[b].quad(v[c]) - k) > 0.001)
+						continue;
+					if (Math.abs(v[c].quad(v[a]) - k) > 0.001)
+						continue;
+
+					Vector3[] r = new Vector3[] { v[a], v[b], v[c] };
+					ConvexPolygon3 q = new ConvexPolygon3(r);
+					if (q.plane.distance(Vector3.Zero) < 0)
+						p[i++] = q;
+				}
+			}
+		return new ConvexPolyhedron(p);
+	}

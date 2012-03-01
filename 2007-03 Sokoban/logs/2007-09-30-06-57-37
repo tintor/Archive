@@ -1,0 +1,81 @@
+levels/simple:6
+
+total=0 distance=0 carries=0
+#################
+#########     ###
+######### $#$ ###
+#########   $ ###
+##########  $ ###
+#########   # ###
+#...   ## $ $   #
+##..      $ $   #
+#...   ##########
+#################
+
+there are 43 nondead cells and 8 boxes, maximum of 145008513 keys!
+#: time=5007ms keys=17k k/s=3344 c/k=37 branch=5.5(5.5) deadlocks[fast2x2=8987 frozenBoxes=15k]34% queue=40k(58k)4% set=57k(131k)5% queue/set=70% deadlock/set=0.42 memFree=4608k
+total=98 distance=44 carries=9
+#################
+#########     ###
+######### $#  ###
+######### $   ###
+##########    ###
+#########   # ###
+#???$!!## $ $   #
+##*?!!$         #
+#?*?!!!##########
+#################
+
+#: time=10s keys=35k k/s=3585 c/k=36 branch=5.7(5.6) deadlocks[fast2x2=19k frozenBoxes=27k]29% queue=82k(86k)4% set=117k(262k)7% queue/set=70% deadlock/set=0.39 memFree=4478k
+total=98 distance=49 carries=10
+#################
+#########     ###
+######### $#  ###
+######### $   ###
+##########    ###
+#########  $# ###
+#...   ##       #
+##**$$          #
+#???!$ ##########
+#################
+
+#: time=15s keys=53k k/s=3666 c/k=35 branch=6.3(5.8) deadlocks[fast2x2=32k frozenBoxes=36k]30% queue=129k(130k)4% set=182k(262k)6% queue/set=71% deadlock/set=0.37 memFree=11M
+total=98 distance=32 carries=10
+#################
+#########     ###
+######### $#  ###
+######### $   ###
+##########    ###
+#########  $# ###
+#??*!!!## $ $   #
+##??!!$         #
+#???$!!##########
+#################
+
+#: time=20s keys=73k k/s=4012 c/k=35 branch=5.3(5.7) deadlocks[fast2x2=42k frozenBoxes=51k hash=2]26% queue=178k(194k)4% set=251k(524k)6% queue/set=71% deadlock/set=0.37 memFree=23M
+total=98 distance=47 carries=10
+#################
+#########     ###
+######### $#  ###
+######### $   ###
+##########    ###
+#########   # ###
+#*??$!!##$$     #
+##??!!!$        #
+#??*!!!##########
+#################
+
+#: time=24s keys=91k k/s=3923 c/k=37 branch=5.9(5.7) deadlocks[fast2x2=51k frozenBoxes=61k hash=6]32% queue=220k(292k)4% set=310k(524k)6% queue/set=71% deadlock/set=0.36 memFree=13M
+solution
+total=98 distance=98 carries=14
+#################
+#########     ###
+#########  #  ###
+#########     ###
+##########    ###
+#########   # ###
+#***   ##       #
+##**            #
+#***   ##########
+#################
+

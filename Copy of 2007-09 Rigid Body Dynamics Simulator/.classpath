@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="tintor/rigidbody/model/FeaturePair.java|tintor/rigidbody/model/solid/|tintor/rigidbody/model/collisiondetection/algorithms/AdaptiveSpatialHashing.java|tintor/rigidbody/model/collisiondetection/algorithms/KineticSweepAndPrune.java|tintor/rigidbody/model/collisiondetection/algorithms/SimpleSpatialHashing.java|tintor/rigidbody/model/collisiondetection/algorithms/SpatialHashing.java|tintor/rigidbody/model/collisiondetection/algorithms/SweepAndPrune.java|tintor/rigidbody/model/joint/|tintor/rigidbody/model/sensor/|tintor/rigidbody/model/collisiondetection/|tintor/rigidbody/model/effector/GearedMotor.java|tintor/rigidbody/main/worlds/AATrebuchet.java|tintor/rigidbody/model/collisiondetector/SpatialHashing.java|tintor/rigidbody/model/Concave.java|Merge.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Library"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

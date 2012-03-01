@@ -1,0 +1,6 @@
+<world
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="world.xsd">
+	<body position="0,1,1">
+		<shape></shape>
+	</body>
+</world>

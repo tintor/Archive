@@ -1,0 +1,9 @@
+def sum a b
+	a + b
+
+a = 0
+s = 0
+while 0 <= a < 10
+	s = sum s, a
+	a = sum a, 1
+puts s

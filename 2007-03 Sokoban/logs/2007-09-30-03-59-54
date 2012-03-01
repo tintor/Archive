@@ -1,0 +1,782 @@
+levels/original:2
+
+distance=0 total=0 carries=0
+##############
+#..  #!!!!!###
+#..  #!$!!$!!#
+#..  #$####!!#
+#..      ##!!#
+#..  # #  $!##
+###### ##$!$!#
+### $  $!$!$!#
+###    #!!!!!#
+##############
+
+there are 46 nondead cells and 10 boxes, maximum of 4076350421 keys!
+#: time=5000ms keys=45k k/s=8964 c/k=45 branch=5.5(5.5) deadlocks[] queue=44k(58k) memory[free=1335k max=531M]
+distance=21 total=131 carries=12
+##############
+#..  #     ###
+#..  # $ $   #
+#..  #$####  #
+#..      ##  #
+#..  #$#    ##
+######!##$$  #
+###!$$$  $   #
+###!!!!#     #
+##############
+
+#: time=10s keys=91k k/s=9239 c/k=40 branch=6.0(5.7) deadlocks[] queue=90k(130k) memory[free=8250k max=531M]
+distance=24 total=133 carries=13
+##############
+#..  #     ###
+#..  # $$    #
+#..  #$####  #
+#..      ##  #
+#..  #$#    ##
+######!##    #
+###!$$!$$ $$ #
+###!!!!#     #
+##############
+
+#: time=15s keys=142k k/s=10k c/k=39 branch=5.6(5.7) deadlocks[] queue=125k(130k) memory[free=20M max=531M]
+distance=24 total=133 carries=12
+##############
+#..  #!!!!!###
+#..  #!$!$$  #
+#..  #$####  #
+#..      ##  #
+#..  #$#    ##
+######!##    #
+###!$!$$ $ $ #
+###!!!!#     #
+##############
+
+#: time=20s keys=197k k/s=11k c/k=36 branch=5.8(5.7) deadlocks[] queue=162k(194k) memory[free=11M max=531M]
+distance=18 total=133 carries=13
+##############
+#..  #!!!!!###
+#..  #$$!!$  #
+#..  # ####  #
+#..      ##  #
+#..  # #    ##
+######$##$$  #
+###!$$!$  $  #
+###!!!!#     #
+##############
+
+#: time=25s keys=249k k/s=10k c/k=34 branch=5.7(5.7) deadlocks[] queue=197k(292k) memory[free=33M max=531M]
+distance=15 total=133 carries=11
+##############
+#..  #!!!!!###
+#..  #!!$$$  #
+#..  #$####  #
+#..      ##  #
+#..  # #    ##
+###### ##  $ #
+###!!$$$$  $ #
+###!!!!#     #
+##############
+
+#: time=30s keys=309k k/s=12k c/k=32 branch=5.7(5.7) deadlocks[] queue=235k(292k) memory[free=22M max=531M]
+distance=13 total=133 carries=8
+##############
+#??!!#!!!!!###
+#??!!#!$!$$  #
+#??!!#$####$ #
+#??!!!!!!##  #
+#??!!#!#!!$ ##
+######!##$   #
+###!$!$  $   #
+###!!!!#     #
+##############
+
+#: time=35s keys=369k k/s=12k c/k=33 branch=5.5(5.7) deadlocks[] queue=271k(292k) memory[free=9201k max=531M]
+distance=35 total=133 carries=17
+##############
+#..  #     ###
+#..  #$  $   #
+#..  #$####  #
+#..      ##  #
+#*.  # #    ##
+###### ## $  #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=40s keys=401k k/s=6349 c/k=51 branch=5.5(5.7) deadlocks[ hash=288] queue=287k(292k) memory[free=55M max=531M]
+distance=53 total=135 carries=22
+##############
+#*.  #     ###
+#..  #   $   #
+#..  # ####  #
+#.*      ##  #
+#*.  # #    ##
+###### ##$   #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=45s keys=432k k/s=6181 c/k=54 branch=6.9(5.8) deadlocks[ hash=560] queue=302k(438k) memory[free=59M max=531M]
+distance=53 total=133 carries=21
+##############
+#.*  #     ###
+#..$ # $     #
+#.*  # ####  #
+#..      ##  #
+#..  # #    ##
+###### ##    #
+###!$$$$$$   #
+###!!!!#     #
+##############
+
+#: time=50s keys=459k k/s=5464 c/k=53 branch=8.0(5.9) deadlocks[ hash=580] queue=317k(438k) memory[free=57M max=531M]
+distance=49 total=135 carries=23
+##############
+#..  #     ###
+#.*  #       #
+#..  #$####  #
+#*.      ##  #
+#..  # #    ##
+######$##    #
+###!$$$$$$   #
+###!!!!#     #
+##############
+
+#: time=55s keys=489k k/s=6077 c/k=52 branch=7.4(6.0) deadlocks[ hash=622] queue=337k(438k) memory[free=43M max=531M]
+distance=47 total=135 carries=24
+##############
+#..  #     ###
+#..  # $     #
+#.*  # ####  #
+#..      ##  #
+#*.  # #    ##
+######$##    #
+###!$$$$$$   #
+###!!!!#     #
+##############
+
+#: time=60s keys=523k k/s=6804 c/k=48 branch=7.0(6.1) deadlocks[ hash=692] queue=358k(438k) memory[free=45M max=531M]
+distance=38 total=133 carries=16
+##############
+#..  #     ###
+#..  #$$ $   #
+#..$ #$####  #
+#..      ##  #
+#..  # #    ##
+###### ##    #
+###!$$$!$$   #
+###!!!!#     #
+##############
+
+#: time=65s keys=559k k/s=7080 c/k=48 branch=6.3(6.1) deadlocks[ hash=772] queue=374k(438k) memory[free=22M max=531M]
+distance=61 total=133 carries=26
+##############
+#**  #     ###
+#..  #       #
+#..$ # ####  #
+#*.      ##  #
+#..  # #    ##
+###### ##    #
+###!$$$$$  $ #
+###!!!!#     #
+##############
+
+#: time=70s keys=589k k/s=5935 c/k=53 branch=7.6(6.1) deadlocks[ hash=865] queue=387k(438k) memory[free=22M max=531M]
+distance=46 total=133 carries=20
+##############
+#.*  #     ###
+#..  # $     #
+#*.  # ####  #
+#..      ##  #
+#..  #$#    ##
+######!##    #
+###!$$$$$  $ #
+###!!!!#     #
+##############
+
+#: time=75s keys=616k k/s=5516 c/k=53 branch=8.2(6.2) deadlocks[ hash=936] queue=398k(438k) memory[free=14M max=531M]
+distance=57 total=135 carries=24
+##############
+#.*$ #!!!!!###
+#..  #$!!!!$ #
+#..  # ####  #
+#..      ##  #
+#..$ # #    ##
+###### ##    #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=80s keys=641k k/s=4989 c/k=53 branch=9.2(6.4) deadlocks[ hash=955] queue=410k(438k) memory[free=20M max=531M]
+distance=57 total=135 carries=23
+##############
+#.*  #     ###
+#..$ # $ $   #
+#..  # ####  #
+#.*      ##  #
+#..  # #    ##
+###### ##    #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=85s keys=667k k/s=5193 c/k=53 branch=8.7(6.4) deadlocks[ hash=967] queue=424k(438k) memory[free=11M max=531M]
+distance=55 total=135 carries=24
+##############
+#..  #     ###
+#..$ #       #
+#*.  # ####  #
+#..      ##  #
+#*.  #$#    ##
+######!## $  #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=90s keys=686k k/s=3664 c/k=52 branch=9.3(6.5) deadlocks[ hash=967] queue=435k(438k) memory[free=105M max=531M]
+distance=66 total=135 carries=28
+##############
+#*.$ #     ###
+#..  #       #
+#..  #$####  #
+#*.      ##  #
+#..  #$#    ##
+######!##    #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=95s keys=710k k/s=4778 c/k=55 branch=9.1(6.6) deadlocks[ hash=1015] queue=452k(656k) memory[free=99M max=531M]
+distance=61 total=135 carries=29
+##############
+#..$ #     ###
+#..  #       #
+#.*  # ####$ #
+#*.      ##  #
+#..$ # #    ##
+###### ##    #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=100s keys=733k k/s=4631 c/k=53 branch=9.8(6.7) deadlocks[ hash=1015] queue=467k(656k) memory[free=94M max=531M]
+distance=44 total=135 carries=21
+##############
+#..  #     ###
+#..$ # $     #
+#..  # ####  #
+#..      ##  #
+#..$ #$#    ##
+######!##    #
+###!$$$$$  $ #
+###!!!!#     #
+##############
+
+#: time=105s keys=766k k/s=6615 c/k=49 branch=7.0(6.7) deadlocks[ hash=1241] queue=486k(656k) memory[free=85M max=531M]
+distance=47 total=135 carries=22
+##############
+#..  #     ###
+#..  #$ $$   #
+#..  # ####  #
+#.*      ##  #
+#.*  # #    ##
+###### ##    #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=110s keys=795k k/s=5805 c/k=49 branch=8.3(6.8) deadlocks[ hash=1241] queue=502k(656k) memory[free=69M max=531M]
+distance=47 total=135 carries=22
+##############
+#..  #     ###
+#.*  #  $    #
+#*.  # ####  #
+#..      ##$ #
+#..  #$#    ##
+######!##    #
+###!$$$$$    #
+###!!!!#     #
+##############
+
+#: time=115s keys=828k k/s=6665 c/k=49 branch=7.4(6.8) deadlocks[ hash=1241] queue=520k(656k) memory[free=76M max=531M]
+distance=35 total=131 carries=13
+##############
+#..  #!!!!!###
+#.*  #$$!!!$ #
+#..  #$####  #
+#..      ##  #
+#..  # #    ##
+###### ## $  #
+###!$$$$     #
+###!!!!#     #
+##############
+
+#: time=120s keys=866k k/s=7484 c/k=48 branch=6.5(6.8) deadlocks[ hash=1482] queue=541k(656k) memory[free=62M max=531M]
+distance=64 total=135 carries=26
+##############
+#*.  #     ###
+#**  #       #
+#..  # ####  #
+#..      ##  #
+#*.  # #  $ ##
+###### ##    #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=125s keys=893k k/s=5441 c/k=55 branch=8.3(6.8) deadlocks[ hash=2062] queue=560k(656k) memory[free=65M max=531M]
+distance=62 total=135 carries=25
+##############
+#*.  #     ###
+#?*  #       #
+#*.  # ####  #
+#..      ##  #
+#..$ # #   $##
+###### ##    #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=130s keys=921k k/s=5549 c/k=53 branch=8.4(6.9) deadlocks[ hash=2151] queue=581k(656k) memory[free=52M max=531M]
+distance=53 total=135 carries=22
+##############
+#*.  #     ###
+#..  # $     #
+#**  # ####  #
+#..      ##  #
+#..  # #  $ ##
+###### ##    #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=135s keys=948k k/s=5422 c/k=53 branch=8.6(6.9) deadlocks[ hash=2744] queue=601k(656k) memory[free=56M max=531M]
+distance=69 total=135 carries=26
+##############
+#*.  #     ###
+#*.$ #   $   #
+#..  # ####  #
+#..      ##  #
+#*.  # #    ##
+###### ##    #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=140s keys=972k k/s=4802 c/k=55 branch=8.9(7.0) deadlocks[ hash=2793] queue=618k(656k) memory[free=48M max=531M]
+distance=64 total=135 carries=24
+##############
+#?*  #     ###
+#*.  #     $ #
+#*.$ # ####  #
+#..      ##  #
+#..  # #    ##
+###### ##$   #
+###!$$$$     #
+###!!!!#     #
+##############
+
+#: time=145s keys=990k k/s=3559 c/k=55 branch=9.7(7.0) deadlocks[ hash=2841] queue=629k(656k) memory[free=39M max=531M]
+distance=60 total=135 carries=25
+##############
+#..  #     ###
+#**  #       #
+#..$ # ####  #
+#..      ##  #
+#.*  # #    ##
+###### ##$   #
+###!$$$$  $  #
+###!!!!#     #
+##############
+
+#: time=150s keys=1015k k/s=5018 c/k=52 branch=9.2(7.1) deadlocks[ hash=2929] queue=647k(656k) memory[free=34M max=531M]
+distance=52 total=135 carries=22
+##############
+#*.  #     ###
+#..  # $     #
+#..  # ####  #
+#..      ##  #
+#*.$ # #    ##
+###### ##$$  #
+###!$$$$     #
+###!!!!#     #
+##############
+
+#: time=155s keys=1039k k/s=4758 c/k=53 branch=10.0(7.1) deadlocks[ hash=2929] queue=664k(985k) memory[free=24M max=531M]
+distance=52 total=135 carries=23
+##############
+#..  #     ###
+#..  # $     #
+#**  # ####  #
+#*.      ##  #
+#..  # #    ##
+###### ##$   #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=160s keys=1063k k/s=4914 c/k=53 branch=9.6(7.2) deadlocks[ hash=2929] queue=683k(985k) memory[free=22M max=531M]
+distance=55 total=135 carries=25
+##############
+#.*  #     ###
+#..  #       #
+#..$ #$####  #
+#..      ##  #
+#*.  # #    ##
+###### ##    #
+###!$$$$ $$  #
+###!!!!#     #
+##############
+
+#: time=167s keys=1082k k/s=2714 c/k=54 branch=10.9(7.3) deadlocks[ hash=2929] queue=698k(985k) memory[free=185M max=531M]
+distance=46 total=135 carries=22
+##############
+#.*  #     ###
+#..  #$      #
+#..  # ####  #
+#*.      ##  #
+#..  #$#    ##
+######!##$   #
+###!$$$$   $ #
+###!!!!#     #
+##############
+
+#: time=172s keys=1106k k/s=4783 c/k=53 branch=9.9(7.3) deadlocks[ hash=2960] queue=718k(985k) memory[free=179M max=531M]
+distance=57 total=133 carries=25
+##############
+#..  #     ###
+#.*  #       #
+#.*  # ####  #
+#..$     ##  #
+#*.  # #    ##
+###### ##    #
+###!$$$$$  $ #
+###!!!!#     #
+##############
+
+#: time=177s keys=1123k k/s=3418 c/k=56 branch=9.8(7.4) deadlocks[ hash=3003] queue=732k(985k) memory[free=172M max=531M]
+distance=68 total=135 carries=26
+##############
+#..  #     ###
+#.*$ #       #
+#.*  #$####  #
+#..      ##  #
+#.*  # #    ##
+###### ##    #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=182s keys=1144k k/s=4183 c/k=54 branch=10.8(7.4) deadlocks[ hash=3030] queue=750k(985k) memory[free=143M max=531M]
+distance=57 total=133 carries=25
+##############
+#..  #     ###
+#.*$ #       #
+#*.  # ####  #
+#.*      ##  #
+#..  # #    ##
+###### ##$   #
+###!$$$$  $  #
+###!!!!#     #
+##############
+
+#: time=187s keys=1165k k/s=4277 c/k=55 branch=10.8(7.5) deadlocks[ hash=3147] queue=767k(985k) memory[free=159M max=531M]
+distance=53 total=135 carries=26
+##############
+#..$ #     ###
+#..  #       #
+#.*  #$####  #
+#*.      ##  #
+#..  # #    ##
+###### ##$   #
+###!$$$$  $  #
+###!!!!#     #
+##############
+
+#: time=192s keys=1187k k/s=4264 c/k=56 branch=10.6(7.5) deadlocks[ hash=3147] queue=784k(985k) memory[free=142M max=531M]
+distance=66 total=135 carries=29
+##############
+#..$ #     ###
+#*.$ #   $   #
+#..  # ####  #
+#..      ##  #
+#*.  # #    ##
+###### ##    #
+###!$$$$  $  #
+###!!!!#     #
+##############
+
+#: time=197s keys=1209k k/s=4355 c/k=54 branch=10.7(7.6) deadlocks[ hash=3147] queue=803k(985k) memory[free=133M max=531M]
+distance=51 total=135 carries=24
+##############
+#..  #     ###
+#.*  #       #
+#.*  #$####  #
+#.*      ##  #
+#..  # #    ##
+###### ##$   #
+###!$$$$   $ #
+###!!!!#     #
+##############
+
+#: time=202s keys=1232k k/s=4615 c/k=51 branch=10.5(7.7) deadlocks[ hash=3147] queue=823k(985k) memory[free=123M max=531M]
+distance=41 total=133 carries=17
+##############
+#*.  #     ###
+#..  # $  $  #
+#..  # ####  #
+#..      ##  #
+#*.  # #    ##
+###### ##$   #
+###!$$$$  $  #
+###!!!!#     #
+##############
+
+#: time=207s keys=1262k k/s=6081 c/k=49 branch=7.8(7.7) deadlocks[ hash=3344] queue=849k(985k) memory[free=151M max=531M]
+distance=51 total=133 carries=29
+##############
+#.*  #     ###
+#..  # $     #
+#..  # ####  #
+#*.      ##  #
+#*.  # #    ##
+###### ##    #
+###!$$$$ $ $ #
+###!!!!#     #
+##############
+
+#: time=212s keys=1284k k/s=4469 c/k=51 branch=9.7(7.7) deadlocks[ hash=3407] queue=869k(985k) memory[free=135M max=531M]
+distance=49 total=135 carries=24
+##############
+#..  #     ###
+#..  # $ $   #
+#..$ #$####  #
+#..      ##  #
+#*.  # #    ##
+###### ##    #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=217s keys=1306k k/s=4366 c/k=50 branch=9.4(7.7) deadlocks[ hash=3407] queue=886k(985k) memory[free=121M max=531M]
+distance=47 total=135 carries=21
+##############
+#.*  #!!!!!###
+#..  #!!!$!$ #
+#..  #$####  #
+#..      ##  #
+#*.  # #    ##
+###### ##$   #
+###!$$$$     #
+###!!!!#     #
+##############
+
+#: time=222s keys=1327k k/s=4102 c/k=49 branch=10.0(7.8) deadlocks[ hash=3407] queue=903k(985k) memory[free=108M max=531M]
+distance=42 total=135 carries=21
+##############
+#..  #     ###
+#*.  #$ $    #
+#..  # ####  #
+#..$     ##  #
+#..  # #    ##
+###### ## $  #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=227s keys=1345k k/s=3738 c/k=49 branch=10.0(7.8) deadlocks[ hash=3407] queue=918k(985k) memory[free=106M max=531M]
+distance=44 total=135 carries=23
+##############
+#..  #     ###
+#*.  #  $    #
+#*.  #$####  #
+#..      ##  #
+#..  # #    ##
+###### ##$ $ #
+###!$$$$     #
+###!!!!#     #
+##############
+
+#: time=232s keys=1372k k/s=5384 c/k=48 branch=9.0(7.8) deadlocks[ hash=3407] queue=936k(985k) memory[free=129M max=531M]
+distance=38 total=135 carries=16
+##############
+#*.  #!!!!!###
+#..  #$!!!$!!#
+#..  #$####!!#
+#..      ##$!#
+#..  # #    ##
+###### ##    #
+###!$$$$ $   #
+###!!!!#     #
+##############
+
+#: time=237s keys=1409k k/s=7415 c/k=47 branch=6.7(7.8) deadlocks[ hash=3407] queue=953k(985k) memory[free=114M max=531M]
+distance=41 total=131 carries=18
+##############
+#.*  #!!!!!###
+#..  #!!!!$  #
+#..  #$####  #
+#.*      ##  #
+#..  # #    ##
+###### ##    #
+###!$$$$$$   #
+###!!!!#     #
+##############
+
+#: time=242s keys=1441k k/s=6234 c/k=52 branch=7.2(7.8) deadlocks[ hash=3512] queue=967k(985k) memory[free=102M max=531M]
+distance=49 total=135 carries=21
+##############
+#..$ #     ###
+#..$ #       #
+#*.  # ####  #
+#..      ##$ #
+#..  # #    ##
+###### ##    #
+###!$$$$$$   #
+###!!!!#     #
+##############
+
+#: time=247s keys=1468k k/s=5372 c/k=52 branch=7.9(7.8) deadlocks[ hash=3519] queue=981k(985k) memory[free=110M max=531M]
+distance=40 total=133 carries=19
+##############
+#..  #     ###
+#..  #     $ #
+#.*$ # ####  #
+#..      ##  #
+#..  #$#    ##
+######!##    #
+###!$$$$$$   #
+###!!!!#     #
+##############
+
+#: time=252s keys=1493k k/s=5093 c/k=52 branch=8.4(7.8) deadlocks[ hash=3519] queue=996k(1477k) memory[free=105M max=531M]
+distance=42 total=135 carries=16
+##############
+#*.  #     ###
+#..  # $     #
+#..  # ####  #
+#..      ##  #
+#.*  # #    ##
+###### ##    #
+###!$$$$$$$  #
+###!!!!#     #
+##############
+
+#: time=257s keys=1529k k/s=7124 c/k=46 branch=6.8(7.8) deadlocks[ hash=3519] queue=1011k(1477k) memory[free=92M max=531M]
+distance=25 total=135 carries=13
+##############
+#??!!#!!!!!###
+#??!!#$!$!!!!#
+#??!!#$####!!#
+#??!!!!!!##!!#
+#??!!#$#!!!$##
+######!##$$  #
+###!$$$      #
+###!!!!#     #
+##############
+
+#: time=262s keys=1562k k/s=6517 c/k=49 branch=6.9(7.7) deadlocks[ hash=3754] queue=1032k(1477k) memory[free=82M max=531M]
+distance=62 total=135 carries=24
+##############
+#**  #     ###
+#.*  #       #
+#..  # ####  #
+#..      ##$ #
+#..$ # #    ##
+###### ##$   #
+###!$$$!$    #
+###!!!!#     #
+##############
+
+#: time=267s keys=1591k k/s=5939 c/k=53 branch=7.2(7.7) deadlocks[ hash=3999] queue=1048k(1477k) memory[free=54M max=531M]
+distance=61 total=135 carries=26
+##############
+#**  #     ###
+#..  #       #
+#..$ # ####  #
+#..      ##  #
+#*.  # #  $ ##
+###### ##$   #
+###!$$$$     #
+###!!!!#     #
+##############
+
+#: time=272s keys=1615k k/s=4775 c/k=54 branch=9.0(7.8) deadlocks[ hash=4405] queue=1061k(1477k) memory[free=79M max=531M]
+distance=52 total=135 carries=24
+##############
+#*?!!#     ###
+#??!!#       #
+#?*$!# ####  #
+#??!!!$  ##  #
+#??!!#!#    ##
+######!##$   #
+###!$$$!$ $  #
+###!!!!#     #
+##############
+
+#: time=277s keys=1645k k/s=5820 c/k=50 branch=7.7(7.8) deadlocks[ hash=4571] queue=1077k(1477k) memory[free=79M max=531M]
+distance=52 total=135 carries=22
+##############
+#*.  #     ###
+#..  #  $    #
+#*.  # ####  #
+#..      ##  #
+#.*  # #   $##
+###### ##    #
+###!$$$!$$   #
+###!!!!#     #
+##############
+
+#: time=282s keys=1667k k/s=4464 c/k=50 branch=9.1(7.8) deadlocks[ hash=4577] queue=1092k(1477k) memory[free=63M max=531M]
+distance=51 total=131 carries=22
+##############
+#?*  #     ###
+#*.  #       #
+#..  #$####  #
+#..      ##  #
+#.*  # #    ##
+###### ##$   #
+###!$$$!$ $  #
+###!!!!#     #
+##############
+
+#: time=287s keys=1690k k/s=4628 c/k=54 branch=8.0(7.8) deadlocks[ hash=5136] queue=1102k(1477k) memory[free=64M max=531M]
+distance=64 total=135 carries=25
+##############
+#*.  #     ###
+#**  #       #
+#..  # ####$ #
+#*.      ##  #
+#..  # #    ##
+###### ##    #
+###!$$$!$ $  #
+###!!!!#     #
+##############
+
+#: time=292s keys=1713k k/s=4495 c/k=53 branch=8.3(7.8) deadlocks[ hash=5245] queue=1114k(1477k) memory[free=68M max=531M]
+distance=51 total=133 carries=23
+##############
+#.*  #     ###
+#..  #       #
+#..  #$####  #
+#.*      ##  #
+#*.  # #    ##
+###### ##$   #
+###!$$$!$ $  #
+###!!!!#     #
+##############
+
+#: time=297s keys=1733k k/s=4010 c/k=53 branch=9.0(7.8) deadlocks[ hash=5248] queue=1126k(1477k) memory[free=46M max=531M]
+distance=50 total=133 carries=23
+##############
+#.*  #     ###
+#.*  #$      #
+#..  # ####  #
+#.*      ##  #
+#..  # #    ##
+###### ## $  #
+###!$$$!$$   #
+###!!!!#     #
+##############
+

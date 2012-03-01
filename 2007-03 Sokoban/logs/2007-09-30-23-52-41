@@ -1,0 +1,82 @@
+loading time: 451ms
+there are 14 nondead cells and 4 boxes, maximum of 1001 keys!
+#: time=263ms keys=85 k/s=324 c/k=13 branch=2.7(2.7) deadlocks[fast2x2=4 frozenBoxes=69]130% queue=85(1000)1% set=171(256)1% queue/set=50% deadlock/set=0.43 memFree=3618k
+solution in 13 pushes!
+there are 20 nondead cells and 4 boxes, maximum of 4845 keys!
+#: time=118s keys=2840 k/s=4504 c/k=18 branch=2.4(2.4) deadlocks[fast2x2=21 frozenBoxes=667]17% queue=191(1000)8% set=3032(4096)5% queue/set=6% deadlock/set=0.23 memFree=3457k
+solution in 84 pushes!
+there are 20 nondead cells and 4 boxes, maximum of 4845 keys!
+#: time=159s keys=2840 k/s=3 c/k=0 branch=0.0(2.4) deadlocks[fast2x2=21 frozenBoxes=667]28% queue=191(1000)-10% set=3032(4096)-3% queue/set=6% deadlock/set=0.23 memFree=3182k
+solution in 84 pushes!
+there are 16 nondead cells and 3 boxes, maximum of 560 keys!
+#: time=169s keys=105 k/s=-19563 c/k=18 branch=2.4(2.6) deadlocks[fast2x2=33 frozenBoxes=47]6% queue=34(1000)-10% set=140(256)-13% queue/set=24% deadlock/set=0.57 memFree=3527k
+solution in 31 pushes!
+there are 16 nondead cells and 3 boxes, maximum of 560 keys!
+#: time=226s keys=105 k/s=8 c/k=0 branch=0.0(2.6) deadlocks[fast2x2=33 frozenBoxes=47]1% queue=34(1000)-0% set=140(256)-0% queue/set=24% deadlock/set=0.57 memFree=3762k
+solution in 31 pushes!
+there are 16 nondead cells and 3 boxes, maximum of 560 keys!
+#: time=261s keys=105 k/s=6 c/k=0 branch=0.0(2.6) deadlocks[fast2x2=33 frozenBoxes=47]2% queue=34(1000)0% set=140(256)0% queue/set=24% deadlock/set=0.57 memFree=3746k
+solution in 31 pushes!
+there are 15 nondead cells and 4 boxes, maximum of 1365 keys!
+#: time=281s keys=834 k/s=3021 c/k=13 branch=3.2(3.1) deadlocks[fast2x2=447 frozenBoxes=263]7% queue=55(1000)1% set=890(2048)2% queue/set=6% deadlock/set=0.80 memFree=3505k
+solution in 32 pushes!
+there are 20 nondead cells and 6 boxes, maximum of 38760 keys!
+#: time=284s keys=3974 k/s=7023 c/k=12 branch=2.3(2.4) deadlocks[fast2x2=573 frozenBoxes=3896]18% queue=427(1000)4% set=4402(8192)3% queue/set=10% deadlock/set=1.02 memFree=3328k
+solution in 32 pushes!
+there are 17 nondead cells and 5 boxes, maximum of 6188 keys!
+#: time=287s keys=1166 k/s=-8607 c/k=11 branch=1.9(3.7) deadlocks[fast2x2=335 frozenBoxes=1068]9% queue=233(1000)-4% set=1400(2048)-3% queue/set=17% deadlock/set=1.00 memFree=2906k
+solution in 21 pushes!
+there are 12 nondead cells and 3 boxes, maximum of 220 keys!
+#: time=288s keys=57 k/s=-5015 c/k=15 branch=3.8(2.4) deadlocks[fast2x2=8 frozenBoxes=35]1% queue=33(1000)-3% set=91(128)-4% queue/set=36% deadlock/set=0.47 memFree=3792k
+solution in 23 pushes!
+there are 15 nondead cells and 4 boxes, maximum of 1365 keys!
+#: time=291s keys=397 k/s=1019 c/k=16 branch=3.1(3.0) deadlocks[ frozenBoxes=334]3% queue=72(1000)1% set=470(1024)1% queue/set=15% deadlock/set=0.71 memFree=3648k
+solution in 26 pushes!
+there are 20 nondead cells and 4 boxes, maximum of 4845 keys!
+#: time=292s keys=1928 k/s=4593 c/k=12 branch=1.7(2.0) deadlocks[fast2x2=360 frozenBoxes=589]7% queue=41(1000)2% set=1970(4096)2% queue/set=2% deadlock/set=0.48 memFree=3210k
+solution in 64 pushes!
+there are 14 nondead cells and 3 boxes, maximum of 364 keys!
+#: time=294s keys=220 k/s=-5068 c/k=12 branch=1.9(3.0) deadlocks[fast2x2=27 frozenBoxes=67]1% queue=55(1000)-2% set=276(512)-2% queue/set=20% deadlock/set=0.34 memFree=3292k
+solution in 28 pushes!
+there are 17 nondead cells and 5 boxes, maximum of 6188 keys!
+#: time=295s keys=1114 k/s=1931 c/k=14 branch=2.8(2.8) deadlocks[fast2x2=193 frozenBoxes=951]6% queue=225(1000)1% set=1340(2048)1% queue/set=17% deadlock/set=0.85 memFree=3456k
+solution in 36 pushes!
+there are 14 nondead cells and 6 boxes, maximum of 3003 keys!
+#: time=296s keys=265 k/s=-2277 c/k=15 branch=2.8(3.1) deadlocks[fast2x2=78 frozenBoxes=229]3% queue=173(1000)-1% set=439(1024)-1% queue/set=39% deadlock/set=0.70 memFree=3018k
+solution in 21 pushes!
+there are 12 nondead cells and 4 boxes, maximum of 495 keys!
+#: time=298s keys=131 k/s=-417 c/k=13 branch=3.7(2.5) deadlocks[fast2x2=25 frozenBoxes=117]1% queue=28(1000)-0% set=160(256)-0% queue/set=18% deadlock/set=0.89 memFree=3662k
+solution in 24 pushes!
+there are 19 nondead cells and 4 boxes, maximum of 3876 keys!
+#: time=299s keys=1331 k/s=2541 c/k=16 branch=3.0(2.9) deadlocks[fast2x2=163 frozenBoxes=1017]7% queue=32(1000)1% set=1364(2048)2% queue/set=2% deadlock/set=0.87 memFree=3872k
+solution in 46 pushes!
+there are 20 nondead cells and 4 boxes, maximum of 4845 keys!
+#: time=301s keys=3026 k/s=3384 c/k=19 branch=2.9(2.9) deadlocks[fast2x2=289 frozenBoxes=1657]11% queue=265(1000)2% set=3292(8192)2% queue/set=8% deadlock/set=0.59 memFree=2944k
+solution in 55 pushes!
+there are 21 nondead cells and 4 boxes, maximum of 5985 keys!
+#: time=306s keys=2430 k/s=-2344 c/k=1 branch=-0.3(3.7) deadlocks[fast2x2=460 frozenBoxes=1447]31% queue=143(1000)-0% set=2574(4096)11% queue/set=6% deadlock/set=0.74 memFree=2696k
+solution in 44 pushes!
+there are 23 nondead cells and 4 boxes, maximum of 8855 keys!
+#: time=307s keys=4685 k/s=4365 c/k=28 branch=5.0(4.3) deadlocks[fast2x2=973 frozenBoxes=1852]30% queue=1086(2250)3% set=5772(8192)0% queue/set=19% deadlock/set=0.49 memFree=3073k
+solution in 56 pushes!
+there are 16 nondead cells and 4 boxes, maximum of 1820 keys!
+#: time=308s keys=820 k/s=-26009 c/k=26 branch=4.7(2.6) deadlocks[fast2x2=195 frozenBoxes=433]17% queue=97(1000)-14% set=918(2048)-29% queue/set=11% deadlock/set=0.68 memFree=3381k
+solution in 42 pushes!
+there are 18 nondead cells and 6 boxes, maximum of 18564 keys!
+#: time=309s keys=3650 k/s=8293 c/k=11 branch=3.0(2.9) deadlocks[fast2x2=1681 frozenBoxes=2480]24% queue=917(1000)4% set=4568(8192)5% queue/set=20% deadlock/set=0.91 memFree=3506k
+solution in 33 pushes!
+there are 17 nondead cells and 4 boxes, maximum of 2380 keys!
+#: time=310s keys=913 k/s=-13921 c/k=11 branch=3.0(2.4) deadlocks[fast2x2=111 frozenBoxes=315]13% queue=87(1000)-7% set=1001(2048)-8% queue/set=9% deadlock/set=0.43 memFree=3333k
+solution in 42 pushes!
+there are 17 nondead cells and 5 boxes, maximum of 6188 keys!
+#: time=311s keys=721 k/s=-838 c/k=8 branch=1.0(2.8) deadlocks[fast2x2=83 frozenBoxes=778]12% queue=139(1000)-0% set=861(2048)-0% queue/set=16% deadlock/set=1.00 memFree=3573k
+solution in 30 pushes!
+there are 27 nondead cells and 4 boxes, maximum of 17550 keys!
+#: time=313s keys=4058 k/s=7208 c/k=30 branch=4.1(3.9) deadlocks[fast2x2=1190 frozenBoxes=2033]23% queue=1166(1500)3% set=5225(8192)6% queue/set=22% deadlock/set=0.62 memFree=2551k
+solution in 61 pushes!
+there are 12 nondead cells and 4 boxes, maximum of 495 keys!
+#: time=314s keys=38 k/s=-16237 c/k=28 branch=3.9(2.1) deadlocks[fast2x2=4 frozenBoxes=33]1% queue=0(1000)-8% set=38(64)-13% queue/set=0% deadlock/set=0.97 memFree=3302k
+no solution!
+there are 12 nondead cells and 4 boxes, maximum of 495 keys!
+#: time=316s keys=38 k/s=4 c/k=0 branch=0.0(2.1) deadlocks[fast2x2=4 frozenBoxes=33]3% queue=0(1000)-0% set=38(64)-0% queue/set=0% deadlock/set=0.97 memFree=3934k
+no solution!

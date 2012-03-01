@@ -1,0 +1,15 @@
+- static and dynamic linear and angular friction
+- joint friction
+- motors, servos
+- sensors
+- explosions
+- runge kuta 4 ??
+- better camera control
+
+- texturing and coloring of objects for rotation
+- frustrum culling
+- picking
+- nonconvex shapes (nonconvex -> convex convertor)
+- rendering text
+- performance timing
+- gui

@@ -1,0 +1,17 @@
+levels/original:2
+
+distance=0 total=0 carries=0
+##############
+#..  #!!!!!###
+#..  #!$!!$!!#
+#..  #$####!!#
+#..      ##!!#
+#..  # #  $!##
+###### ##$!$!#
+### $  $!$!$!#
+###    #!!!!!#
+##############
+
+there are 23 nondead cells and 10 boxes, maximum of 1144066 keys!
+#: time=8414us keys=1 k/s=119 c/k=37 branch=0.0(0.0) deadlocks[fast2x2=136 frozenBoxes=305] queue=0(1000) memory[free=4306k max=531M]
+no solution!

@@ -1,0 +1,29 @@
+levels/simple:3
+
+total=0 distance=0 carries=0
+#################
+#########     ###
+######### $#  ###
+#########     ###
+##########  $ ###
+#########   # ###
+#.     ##   $   #
+##.             #
+#.     ##########
+#################
+
+there are 43 nondead cells and 3 boxes, maximum of 12341 keys!
+#: time=142ms keys=41 k/s=288 c/k=48 branch=4.4(4.4) deadlocks[fast2x2=268 frozenBoxes=42 hash=9]161% queue=115(1000)1% set=166(256)1% queue/set=69% deadlock/set=1.92 memFree=4038k
+solution
+total=41 distance=41 carries=3
+#################
+#########     ###
+#########  #  ###
+#########     ###
+##########    ###
+#########   # ###
+#*     ##       #
+##*             #
+#*     ##########
+#################
+

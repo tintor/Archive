@@ -1,0 +1,13 @@
+console.font.name=Courier New
+console.font.size=9
+level.file=levels/original
+level.id=1
+shell.location=0, 0
+shell.maximized=true
+shell.size=1680, 1050
+shell.title=Markoban
+
+loading time: 459ms
+changed: shell=Point {1680, 1050}
+changed: shell=Point {-4, -4}
+changed: shell=Point {1688, 1028}

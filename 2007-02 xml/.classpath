@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/dom4j 1.6.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jaxen 1.1"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/2006-12 Library"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

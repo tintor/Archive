@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="tintor/graph/|tintor/graph/sandbox/AbstractGraph.java|tintor/graph/sandbox/Algorithms.java|tintor/graph/sandbox/AlgorithmsTest.java|tintor/graph/sandbox/DirectedGraph.java|tintor/graph/sandbox/Graph.java|tintor/graph/sandbox/MutableGraph.java|tintor/graph/sandbox/NumberUtils.java|tintor/graph/sandbox/Queue.java|tintor/graph/sandbox/Sandbox.java|tintor/graph/sandbox/Search.java|tintor/graph/sandbox/UndirectedGraph.java|tintor/heap/scrap/|tintor/sandbox/|tintor/properties/scrap/|tintor/properties/Properties.java|tintor/swt/|tintor/geometry/test/|tintor/geometry/extended/ConvexHull3_old.java|tintor/geometry/sandbox/|tintor/units/|tintor/geometry/extended/ConcavePolyhedrons.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/dom4j 1.6.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/XStream 1.2.1"/>
+	<classpathentry kind="lib" path="C:/java lib/jogl-1.1.1-rc7/jogl.jar"/>
+	<classpathentry kind="lib" path="C:/java lib/jakarta commons/commons-lang-2.2/commons-lang-2.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

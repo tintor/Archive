@@ -1,0 +1,3 @@
+- OK funkcije sa rekurzijom
+- nizovi i hesovi
+- objekti

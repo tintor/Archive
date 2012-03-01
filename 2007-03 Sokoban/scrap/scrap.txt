@@ -1,0 +1,158 @@
+	static final List<char[][]> list = new ArrayList<char[][]>();
+	
+	static int ccc = 0;
+	static void add(char[][] a) {
+		try {
+			ccc++;
+			for (int i = 0; i < a.length; i++)
+				out.write(a[i]);
+			out.write('\n');
+			out.flush();
+
+			if(ccc == 50) System.out.println(ccc);
+		} catch(Exception e) {
+			throw new RuntimeException();
+		}
+	}
+	
+	// does pattern A contains pattern B (flipped / rotated)?
+	static boolean xcontains(char[][] a, char[][] b) {
+		char[][] p = copy(b);
+		if (contains(a, p)) return true;
+		flipX(p);
+		if (contains(a, p)) return true;
+		flipY(p);
+		if (contains(a, p)) return true;
+		flipX(p);
+		if (contains(a, p)) return true;
+
+		p = tcopy(b);
+		if (contains(a, p)) return true;
+		flipX(p);
+		if (contains(a, p)) return true;
+		flipY(p);
+		if (contains(a, p)) return true;
+		flipX(p);
+		if (contains(a, p)) return true;
+
+		return false;
+	}
+
+	static boolean contains(char[][] a, char[][] b) {
+		for (int y = 0; y < a.length - b.length + 1; y++)
+			for (int x = 0; x < a[0].length - b[0].length + 1; x++)
+				if (match(a, x, y, b)) return true;
+		return false;
+	}
+
+	static char[][] copy(char[][] b) {
+		char[][] r = new char[b.length][b[0].length];
+		for (int y = 0; y < b.length; y++)
+			for (int x = 0; x < b[0].length; x++)
+				r[y][x] = b[y][x];
+		return r;
+	}
+
+	static void flipX(char[][] b) {
+		for (int y = 0; y < b.length; y++)
+			for (int x = 0; x < b[0].length / 2; x++) {
+				char t = b[y][x];
+				b[y][x] = b[y][b[0].length - 1 - x];
+				b[y][b[0].length - 1 - x] = t;
+			}
+	}
+
+	static void flipY(char[][] b) {
+		for (int x = 0; x < b[0].length; x++)
+			for (int y = 0; y < b.length / 2; y++) {
+				char t = b[y][x];
+				b[y][x] = b[b.length - 1 - y][x];
+				b[b.length - 1 - y][x] = t;
+			}
+	}
+
+	// transposed copy
+	static char[][] tcopy(char[][] b) {
+		char[][] r = new char[b[0].length][b.length];
+		for (int y = 0; y < b.length; y++)
+			for (int x = 0; x < b[0].length; x++)
+				r[x][y] = b[y][x];
+		return r;
+	}
+
+	static boolean match(char[][] a, int ax, int ay, char[][] b) {
+		for (int y = 0; y < b.length; y++)
+			for (int x = 0; x < b[0].length; x++)
+				if (a[ay + y][ax + x] != b[y][x]) return false;
+		return true;
+	}
+
+
+	static List<char[]> load(String file) {
+		List<char[]> list = new ArrayList<char[]>();
+		try {
+			Reader in = new FileReader(file);
+			while (true) {
+				int c;
+				char[] map = new char[width * height];
+				for (int y = 0; y < height; y++) {
+					c = in.read(map, y * width, width);
+					if (c == -1) return list;
+					c = in.read();
+					assert c == '\n';
+				}
+
+				c = in.read();
+				assert c == '=';
+				c = in.read();
+				assert c == '=';
+				c = in.read();
+				assert c == '=';
+				c = in.read();
+				assert c == '\n';
+
+				list.add(map);
+			}
+		} catch (IOException e) {
+			throw new RuntimeException();
+		}
+	}
+
+	// list all single-steps
+	private List<Key> steps() {
+		final List<Key> steps = new ArrayList<Key>();
+		for (Dir dir : Dir.values()) {
+			Key k = step(dir);
+			if (k != null) steps.add(k);
+		}
+		return steps;
+	}
+
+	private Key step(Dir d) {
+		Cell b = agent.get(d);
+		if (b == null) return null;
+		if (!XArrays.contains(boxes, b)) return new Key(b, boxes);
+
+		Cell c = b.get(d);
+		if (c == null || XArrays.contains(boxes, c)) return null;
+		return new Key(b, XArrays.insertionSort(XArrays.replaceI(boxes, b, c)));
+	}
+
+//	static boolean contains(int aw, char[] a, int bw, char[] b) {
+//		int ah = a.length / aw, bh = b.length / bw;
+//
+//		for (int y = 0; y < ah - bh + 1; y++)
+//			for (int x = 0; x < aw - bw + 1; x++)
+//				if (match(aw, a, x, y, bw, b)) return true;
+//		return false;
+//	}
+//
+//	static boolean match(int aw, char[] a, int ax, int ay, int bw, char[] b) {
+//		for (int y = 0; y < (b.length / bw); y++)
+//			for (int x = 0; x < bw; x++) {
+//				char ac = a[(ay + y) * aw + ax + x];
+//				char bc = b[y * bw + x];
+//				if (!(bc == ac || bc == Level.Code.Space)) return false;
+//			}
+//		return true;
+//	}

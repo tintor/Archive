@@ -1,0 +1,11 @@
+console.font.name=Courier New
+console.font.size=9
+level.file=levels/original
+level.id=1
+properties.sleep_time=1000
+shell.location=82, 194
+shell.maximized=true
+shell.size=1066, 738
+shell.title=Markoban
+
+loading time: 502ms

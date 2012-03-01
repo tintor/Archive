@@ -1,0 +1,3 @@
+<properties>
+	<property name="tintor.properties.Properties.file"><string>properties.xml</string></property>
+</properties>

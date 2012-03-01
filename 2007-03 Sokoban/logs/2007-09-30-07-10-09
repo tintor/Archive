@@ -1,0 +1,68 @@
+levels/simple:6
+
+total=0 distance=0 carries=0
+#################
+#########     ###
+######### $#$ ###
+#########   $ ###
+##########  $ ###
+#########   # ###
+#...   ## $ $   #
+##..      $ $   #
+#...   ##########
+#################
+
+there are 43 nondead cells and 8 boxes, maximum of 145008513 keys!
+#: time=5262ms keys=25k k/s=4708 c/k=36 branch=5.5(5.5) deadlocks[fast2x2=13k frozenBoxes=21k]42% queue=59k(86k)6% set=84k(131k)7% queue/set=70% deadlock/set=0.41 memFree=1966k
+total=98 distance=30 carries=8
+#################
+#########     ###
+######### $#  ###
+######### $   ###
+##########$   ###
+#########   # ###
+#...   ##$$ $   #
+##*.            #
+#?*.   ##########
+#################
+
+#: time=10s keys=49k k/s=4754 c/k=36 branch=6.1(5.8) deadlocks[fast2x2=28k frozenBoxes=34k]43% queue=118k(130k)5% set=166k(262k)9% queue/set=71% deadlock/set=0.37 memFree=12M
+total=98 distance=50 carries=12
+#################
+#########     ###
+######### $#  ###
+######### $   ###
+##########    ###
+#########   # ###
+#??*!$!##$      #
+##??$!!$        #
+#???$!!##########
+#################
+
+#: time=15s keys=75k k/s=5332 c/k=35 branch=5.4(5.6) deadlocks[fast2x2=43k frozenBoxes=52k hash=2]41% queue=183k(194k)5% set=258k(524k)8% queue/set=71% deadlock/set=0.37 memFree=20M
+total=98 distance=47 carries=11
+#################
+#########     ###
+######### $#  ###
+######### $   ###
+##########    ###
+#########   # ###
+#*..   ##   $   #
+##.* $     $    #
+#?*.   ##########
+#################
+
+#: time=18s keys=91k k/s=5318 c/k=37 branch=6.1(5.7) deadlocks[fast2x2=51k frozenBoxes=61k hash=6]38% queue=220k(292k)5% set=310k(524k)8% queue/set=71% deadlock/set=0.36 memFree=16M
+solution
+total=98 distance=98 carries=14
+#################
+#########     ###
+#########  #  ###
+#########     ###
+##########    ###
+#########   # ###
+#***   ##       #
+##**            #
+#***   ##########
+#################
+

@@ -1,0 +1,12 @@
+levels/microban:1
+
+distance=0 total=0 carries=0
+######
+#x.###
+#  ###
+#*  x#
+#  $x#
+#xx###
+######
+
+there are 9 nondead cells and 2 boxes, maximum of 36 keys!

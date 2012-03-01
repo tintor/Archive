@@ -1,0 +1,1 @@
+@java -ea -cp swt.jar;bin gui.Main

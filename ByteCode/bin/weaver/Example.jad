@@ -1,0 +1,125 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) annotate 
+// Source File Name:   Example.java
+
+package weaver;
+
+import tintor.geometry.Vector3;
+
+public class Example
+{
+
+    public Example()
+    {
+    //    0    0:aload_0         
+    //    1    1:invokespecial   #8   <Method void Object()>
+    //    2    4:return          
+    }
+
+    public static Vector3 main(Vector3 a, Vector3 b, Vector3 c)
+    {
+		push new Vector3		n1
+		push top				n1, n1
+		push a					n1, n1, a
+		push pop.x				n1, n1, a.x
+		push b					n1, n1, a.x, b
+		push pop.x				n1, n1, a.x, b.x
+		push pop+pop			n1, n1, a.x+b.x
+		push a					n1, n1, a.x+b.x, a
+		push pop.y				n1, n1, a.x+b.x, a.y
+		push b					n1, n1, a.x+b.x, a.y, b
+		push pop.y				n1, n1, a.x+b.x, a.y, b.y
+		push pop+pop			n1, n1, a.x+b.x, a.y+b.y
+		push a					n1, n1, a.x+b.x, a.y+b.y, a
+		push pop.z				n1, n1, a.x+b.x, a.y+b.y, a.z
+		push b					n1, n1, a.x+b.x, a.y+b.y, a.z, b
+		push pop.z				n1, n1, a.x+b.x, a.y+b.y, a.z, b.z
+		push pop+pop			n1, n1, a.x+b.x, a.y+b.y, a.z+b.z
+		push pop.Vector3(pop, pop, pop)	n1
+		r = pop
+
+		// push new Vector3		n1
+		// push top				n1
+		push a					a
+		push pop.x				a.x
+		push b					a.x, b
+		push pop.x				a.x, b.x
+		push pop+pop			a.x+b.x
+		pop rx
+		push a					a
+		push pop.y				a.y
+		push b					a.y, b
+		push pop.y				a.y, b.y
+		push pop+pop			a.y+b.y
+		pop ry
+		push a					a
+		push pop.z				a.z
+		push b					a.z, b
+		push pop.z				a.z, b.z
+		push pop+pop			a.z+b.z
+		pop rz
+
+		push new Vector3
+		push top
+		push r
+		push pop.x
+		push c
+		push pop.x
+		push pop-pop
+		push r
+		push pop.y
+		push c
+		push pop.y
+		push pop-pop
+		push r
+		push pop.z
+		push c
+		push pop.z
+		push pop-pop
+		push pop.Vector3(pop, pop, pop)
+		return pop
+
+////////////    
+        Vector3 r = n1 Vector3(a.x + b.x, a.y + b.y, a.z + b.z);
+    //    0    0:n1             #16  <Class Vector3>
+    //    1    3:dup             
+    //    2    4:aload_0         
+    //    3    5:getfield        #18  <Field float Vector3.x>
+    //    4    8:aload_1         
+    //    5    9:getfield        #18  <Field float Vector3.x>
+    //    6   12:fadd            
+    //    7   13:aload_0         
+    //    8   14:getfield        #22  <Field float Vector3.y>
+    //    9   17:aload_1         
+    //   10   18:getfield        #22  <Field float Vector3.y>
+    //   11   21:fadd            
+    //   12   22:aload_0         
+    //   13   23:getfield        #25  <Field float Vector3.z>
+    //   14   26:aload_1         
+    //   15   27:getfield        #25  <Field float Vector3.z>
+    //   16   30:fadd            
+    //   17   31:invokespecial   #28  <Method void Vector3(float, float, float)>
+    //   18   34:astore_3        
+        return n1 Vector3(r.x - c.x, r.y - c.y, r.z - c.z);
+    //   19   35:n1             #16  <Class Vector3>
+    //   20   38:dup             
+    //   21   39:aload_3         
+    //   22   40:getfield        #18  <Field float Vector3.x>
+    //   23   43:aload_2         
+    //   24   44:getfield        #18  <Field float Vector3.x>
+    //   25   47:fsub            
+    //   26   48:aload_3         
+    //   27   49:getfield        #22  <Field float Vector3.y>
+    //   28   52:aload_2         
+    //   29   53:getfield        #22  <Field float Vector3.y>
+    //   30   56:fsub            
+    //   31   57:aload_3         
+    //   32   58:getfield        #25  <Field float Vector3.z>
+    //   33   61:aload_2         
+    //   34   62:getfield        #25  <Field float Vector3.z>
+    //   35   65:fsub            
+    //   36   66:invokespecial   #28  <Method void Vector3(float, float, float)>
+    //   37   69:areturn         
+    }
+}

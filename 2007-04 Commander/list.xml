@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" ?><MyList class="java.util.ArrayList"><String value="John Doe"/><Null/><Map><Key class="String" value="ONE"/><Value class="Integer" value="1"/><Key class="String" value="TWO"/><Value class="Integer" value="2"/></Map></MyList>

@@ -1,0 +1,29 @@
+Near(x, y) => Near(y, x)
+Wumpus(x) and Near(x, y) => Stinks(y)
+Pit(x) and Near(x, y) => Breeze(y)
+Safe(x) <=> !Wumpus(x) and !Pit(x)
+(E1 x) Wumpus(x)
+
+Explored(x)
+
+---------
+(E0 x) F(x) = (A x) !F(x)
+---------
+
+Contains(S, A)
+Contains(S, B)
+Contains(S, C)
+(A x) x != A and x != B and x != C => !Contains(S, x)
+
+Length(s, n) = (En x) Contains(s, x)
+Empty(s) = Length(s, 0)
+EveryElement(s, f) = Contains(s, x) => f(x)
+ExistsElement(s, f) = (E x) Contains(s, x) and f(x)
+
+----------
+
+Pit(x) and Near(x, y) => Breeze(y)
+!Breeze(y) and Near(y, x) => !Pit(x)
+
+!Pit(B)
+!Breeze(A)

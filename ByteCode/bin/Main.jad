@@ -1,0 +1,44 @@
+import tintor.geometry.Vector3;
+
+public class Main
+{
+	public static void main(String args[])
+	{
+		Vector3 vector3 = new Vector3(1.0F, 2.0F, 0.0F);
+	//    0    0:new             #13  <Class Vector3>
+	//    1    3:dup             
+	//    2    4:fconst_1        
+	//    3    5:fconst_2        
+	//    4    6:fconst_0        
+	//    5    7:invokespecial   #15  <Method void Vector3(float, float, float)>
+	//    6   10:astore_1        
+		Vector3 vector3_1 = new Vector3(0.0F, -1F, 0.0F);
+	//    7   11:new             #13  <Class Vector3>
+	//    8   14:dup             
+	//    9   15:fconst_0        
+	//   10   16:ldc1            #18  <Float -1F>
+	//   11   18:fconst_0        
+	//   12   19:invokespecial   #15  <Method void Vector3(float, float, float)>
+	//   13   22:astore_2        
+		Vector3 vector3_2 = new Vector3(-2F, 4F, 7F);
+	//   14   23:new             #13  <Class Vector3>
+	//   15   26:dup             
+	//   16   27:ldc1            #19  <Float -2F>
+	//   17   29:ldc1            #20  <Float 4F>
+	//   18   31:ldc1            #21  <Float 7F>
+	//   19   33:invokespecial   #15  <Method void Vector3(float, float, float)>
+	//   20   36:astore_3        
+		Vector3 vector3_3 = vector3.sub(vector3_1).cross(vector3_2);
+	//   21   37:aload_1         
+	//   22   38:aload_2         
+	//   23   39:invokevirtual   #22  <Method Vector3 Vector3.sub(Vector3)>
+	//   24   42:aload_3         
+	//   25   43:invokevirtual   #26  <Method Vector3 Vector3.cross(Vector3)>
+	//   26   46:astore          4
+		System.out.println(vector3_3);
+	//   27   48:getstatic       #29  <Field PrintStream System.out>
+	//   28   51:aload           4
+	//   29   53:invokevirtual   #35  <Method void PrintStream.println(Object)>
+	//   30   56:return          
+	}
+}

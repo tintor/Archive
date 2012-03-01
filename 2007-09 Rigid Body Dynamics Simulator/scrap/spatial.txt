@@ -1,0 +1,9 @@
+//	private int hash2(int x, int y, int z) {
+//		return (x * 36760981) ^ (y * 66069761) ^ (z * 48819587);
+//	}
+
+	//	public static void main(String[] a) {
+	//		Random r = new Random();
+	//		for(int i=0; i<10; i++)
+	//		System.out.println(BigInteger.probablePrime(26, r).intValue());
+	//	}

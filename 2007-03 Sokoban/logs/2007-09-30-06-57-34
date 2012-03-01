@@ -1,0 +1,29 @@
+levels/simple:5
+
+total=0 distance=0 carries=0
+#################
+#########     ###
+#########  #$ ###
+#########   $ ###
+##########  $ ###
+#########   # ###
+#..    ##   $   #
+##.         $   #
+#..    ##########
+#################
+
+there are 43 nondead cells and 5 boxes, maximum of 962598 keys!
+#: time=202ms keys=69 k/s=341 c/k=46 branch=5.8(5.8) deadlocks[fast2x2=274 frozenBoxes=44 hash=6]121% queue=301(1000)1% set=377(512)3% queue/set=80% deadlock/set=0.86 memFree=4116k
+solution
+total=69 distance=69 carries=6
+#################
+#########     ###
+#########  #  ###
+#########     ###
+##########    ###
+#########   # ###
+#**    ##       #
+##*             #
+#**    ##########
+#################
+

@@ -1,0 +1,32 @@
+console.font.name=Courier New
+console.font.size=9
+level.file=levels/original
+level.id=1
+properties.sleep_time=1000
+shell.location=72, 119
+shell.maximized=false
+shell.size=1314, 822
+shell.title=Markoban
+
+loading time: 462ms
+changed: shell.size=1314, 822
+changed: shell.size=1314, 822
+changed: shell.location=76, 120
+changed: shell.location=78, 120
+changed: shell.location=89, 120
+changed: shell.location=113, 114
+changed: shell.location=131, 110
+changed: shell.location=162, 99
+changed: shell.location=187, 88
+changed: shell.location=214, 78
+changed: shell.location=234, 72
+changed: shell.location=241, 66
+changed: shell.location=245, 62
+changed: shell.location=255, 51
+changed: shell.location=258, 48
+changed: shell.location=259, 45
+changed: shell.location=261, 42
+changed: shell.location=265, 37
+changed: shell.location=267, 35
+changed: shell.location=268, 34
+changed: shell.location=268, 32

@@ -1,0 +1,83 @@
+test:
+star FAILS macro expansion
+
+original:
+1 SOLVED 97 pushes, 65 keys, 220ms
+2 SLOW!
+6 SOLVED 110 pushes, 394k keys, 188s
+7 FAILS on start
+18 (146 pushes) OUT OF MEMORY
+32 (149 pushes)
+38 SOLVED 81 pushes, 118k keys, 38s
+49 (132 pushes) OUT OF MEMORY at 1351k keys!
+
+kids (all solved except):
+ 2 FAILS start deadlock
+ 8 FAILS start deadlock
+28 FAILS start deadlock
+39 FAILS start deadlock
+47 FAILS start deadlock
+49 FAILS start deadlock
+53 FAILS start deadlock
+55 FAILS macro expansion
+56 FAILS macro expansion
+57 FAILS macro expansion
+58 FAILS macro expansion
+    without, 14s, 54 pushes, 159k keys, but max is 74k!
+61 FAILS macro expansion
+    without, 32, 89 pushes, 407k keys, but max is 296k!
+
+microban:
+2 FAILS start deadlock
+3 FAILS start deadlock, invalid push distances
+6 FAILS start deadlock
+12 FAILS macro expandion + frozen boxes test
+14 FAILS frozen boxes test
+16 FAILS start deadlock
+26 FAILS frozen boxes test
+37 FAILS macro expansion
+48 FAILS frozen boxes test
+53 FAILS frozen boxes test
+54 FAILS macro expansion
+55 FAILS frozen boxes test
+   long tunnels!
+59 FAILS macro expansion
+60
+61
+63
+64
+66
+71
+73
+74
+75
+76
+78
+79
+84
+86
+90
+91
+92 SLOW, bad heuristic estimate, high symetry
+   manualy soved in 52 pushes!
+95
+96
+97
+98
+106
+110
+111
+113
+120
+121
+126
+127
+134
+137
+138 SLOW!
+143
+146
+148
+152 Interesting Linear Level!
+153 SOLVED! many long tunnels!
+154 FAILS to load!
